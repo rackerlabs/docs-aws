@@ -1,4 +1,4 @@
-.. _index-xxx-ug:
+.. _index-aws-docs:
 
 ======================================
 Rackspace |product name| vN User Guide
@@ -18,18 +18,30 @@ into Rackspace products and services.
 
 Describe the purpose of this document and the audience.
 
-For an example of a topic that uses this template, see
-:ref:`index-example-ug`.
+For an example of a topic that uses this template, see.
 
 .. toctree::
    :maxdepth: 2
 
-   ../template-user-guide/common/common-front.rst
-   ../template-user-guide/overview/index.rst
-   ../template-user-guide/installing/index.rst
-   ../template-user-guide/getting-started/index.rst
-   ../template-user-guide/using/index.rst
-   ../template-user-guide/administering/index.rst
-   ../template-user-guide/support/index.rst
-   ../template-user-guide/api.rst
-   ../template-user-guide/common/common-end.rst
+   getting-started/index.rst
+   aws-accounts/index.rst
+   service-levels/index.rst
+   pricing.rst
+   avaitor-infrastructure-management/index.rst
+   recommended-network-config/index.rst
+   billing/index.rst
+   reserved-instances/index.rst
+   access-and-permissions/index.rst
+   security/index.rst
+   compliance/index.rst
+   passport/index.rst
+   logbook.rst
+   compass/index.rst
+   waypoint.rst
+   watchman/index.rst
+   aws-instance-scheduler/index.rst
+   support/index.rst
+   patching/index.rst
+   aws-marketplace/index.rst
+   managed-infra-as-code/index.rst
+   service-blocks/index.rst
