@@ -43,7 +43,7 @@ extensions = [
     'sphinx.ext.todo',
     'chios.bolditalic',
     'chios.remotecode',
-    'chios.remoteinclude',
+    'chios.remoteinclude'
 ]
 
 if spelling is not None:
