@@ -1,0 +1,8 @@
+{
+  "contentIDBase": "https://github.com/rackerlabs/docs-repo-template/user-guide/",
+  "githubUrl": "https://github.com/rackerlabs/docs-repo-template/",
+  "githubBranch": "master",
+  "meta": {
+    "preferGithubIssues": true
+  }
+}
