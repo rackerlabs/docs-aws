@@ -11,11 +11,11 @@ DOCDIR        = docs
 
 # User-friendly check for sphinx-build
 ifeq ($(shell which $(SPHINXBUILD) >/dev/null 2>&1; echo $$?), 1)
-	$(error The '$(SPHINXBUILD)' command was not found. Make sure you have Sphinx \
-	installed, then set the SPHINXBUILD environment variable to point to the full \
-	path of the '$(SPHINXBUILD)' executable. Alternatively you can add the \
-	directory with the executable to your PATH. If you don\'t have Sphinx \
-	installed, grab it from http://sphinx-doc.org/)
+  $(error The '$(SPHINXBUILD)' command was not found. Make sure you have Sphinx \
+  installed, then set the SPHINXBUILD environment variable to point to the full \
+  path of the '$(SPHINXBUILD)' executable. Alternatively you can add the \
+  directory with the executable to your PATH. If you don\'t have Sphinx \
+  installed, grab it from http://sphinx-doc.org/)
 endif
 
 # Internal variables.
@@ -68,3 +68,16 @@ spelling:
 	$(SPHINXBUILD) -b spelling $(ALLSPHINXOPTS) $(BUILDDIR)/spelling
 	@echo
 	@echo "Build finished. The spelling files are in $(BUILDDIR)/spelling."
+
+latex:
+	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
+	@echo
+	@echo "Build finished; the LaTeX files are in $(BUILDDIR)/latex."
+	@echo "Run \`make' in that directory to run these through (pdf)latex" \
+		      "(use \`make latexpdf' here to do that automatically)."
+
+latexpdf:
+	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) $(BUILDDIR)/latex
+	@echo "Running LaTeX files through pdflatex..."
+	$(MAKE) -C $(BUILDDIR)/latex all-pdf
+	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
