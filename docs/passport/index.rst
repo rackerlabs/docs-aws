@@ -1,4 +1,4 @@
-.. _index-passport:
+.. _passport:
 
 ========
 Passport

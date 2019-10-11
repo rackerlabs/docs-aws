@@ -1,4 +1,4 @@
-.. _index-patching:
+.. _patching:
 
 ========
 Patching

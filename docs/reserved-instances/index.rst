@@ -1,4 +1,4 @@
-.. _index-reserved-instances:
+.. _reserved-instances:
 
 ==================
 Reserved Instances

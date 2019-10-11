@@ -1,20 +1,22 @@
-.. _index-getting-started:
+.. _getting-started:
 
 ===============
 Getting started
 ===============
 
-.. Define |product name| in conf.py
+It is extremely easy to get started experiencing Fanatical Support for AWS.
 
-Include any tasks that are needed to get the product to a usable state.
-Some example tasks are included here, but you can add (or remove) topics.
+.. _create-rackspace-account:
 
-This section provides information about getting started with the |product name|
-product.
+Create your Rackspace account
+-----------------------------
+
+The first step is to create your Rackspace account. Visit
+`https://cart.rackspace.com/aws <https://cart.rackspace.com/aws>`_
+and follow the instructions to establish your account.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
-   create-rackspace-account.rst
-   add-new-aws-account.rst
+   add-aws-account.rst
    use-existing-aws-account.rst

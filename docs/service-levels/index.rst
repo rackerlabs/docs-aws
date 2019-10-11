@@ -1,4 +1,4 @@
-.. _index-service-levels:
+.. _service-levels:
 
 ==============
 Service Levels

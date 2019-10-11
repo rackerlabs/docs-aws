@@ -1,4 +1,4 @@
-.. _index-aviator-infrastructure-management:
+.. _aviator-infrastructure-management:
 
 =================================
 Aviator Infrastructure Management

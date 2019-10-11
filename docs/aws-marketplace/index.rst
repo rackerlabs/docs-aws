@@ -1,4 +1,4 @@
-.. _index-aws-marketplace:
+.. _aws-marketplace:
 
 ===============
 AWS Marketplace

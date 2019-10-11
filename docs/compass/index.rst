@@ -1,4 +1,4 @@
-.. _index-compass:
+.. _compass:
 
 =======
 Compass

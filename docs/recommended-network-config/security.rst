@@ -1,4 +1,4 @@
-.. _security:
+.. _net-config-security:
 
 ========
 Security

@@ -1,4 +1,4 @@
-.. _index-recommended-network-config:
+.. _recommended-network-config:
 
 =================================
 Recommended Network Configuration

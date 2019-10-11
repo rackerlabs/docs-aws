@@ -1,4 +1,4 @@
-.. _index-support:
+.. _support:
 
 =======
 Support

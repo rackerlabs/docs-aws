@@ -1,8 +1,8 @@
-.. _index-using-xxx-ug:
+.. _billing:
 
-=====
-Using
-=====
+=======
+Billing
+=======
 
 .. Define |product name| in conf.py
 

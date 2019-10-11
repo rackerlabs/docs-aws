@@ -1,4 +1,4 @@
-.. _index-service-blocks:
+.. _service-blocks:
 
 ==============
 Service Blocks

@@ -1,4 +1,4 @@
-.. _index-access-and-permissions:
+.. _access-and-permissions:
 
 ======================
 Access and Permissions

@@ -1,4 +1,4 @@
-.. _index-security:
+.. _security:
 
 ========
 Security

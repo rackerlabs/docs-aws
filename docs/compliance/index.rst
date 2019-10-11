@@ -1,4 +1,4 @@
-.. _index-compliance:
+.. _compliance:
 
 ==========
 Compliance

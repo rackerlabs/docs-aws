@@ -1,4 +1,4 @@
-.. _index-watchman:
+.. _watchman:
 
 ========
 Watchman

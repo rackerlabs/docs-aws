@@ -6,19 +6,43 @@ Rackspace |product name| vN User Guide
 
 *Last updated:* |today|
 
-.. Define |product name| in conf.py
-.. You can define other variables in that file and use them throughout
-   your documents.
+.. only:: latex
 
-The Rackspace |product name| vN enables customers to [insert a
-description or benefit of the product].
+  **IMPORTANT:** This is a PDF version of the Product Guide, and is intended
+  to be used for point-in-time offline reference purposes only. The
+  authoritative version of this document lives online at
+  `https://manage.rackspace.com/aws/docs <https://manage.rackspace.com/aws/docs>`_
+  and will contain the latest updates. |vspace|
 
-Provide one to two paragraphs that describe the product and where it fits
-into Rackspace products and services.
+This Product Guide is designed to provide a detailed look at how Rackspace
+delivers our **Fanatical Support for AWS** offering. It covers core concepts
+such as the :ref:`AWS account structure <aws-accounts>` and Rackspace
+:ref:`service levels <service-levels>`, and advanced concepts such as
+provisioning bastion access via :ref:`Rackspace Passport <passport>` and
+accessing audit logs via :ref:`Rackspace Logbook <logbook>`.
 
-Describe the purpose of this document and the audience.
+For general information on the offering, please visit
+`https://www.rackspace.com/aws <https://www.rackspace.com/managed-aws>`_.
 
-For an example of a topic that uses this template, see.
+To sign up, visit
+`https://cart.rackspace.com/aws <https://cart.rackspace.com/aws>`_.
+
+.. only:: html
+
+  PDF Download
+  ------------
+
+  You can download a PDF version of this documentation by
+  :download:`clicking here <figures/fanaticalsupportforawsproductguide.pdf>`.
+  Note that we frequently update our
+  documentation so we encourage you to check back periodically for the
+  latest information.
+
+.. |vspace| raw:: latex
+
+    \vspace{10mm}
+
+----
 
 .. toctree::
    :maxdepth: 2

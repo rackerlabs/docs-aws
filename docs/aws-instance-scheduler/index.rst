@@ -1,4 +1,4 @@
-.. _index-aws-instance-scheduler:
+.. _aws-instance-scheduler:
 
 ======================
 AWS Instance Scheduler

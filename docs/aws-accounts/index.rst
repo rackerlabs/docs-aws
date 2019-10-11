@@ -1,4 +1,4 @@
-.. _index-aws-accounts:
+.. _aws-accounts:
 
 ============
 AWS Accounts
