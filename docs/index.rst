@@ -50,7 +50,7 @@ To sign up, visit
    getting-started/index.rst
    aws-accounts/index.rst
    service-levels/index.rst
-   pricing.rst
+   pricing/index.rst
    aviator-infrastructure-management/index.rst
    recommended-network-config/index.rst
    billing/index.rst
@@ -59,9 +59,9 @@ To sign up, visit
    security/index.rst
    compliance/index.rst
    passport/index.rst
-   logbook.rst
+   logbook/index.rst
    compass/index.rst
-   waypoint.rst
+   waypoint/index.rst
    watchman/index.rst
    aws-instance-scheduler/index.rst
    support/index.rst
