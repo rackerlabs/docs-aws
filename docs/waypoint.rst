@@ -20,6 +20,3 @@ If the API is not extensive and you want to document it here, group the
 methods into logical categories, as needed, and then use the `HTTP request
 template <https://github.com/rackerlabs/docs-repo-template/blob/master/api-guide-template/api-reference/methods/http-request-template.rst>`_
 to document the methods.
-
-For examples of topics that use this template, see :ref:`api-example-1-ug`
-and :ref:`api-example-2-ug`.

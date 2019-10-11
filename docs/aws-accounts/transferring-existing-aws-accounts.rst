@@ -12,7 +12,3 @@ If monitoring is provided for the product, document its use here.
   and provide a link to its documentation.
 - If the product implements its own monitoring system, you might
   need to create many subtopics to explain that implementation.
-
-
-For an example of a topic that describes how monitoring is
-implemented for a product, see :ref:`monitoring-example-ug`.

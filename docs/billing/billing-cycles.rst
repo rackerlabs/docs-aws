@@ -31,6 +31,3 @@ Next steps
 ~~~~~~~~~~
 
 Provide links to any tasks that must or can be completed after this task.
-
-For an example of a topic that uses this template, see
-:ref:`task-example-ug`.

@@ -1,8 +1,8 @@
-.. _modifying-payment-method:
+.. _financial-benefits:
 
-=============================
-Modifying your payment method
-=============================
+============================================
+Financial Benefits of your Rackspace Account
+============================================
 
 Begin the title of tasks with an imperative verb (for example, Add a user).
 

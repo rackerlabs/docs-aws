@@ -16,5 +16,5 @@ product.
 .. toctree::
    :maxdepth: 2
 
-   shared-management.rst
-   aws-security.rst
+   pci-dss.rst
+   hipaa.rst

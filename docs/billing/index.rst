@@ -20,5 +20,11 @@ This section provides information about using the
 .. toctree::
    :maxdepth: 1
 
-   use-cases/index.rst
-   task.rst
+   billing-currency.rst
+   billing-cycles.rst
+   financial-benefits.rst
+   monthly-service-fees.rst
+   usage.rst
+   viewing-invoices.rst
+   tagging.rst
+   modifying-payment-method.rst

@@ -15,6 +15,6 @@ product.
 .. toctree::
    :maxdepth: 1
 
-   configuring.rst
-   accessing.rst
-   navigating.rst
+   create-rackspace-account.rst
+   add-new-aws-account.rst
+   use-existing-aws-account.rst

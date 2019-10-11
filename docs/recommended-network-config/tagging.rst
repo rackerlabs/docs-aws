@@ -1,4 +1,4 @@
-.. _tagging:
+.. _network-config-tagging:
 
 =======
 Tagging
@@ -21,7 +21,3 @@ Following is an example introductory sentence:
 
 If you encounter issues when working with |product name|, use the information
 in this section to help you troubleshoot.
-
-For an example of a troubleshooting topic that describes many issues, see
-:ref:`troubleshooting-example-1-ug`. For an example of a topic that describes
-only one issue, see and :ref:`troubleshooting-example-2-ug`.

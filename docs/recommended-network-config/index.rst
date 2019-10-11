@@ -14,6 +14,10 @@ product.
 .. toctree::
    :maxdepth: 1
 
-   troubleshooting.rst
-   spheres-support.rst
-   licensing.rst
+   cloudformation.rst
+   virtual-private-cloud.rst
+   availability-zones.rst
+   subnets.rst
+   ha-nat.rst
+   security.rst
+   tagging.rst

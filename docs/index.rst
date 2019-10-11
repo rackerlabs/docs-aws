@@ -27,7 +27,7 @@ For an example of a topic that uses this template, see.
    aws-accounts/index.rst
    service-levels/index.rst
    pricing.rst
-   avaitor-infrastructure-management/index.rst
+   aviator-infrastructure-management/index.rst
    recommended-network-config/index.rst
    billing/index.rst
    reserved-instances/index.rst
