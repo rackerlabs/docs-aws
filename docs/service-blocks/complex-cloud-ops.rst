@@ -1,4 +1,4 @@
-.. _complex-cloud-ops:
+.. _complex_cloud_ops:
 
 ========================
 Complex Cloud Operations

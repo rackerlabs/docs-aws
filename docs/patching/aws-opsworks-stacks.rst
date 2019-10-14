@@ -1,4 +1,4 @@
-.. _aws-opsworks-stacks:
+.. _aws_opsworks_stacks:
 
 ===================
 AWS OpsWorks Stacks

@@ -1,4 +1,4 @@
-.. _advanced-usage:
+.. _advanced_usage:
 
 ==============
 Advanced Usage

@@ -1,4 +1,4 @@
-.. _platform-essentials:
+.. _platform_essentials:
 
 ===================
 Platform Essentials

@@ -1,4 +1,4 @@
-.. _network-config-tagging:
+.. _network_config_tagging:
 
 =======
 Tagging

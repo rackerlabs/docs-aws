@@ -1,15 +1,16 @@
-.. _access-and-permissions:
+.. _access_and_permissions:
 
 ======================
 Access and Permissions
 ======================
 
-.. Define |product name| in conf.py
+Controlling access and permissions to the Rackspace and AWS control planes
+(APIs and UIs) along with the resources you deploy at AWS are a critical
+part of the overall security of your environment. This section outlines
+several core concepts related to access and permissions, along with
+details on how to grant members of your team and others access to your
+account, as needed.
 
-Include support and troubleshooting information for the product.
-
-This section provides support information for the |product name|
-product.
 
 .. toctree::
    :maxdepth: 1

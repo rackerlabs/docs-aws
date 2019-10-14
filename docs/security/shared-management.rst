@@ -1,4 +1,4 @@
-.. _shared-management:
+.. _shared_management:
 
 ====================================
 Rackspace Shared Management Services

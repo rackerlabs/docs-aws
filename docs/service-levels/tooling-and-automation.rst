@@ -1,4 +1,4 @@
-.. _tooling-and-automation:
+.. _tooling_and_automation:
 
 ================================
 Features: Tooling and Automation

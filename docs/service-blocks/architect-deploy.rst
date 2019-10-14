@@ -1,4 +1,4 @@
-.. _architect-deploy:
+.. _architect_deploy:
 
 ==================
 Architect & Deploy

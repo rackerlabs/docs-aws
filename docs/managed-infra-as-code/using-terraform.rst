@@ -1,4 +1,4 @@
-.. _using-terraform:
+.. _using_terraform:
 
 ===============
 Using Terraform

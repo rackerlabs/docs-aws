@@ -1,4 +1,4 @@
-.. _using-github:
+.. _using_github:
 
 ============
 Using GitHub

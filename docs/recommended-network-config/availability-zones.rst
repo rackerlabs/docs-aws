@@ -1,4 +1,4 @@
-.. _availability-zones:
+.. _availability_zones:
 
 ========================
 Availability Zones (AZs)

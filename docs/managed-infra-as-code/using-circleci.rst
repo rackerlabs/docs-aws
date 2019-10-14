@@ -1,4 +1,4 @@
-.. _using-circleci:
+.. _using_circleci:
 
 ==============
 Using CircleCI

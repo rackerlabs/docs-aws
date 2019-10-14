@@ -1,4 +1,4 @@
-.. _ha-nat:
+.. _ha_nat:
 
 =====================================================
 Highly Available Network Address Translation (HA NAT)

@@ -1,4 +1,4 @@
-.. _discover-enhance:
+.. _discover_enhance:
 
 ==================
 Discover & Enhance

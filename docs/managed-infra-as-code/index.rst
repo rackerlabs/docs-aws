@@ -1,4 +1,4 @@
-.. _managed-infra-as-code:
+.. _managed_infra_as_code:
 
 ==============================
 Managed Infrastructure as Code

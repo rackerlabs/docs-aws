@@ -1,4 +1,4 @@
-.. _impact-on-fees:
+.. _impact_on_fees:
 
 ==============================
 Impact on Monthly Service Fees

@@ -1,4 +1,4 @@
-.. _custom-cloudwatch:
+.. _custom_cloudwatch:
 
 ===============================
 Custom CloudWatch Configuration

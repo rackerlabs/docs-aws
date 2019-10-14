@@ -1,4 +1,4 @@
-.. _amazon-emr:
+.. _amazon_emr:
 
 ==========
 Amazon EMR

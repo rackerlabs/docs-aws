@@ -1,4 +1,4 @@
-.. _aws-elastic-beanstalk:
+.. _aws_elastic_beanstalk:
 
 =====================
 AWS Elastic Beanstalk

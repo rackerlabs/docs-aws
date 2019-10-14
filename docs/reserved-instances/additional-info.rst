@@ -1,4 +1,4 @@
-.. _additional-info:
+.. _additional_info:
 
 ==============================
 Additional Billing Information

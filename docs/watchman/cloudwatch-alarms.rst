@@ -1,4 +1,4 @@
-.. _cloudwatch-alarms:
+.. _cloudwatch_alarms:
 
 =================
 CloudWatch Alarms

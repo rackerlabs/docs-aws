@@ -1,4 +1,4 @@
-.. _passport-getting-started:
+.. _passport_getting_started:
 
 ===============
 Getting Started

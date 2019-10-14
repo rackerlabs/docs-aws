@@ -1,4 +1,4 @@
-.. _response-time-slas:
+.. _response_time_slas:
 
 ==================
 Response Time SLAs

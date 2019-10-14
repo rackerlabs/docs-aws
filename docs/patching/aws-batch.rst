@@ -1,4 +1,4 @@
-.. _aws-batch:
+.. _aws_batch:
 
 =========
 AWS Batch

@@ -1,4 +1,4 @@
-.. _aws-security:
+.. _aws_security:
 
 ============
 AWS Security

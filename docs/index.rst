@@ -1,7 +1,7 @@
-.. _index-aws-docs:
+.. _index_aws_docs:
 
 ======================================
-Rackspace |product name| vN User Guide
+Rackspace |product name| Product Guide
 ======================================
 
 *Last updated:* |today|
@@ -16,8 +16,8 @@ Rackspace |product name| vN User Guide
 
 This Product Guide is designed to provide a detailed look at how Rackspace
 delivers our **Fanatical Support for AWS** offering. It covers core concepts
-such as the :ref:`AWS account structure <aws-accounts>` and Rackspace
-:ref:`service levels <service-levels>`, and advanced concepts such as
+such as the :ref:`AWS account structure <aws_accounts>` and Rackspace
+:ref:`service levels <service_levels>`, and advanced concepts such as
 provisioning bastion access via :ref:`Rackspace Passport <passport>` and
 accessing audit logs via :ref:`Rackspace Logbook <logbook>`.
 

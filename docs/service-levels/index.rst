@@ -1,4 +1,4 @@
-.. _service-levels:
+.. _service_levels:
 
 ==============
 Service Levels

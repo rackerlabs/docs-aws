@@ -1,4 +1,4 @@
-.. _manage-operate:
+.. _manage_operate:
 
 ================
 Manage & Operate

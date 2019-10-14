@@ -1,4 +1,4 @@
-.. _virtual-private-cloud:
+.. _virtual_private_cloud:
 
 ===========================
 Virtual Private Cloud (VPC)

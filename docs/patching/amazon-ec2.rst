@@ -1,4 +1,4 @@
-.. _amazon-ec2:
+.. _amazon_ec2:
 
 ==========
 Amazon EC2

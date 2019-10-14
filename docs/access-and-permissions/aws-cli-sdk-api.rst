@@ -1,25 +1,30 @@
-.. _aws-cli-sdk-api:
+.. _aws_cli_sdk_api:
 
 =======================
 AWS CLI, SDKs, and APIs
 =======================
 
-.. Define |product name| in conf.py
+There are two methods for accessing the AWS command-line interface
+(CLI), software development kits (SDKs), and application programming
+interfaces (APIs):
 
-Document any troubleshooting steps for common issues related to the product
-or service described in the guide. Troubleshooting information typically
-describes an issue, its symptoms, the environment, and the possible causes,
-and provides suggestions for recovering. As such, a troubleshooting topic
-can contain almost any structure, from paragraphs, bullet lists, and numbered
-lists, to sections, tables, and figures.
+1. From the `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_,
+   navigate to the Account Details screen for the AWS account you would like
+   to access and click the View Credentials button. You will be issued AWS
+   Security Token Service (STS) credentials that are valid for up to
+   60 minutes and are scoped to the same level of permissions as if you were
+   to federate to the AWS Console. This is the preferred method of
+   short-lived, infrequent access as access to the credentials is tied to
+   your Fanatical Support for AWS user and is logged in the
+   :ref:`Rackspace Logbook <logbook>`.
 
-If you have many troubleshooting tips, create separate sections with
-descriptive headings. You can also create separate child files under a parent
-“Troubleshooting” topic.
+2. If you require longer-lived, more persistent access to the CLI, SDKs, or
+   APIs you should create an IAM user with access keys (if the access will
+   be from a user's workstation) or an IAM instance role (if the access will
+   be from resources, such as EC2 instances, running at AWS). Note that
+   directly-created IAM users or roles are not managed within the Fanatical
+   Support for AWS user management system, and therefore modifying or
+   terminating access must be done directly within AWS IAM.
 
-Following is an example introductory sentence:
-
-If you encounter issues when working with |product name|, use the information
-in this section to help you troubleshoot.
-
-For an example of a troubleshooting topic that describes many issues, see.
+If you need assistance determining which option is best for your specific
+use case, please :ref:`contact a Racker <support>`.

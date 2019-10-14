@@ -1,4 +1,4 @@
-.. _pci-dss:
+.. _pci_dss:
 
 =======
 PCI-DSS

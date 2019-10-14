@@ -1,4 +1,4 @@
-.. _change-workflow:
+.. _change_workflow:
 
 ===============
 Change Workflow

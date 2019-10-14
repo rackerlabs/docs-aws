@@ -1,4 +1,4 @@
-.. _meltdown-spectre:
+.. _meltdown_spectre:
 
 =============================
 Amazon EC2 - Meltdown/Spectre

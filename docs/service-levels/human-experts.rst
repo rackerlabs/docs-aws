@@ -1,4 +1,4 @@
-.. _human-experts:
+.. _human_experts:
 
 =======================
 Features: Human Experts

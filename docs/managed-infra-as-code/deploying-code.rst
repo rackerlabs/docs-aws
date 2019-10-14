@@ -1,4 +1,4 @@
-.. _deploying-code:
+.. _deploying_code:
 
 ==============
 Deploying Code

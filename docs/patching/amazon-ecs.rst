@@ -1,4 +1,4 @@
-.. _amazon-ecs:
+.. _amazon_ecs:
 
 ==========
 Amazon ECS
