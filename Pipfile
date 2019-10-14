@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+chios = "*"
+"doc8" = "*"
+pandoc = "*"
+pyenchant = "*"
+recommonmark = "*"
+sphinxcontrib-spelling = "*"
+sphinxcontrib-versioning = "*"
+tox = "*"
+Markdown = "*"
+restructuredtext_lint = "*"
+Sphinx = "*"
+sphinx_rtd_theme = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
