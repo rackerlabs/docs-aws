@@ -106,7 +106,8 @@ historical usage from previous months. You can use this information to avoid
 unexpected AWS infrastructure charges. To access the report, select the Usage
 link in the primary navigation.
 
-Due to our :ref:`account_defaults` and associated management
+Due to our :ref:`Account Defaults <account_defaults>`
+and associated management
 tooling, each AWS account that you provision will have approximately $5-10 of
 monthly infrastructure charges, regardless of whether you provision any
 additional AWS resources.
