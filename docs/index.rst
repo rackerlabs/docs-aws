@@ -15,7 +15,8 @@ Rackspace |product name| Product Guide
   and will contain the latest updates. |vspace|
 
 This Product Guide is designed to provide a detailed look at how Rackspace
-delivers our **Fanatical Support for AWS** offering. It covers core concepts
+delivers our **Fanatical Support for AWS** offering. It covers
+core concepts
 such as the :ref:`AWS account structure <aws_accounts>` and Rackspace
 :ref:`service levels <service_levels>`, and advanced concepts such as
 provisioning bastion access via :ref:`Rackspace Passport <passport>` and
