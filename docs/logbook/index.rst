@@ -1,22 +1,40 @@
 .. _logbook:
+.. |LogbookTM|  raw:: html
+
+    Logbook&trade;
 
 =======
 Logbook
 =======
 
-.. Define |product name| in ``conf.py``.
+AWS and Rackspace generate detailed control plane logs for all activities
+taking place in your Fanatical Support for AWS account(s). This data is
+aggregated from a number of different sources:
 
-Provide information about the API for the product or service. If the API is
-extensive, create a separate API reference document by using the
-`API guide template <https://github.rackspace.com/IX/docs-starter-kit/tree/master/api-guide-template>`_.
-Following is example introductory and reference text:
+* `AWS CloudTrail <https://aws.amazon.com/cloudtrail/>`_: detailed logs of
+  most AWS API requests made on your account to supported AWS services. Most
+  `object-level S3 actions <https://docs.aws.amazon.com/AmazonS3/latest/dev/cloudtrail-logging.html#cloudtrail-object-level-tracking>`_
+  will be ignored. Only ``PutObjectAcl``, ``DeleteObject``, and
+  ``DeleteObjects`` will be stored in Logbook. Read-only events are not
+  stored in Logbook.
+* Fanatical Support for AWS shared management system and user interfaces: view
+  control panel logins and other actions (such as creating a new AWS account
+  or modifying user permissions)
+* Fanatical Support for AWS environment access: any time a Racker or one of
+  your employees accesses your AWS environment by creating an access request
+  and provisioning a temporary bastion, view the specific resources they had
+  access to, the source of their access request, and other associated
+  details throughout the duration of the access request
 
-The |product name| API provides developers with HTTP methods to administer
-the service.
+The |LogbookTM| section of the
+`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+provides a timeline-based view of all of these activities. You can view
+the activities for a specific AWS account or view activities across all of
+your AWS accounts. You can also filter/facet the results to find the
+specific activities you are looking for. Logbook retains the last 90 days
+of historical data indexed for you to explore.
 
-The documentation for the |product name| API is located at <URL>.
-
-If the API is not extensive and you want to document it here, group the
-methods into logical categories, as needed, and then use the `HTTP request
-template <https://github.com/rackerlabs/docs-repo-template/blob/master/api-guide-template/api-reference/methods/http-request-template.rst>`_
-to document the methods.
+The information in Logbook can prove to be extremely valuable if you need
+to view the changes your employees, our Rackers, or automated processes
+made to your environment when troubleshooting an issue or reviewing the
+root cause of a service impacting event.
