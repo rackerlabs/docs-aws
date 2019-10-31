@@ -1,23 +1,31 @@
-.. _amazon_emr:
+.. _patching_emr:
 
-==========
-Amazon EMR
-==========
+===================
+Patching Amazon EMR
+===================
 
-.. Define |product name| in conf.py
+Recommended Method
+------------------
 
-Document any troubleshooting steps for common issues related to the product
-or service described in the guide. Troubleshooting information typically
-describes an issue, its symptoms, the environment, and the possible causes,
-and provides suggestions for recovering. As such, a troubleshooting topic
-can contain almost any structure, from paragraphs, bullet lists, and numbered
-lists, to sections, tables, and figures.
+Rackspace's recommended method for securing EMR clusters with current
+software updates is to launch a new EMR cluster, using the latest
+`EMR release <https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-release-components.html>`_.
+EMR clusters are not intended for indefinite runtime and are expected to
+terminate after a specific processing job (*Transient clusters*) or after a
+succession of jobs (*Long-running clusters*).
 
-If you have many troubleshooting tips, create separate sections with
-descriptive headings. You can also create separate child files under a parent
-“Troubleshooting” topic.
+Note: If an EMR cluster is using a custom AMI, a new AMI should be create
+including the desired updates, and a new EMR cluster launched with the new AMI
+(the AMI used for an EMR cluster cannot be altered after launch).
 
-Following is an example introductory sentence:
+Alternative Method
+------------------
 
-If you encounter issues when working with |product name|, use the information
-in this section to help you troubleshoot.
+It is possible to manually patch cluster instances in-place using OS
+management access to the instances. This may be appropriate if an EMR
+cluster needs to remain provisioned for a recurring job, but security
+updates are critical. The EMR cluster should be replaced using the recommended
+method above as soon as a downtime window is available.
+
+Note: Any new instances that are launched - either through scaling changes
+or self-healing - will apply outstanding patches at launch.

@@ -4,12 +4,14 @@
 Patching
 ========
 
-.. Define |product name| in conf.py
+This section describes the necessary considerations and steps for patching
+guest Operating Systems in AWS services where the OS is unmanaged, with a
+particular focus on EC2 instances.
 
-Include support and troubleshooting information for the product.
+Customers of *Fanatical Support for AWS* may wish to reach out to the
+Rackspace support team for further advice, guidance, and assistance on
+applying security updates or patches to any of these services.
 
-This section provides support information for the |product name|
-product.
 
 .. toctree::
    :maxdepth: 1

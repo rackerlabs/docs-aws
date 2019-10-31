@@ -50,49 +50,105 @@ following environment variables:
 
 .. code::
 
-TF_STATE_REGION='us-west-2',
-TF_STATE_BUCKET='your-bucket-name'
-TF_VAR_aws_account_id='your-aws-account-number'
+  TF_STATE_REGION='us-west-2',
+  TF_STATE_BUCKET='your-bucket-name'
+  TF_VAR_aws_account_id='your-aws-account-number'
 
 
-As mentioned in [Using Terraform](using-terraform.md), we recommend using an existing build's output to find out your state bucket name. You may also copy and paste the final commands from those builds, bypassing the need to set some environment variables.
+As mentioned in :ref:`Using Terraform <using_terraform>`, we recommend
+using an existing build's output to find out your state bucket name. You
+may also copy and paste the final commands from those builds, bypassing
+the need to set some environment variables.
 
-## Workflow Execution
+Workflow Execution
+------------------
 
-```eval_rst
-.. caution:: This section refers to the CircleCI concepts of workflows, jobs, and steps. These should not be confused with the more general usage of terms like "workflow" or other services where these terms exist, like GitHub.
-```
+.. caution::
 
-### Job Steps and Configuration
+  This section refers to the CircleCI concepts of
+  workflows, jobs, and steps. These should not be confused with the more
+  general usage of terms like "workflow" or other services where these terms
+  exist, like GitHub.
 
-On every branch, your builds run standard commands like `terraform fmt` and `terraform init`, as well as our custom linting tool, [tuvok](https://github.com/rackerlabs/tuvok). We also calculate what layers have changed using a detailed comparison between the current branch and the most recent successful master build.
+Job Steps and Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. On branch `master`, your builds run both `terraform plan` and `terraform apply` for any changed or removed layers.
+On every branch, your builds run standard commands like
+``terraform fmt`` and ``terraform init``, as well as our custom
+linting tool, `tuvok <https://github.com/rackerlabs/tuvok>`_. We also
+calculate what layers have changed using a detailed comparison between
+the current branch and the most recent successful master build.
 
-1. On any other branch, your builds will only run `terraform plan` for any changed or removed layers.
+1. On branch ``master``, your builds run both ``terraform plan`` and
+   ``terraform apply`` for any changed or removed layers.
 
-Your CircleCI configuration is stored in your repository at `.circleci/config.yml`. This file configures the CI/CD system with specific workflow steps to execute, and a defines a container in which to run them. This file should not be modified except through coordination with Rackspace.
+2. On any other branch, your builds will only run ``terraform plan`` for
+   any changed or removed layers.
 
-In your CircleCI configuration, these two main steps are organized as two steps in the workflow, called "plan" and "apply", and we use the branch filtering functionality to ensure the "apply" step only runs on master, and depends on the plan step. If you're running terraform locally, it's important to use the same steps used in CI/CD, and also to never apply a change before it's been merged into master.
+Your CircleCI configuration is stored in your repository at
+``.circleci/config.yml``. This file configures the CI/CD system with
+specific workflow steps to execute, and a defines a container in which to
+run them. This file should not be modified except through coordination
+with Rackspace.
 
-### Failed Builds
+In your CircleCI configuration, these two main steps are organized as two
+steps in the workflow, called "plan" and "apply", and we use the branch
+filtering functionality to ensure the "apply" step only runs on master, and
+depends on the plan step. If you're running terraform locally, it's
+important to use the same steps used in CI/CD, and also to never apply
+a change before it's been merged into master.
 
-From time to time, either due to code changes or Terraform/AWS internals, build steps may fail. For branches other than master, this is a totally normal part of writing and testing code. We also enforce that branches are up to date with the latest commits from master before merging, which can cause failures or plans that show unexpected changes. Most failed builds can be resolved through re-running the build or pushing additional commits or pulling in the latest changes from master.
+Failed Builds
+^^^^^^^^^^^^^
 
-In the event that a master build fails, on the plan or apply steps, Rackspace will automatically create an urgent, public ticket and investigate. We believe that these events could indicate larger problems with your infrastructure, partially applied changes to your infrastructure, or other impactful situations that require immediate attention.
+From time to time, either due to code changes or Terraform/AWS
+internals, build steps may fail. For branches other than master, this is
+a totally normal part of writing and testing code. We also enforce that
+branches are up to date with the latest commits from master before
+merging, which can cause failures or plans that show unexpected
+changes. Most failed builds can be resolved through re-running the build
+or pushing additional commits or pulling in the latest changes from master.
 
-## Artifacts and Storage
+In the event that a master build fails, on the plan or apply steps, Rackspace
+will automatically create an urgent, public ticket and investigate. We
+believe that these events could indicate larger problems with your
+infrastructure, partially applied changes to your infrastructure, or
+other impactful situations that require immediate attention.
 
-Each build step writes logs in order to help record what is happening, make troubleshooting easier, and shed light on unexpected failures. These log files are made available in the CircleCI UI for a given build, in an "Artifacts" tab. Over time, we plan to make more artifacts available, with additional helpful output, to make it easier to troubleshoot problems or understand what's happening in a build. Please note that these artifacts eventually do expire.
+Artifacts and Storage
+---------------------
 
-## AWS Credentials
+Each build step writes logs in order to help record what is happening, make
+troubleshooting easier, and shed light on unexpected failures. These log
+files are made available in the CircleCI UI for a given build, in an
+"Artifacts" tab. Over time, we plan to make more artifacts available, with
+additional helpful output, to make it easier to troubleshoot problems or
+understand what's happening in a build. Please note that these artifacts
+eventually do expire.
 
-Temporary credentials are issued to each build, at the start of the build, after our automation confirms that the build is associated with the correct GitHub repository, AWS account, and Rackspace customer. This confirmation relies on the same RSA keys used by GitHub to authorize access to the repository itself.
+AWS Credentials
+---------------
 
-CircleCI builds now use temporary credentials rather than requiring an IAM user to be assigned to each AWS account. This is based on the same [AWS STS-based temporary credentials mechanism](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html) used when you access your AWS account via the Fanatical Support for AWS control panel "Console" button.
+Temporary credentials are issued to each build, at the start of the
+build, after our automation confirms that the build is associated with
+the correct GitHub repository, AWS account, and Rackspace customer. This
+confirmation relies on the same RSA keys used by GitHub to authorize
+access to the repository itself.
 
-There are several advantages to using temporary, short-lived credentials over static credentials, given how permissive and powerful Terraform's credentials need to be when building and managing AWS services on your account:
+CircleCI builds now use temporary credentials rather than requiring an IAM
+user to be assigned to each AWS account. This is based on the same
+`AWS STS-based temporary credentials mechanism <https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html>`_
+used when you access your AWS account via the Fanatical Support for AWS
+control panel "Console" button.
 
-- Credentials are not stored permanently in the account or in Terraform state (an S3 bucket)
-- Temporary credentials will be valid for a short period of time from the start of a build and expire safely
-- Static credentials require a terraform change, slowing down the provisioning process for new accounts
+There are several advantages to using temporary, short-lived credentials
+over static credentials, given how permissive and powerful Terraform's
+credentials need to be when building and managing AWS services on your
+account:
+
+- Credentials are not stored permanently in the account or in Terraform
+  state (an S3 bucket)
+- Temporary credentials will be valid for a short period of time from
+  the start of a build and expire safely
+- Static credentials require a terraform change, slowing down the
+  provisioning process for new accounts

@@ -125,9 +125,9 @@ We're allocating an IAM user on every AWS account strictly to be used by
 Terraform when running through the CI system. This user's access keys
 are known only to the CI system. We will eventually remove this user
 and use a new process that relies on API keys, scoped only to your AW
- account, that can be used by the CI system to get temporary, short-lived
- credentials that have access to build and manage resources in your AWS
- account.
+account, that can be used by the CI system to get temporary, short-lived
+credentials that have access to build and manage resources in your AWS
+account.
 
 **How many users can I add to GitHub? How do I add them?**
 

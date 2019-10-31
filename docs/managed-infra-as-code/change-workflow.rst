@@ -4,7 +4,7 @@
 Change Workflow
 ===============
 
-.. image:: figures/change-flow-overview.png
+.. image:: ../images/change-flow-overview.png
 
 Initiating a change
 -------------------
@@ -41,13 +41,13 @@ There are two required checks that must pass for your pull request to be
 merged:
 
 1. Approval (``rackspace/approval``): The pull request must be approved by at
-least one Racker, using
-`the GitHub PR review mechanism <https://help.github.com/en/articles/reviewing-proposed-changes-in-a-pull-request>`_.
-Approvals by the committer will not count towards this requirement.
+   least one Racker, using
+   `the GitHub PR review mechanism <https://help.github.com/en/articles/reviewing-proposed-changes-in-a-pull-request>`_.
+   Approvals by the committer will not count towards this requirement.
 
 2. Plan (``ci/circleci: plan``): The branch must successfully pass
-``terraform fmt`` and successfully run `terraform plan`. If either of these
-steps fail, you may push additional commits to address them.
+   ``terraform fmt`` and successfully run `terraform plan`. If either of these
+   steps fail, you may push additional commits to address them.
 
 Approving a change
 ------------------
@@ -60,15 +60,15 @@ note that, too.
 
 When Rackers review a pull request, they are looking to understand:
 
-* Did all automated tests and checks pass? Are the code changes technically
+- Did all automated tests and checks pass? Are the code changes technically
   correct?
 
-* Does this change do what was requested, in an appropriate and well-designed
+- Does this change do what was requested, in an appropriate and well-designed
   way?
 
-* Can Rackspace proceed with making the change (now or at a specific time)?
+- Can Rackspace proceed with making the change (now or at a specific time)?
 
-* Does this change require any additional, explicit approval from the
+- Does this change require any additional, explicit approval from the
   requestor?
 
 Deploying a change
@@ -85,21 +85,21 @@ emergency Rackspace ticket will be created for Rackers to investigate.
 Additionally, please consider the following when deploying a change or
 performing actions on a pull request:
 
-* Any approvals will be dismissed if additional commits are added to
-the scope of the pull request.
+- Any approvals will be dismissed if additional commits are added to
+  the scope of the pull request.
 
-* Only one pull request will be merged to master, and changes applied, at
-any given time. Attempts to do more than one may fail.
+- Only one pull request will be merged to master, and changes applied, at
+  any given time. Attempts to do more than one may fail.
 
-* Any changes that may be staged far in advance may require re-planning or
-branch updates at the time of the change. Please be sure to inform
-Rackspace, in a Support ticket, to schedule for a specific change window
-or maintenance window. Rackspace may require additional time to update
-an older pull request as part of a scheduled change.
+- Any changes that may be staged far in advance may require re-planning or
+  branch updates at the time of the change. Please be sure to inform
+  Rackspace, in a Support ticket, to schedule for a specific change window
+  or maintenance window. Rackspace may require additional time to update
+  an older pull request as part of a scheduled change.
 
-* Rackspace will not automatically deploy changes without Racker interaction
-or Racker approval, even if two reviewers approve the pull request. Rackspace
-doesn't have a default list of changes that can bypass Racker approval.
+- Rackspace will not automatically deploy changes without Racker interaction
+  or Racker approval, even if two reviewers approve the pull request. Rackspace
+  doesn't have a default list of changes that can bypass Racker approval.
 
 To raise issues, questions, and changes that aren't already represented as
 pull requests, Customers should open a new ticket with Rackspace Support.

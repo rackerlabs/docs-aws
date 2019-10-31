@@ -1,15 +1,44 @@
-.. _recommended_network_config:
+.. _recommended_network_configuration:
 
 =================================
 Recommended Network Configuration
 =================================
 
-.. Define |product name| in conf.py
+This section describes the necessary scaffolding and processes to create
+the initial AWS network environment for Rackspace customers using AWS
+through the Fanatical Support for AWS offering. A CloudFormation template
+and additional supporting scripts will be used to create the initial
+network and all of its necessary components, thus providing Public and
+Private subnets for EC2 instances and other AWS services.
 
-Include support and troubleshooting information for the product.
+.. image:: ../images/recommended_network_configuration.png
 
-This section provides support information for the |product name|
-product.
+This includes:
+
+* A Single VPC
+* Availability Zones (AZ) Options
+
+  * Two AZ deployments are the standard
+  * Three AZ deployment to address specific application requirements
+
+* Subnets
+
+  * Public Tier - could be accessible from the Internet
+  * Private Tier - could access the Internet via a NAT environment
+  * Subnets in each Tier will have the same network masks
+
+* Highly Available Outbound NAT (HA-NAT) with Elastic IP - for EC2 gateways
+  in the Private Subnets
+* Security Groups - primary method to isolate and secure workloads
+* Tagging - to address Rackspace billing and operational processes
+
+You can access the template by downloading it from
+:download:`here <assets/BaseNetwork.template>`.
+
+Note: The template will create AWS resources for which you will be charged
+(for example, EC2 NAT gateways).
+
+----
 
 .. toctree::
    :maxdepth: 1

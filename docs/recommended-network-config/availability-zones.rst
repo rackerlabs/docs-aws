@@ -4,20 +4,37 @@
 Availability Zones (AZs)
 ========================
 
-.. Define |product name| in conf.py
+Each region contains multiple distinct locations called Availability Zones, or
+AZs. Each Availability Zone is engineered to be isolated from failures in
+other Availability Zones, and to provide inexpensive, low-latency network
+connectivity to other AZs in the same region.
 
-Document any troubleshooting steps for common issues related to the product
-or service described in the guide. Troubleshooting information typically
-describes an issue, its symptoms, the environment, and the possible causes,
-and provides suggestions for recovering. As such, a troubleshooting topic
-can contain almost any structure, from paragraphs, bullet lists, and numbered
-lists, to sections, tables, and figures.
+An Availability Zone (AZ) is one or more data centers in close geographic
+proximity connected together over low-latency/high-speed links.
 
-If you have many troubleshooting tips, create separate sections with
-descriptive headings. You can also create separate child files under a parent
-“Troubleshooting” topic.
+By launching instances in separate Availability Zones, you can protect your
+applications from the failure of a single location. Note: Each AWS region
+provides a minimum of two AZs.
 
-Following is an example introductory sentence:
+Rackspace Availability Zone Recommendations
+-------------------------------------------
 
-If you encounter issues when working with |product name|, use the information
-in this section to help you troubleshoot.
+Rackspace typically recommends a two AZ deployment, which provides
+availability and redundancy while reducing complexity, operational
+overhead, and cost.
+
+There are situations where a third AZ may be required to address specific
+application-centric requirements:
+
+* Example 1: MongoDB's Election and Quorum constraints require three AZs to
+  survive a single AZ failure that contains the primary and a secondary in a
+  three-node cluster.
+
+  .. image:: ../images/recommended_network_configuration_mongodb.png
+
+* Example 2: Applications that have strict load and availability requirements
+  that cannot be met by relying on Auto Scaling Groups require
+  over-provisioning. Adding a third AZ could be considered to reduce costs
+  by lowering needed the over-provisioning.
+
+  .. image:: ../images/recommended_network_configuration_autoscale_costs.png
