@@ -29,7 +29,7 @@ Debian and Ubuntu
 """""""""""""""""
 
 1. Add the
-   :ref:`ScaleFT package repository <passport__scaleft_agents_and_tools_package_repositories>`
+   :ref:`ScaleFT package repository <passport_scaleft_agents_and_tools_package_repositories>`
    for your Linux distribution.
 2. Execute the following commands::
 
@@ -44,7 +44,7 @@ Amazon Linux, CentOS, Fedora, and Red Hat
 """""""""""""""""""""""""""""""""""""""""
 
 1. Add the
-   :ref:`ScaleFT package repository <passport__scaleft_agents_and_tools_package_repositories>`
+   :ref:`ScaleFT package repository <passport_scaleft_agents_and_tools_package_repositories>`
    for your Linux distribution.
 2. Execute the following commands::
 
@@ -115,7 +115,7 @@ Debian and Ubuntu
 """""""""""""""""
 
 1. Add the
-   :ref:`ScaleFT package repository <passport__scaleft_agents_and_tools_package_repositories>`
+   :ref:`ScaleFT package repository <passport_scaleft_agents_and_tools_package_repositories>`
    for your Linux distribution.
 2. Execute the following commands::
 
@@ -137,7 +137,7 @@ Amazon Linux, CentOS, Fedora, and Red Hat
 """""""""""""""""""""""""""""""""""""""""
 
 1. Add the
-   :ref:`ScaleFT package repository <passport__scaleft_agents_and_tools_package_repositories>`
+   :ref:`ScaleFT package repository <passport_scaleft_agents_and_tools_package_repositories>`
    for your Linux distribution.
 2. Execute the following commands::
 
