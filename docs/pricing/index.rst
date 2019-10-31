@@ -4,19 +4,17 @@
 Pricing
 =======
 
-.. Define |product name| in ``conf.py``.
+Your monthly service fees will be calculated by pooling the AWS infrastructure
+charges from all of your AWS accounts at the same service level. Learn more
+about monthly service fee calculations in the
+:ref:`Billing <billing_monthly_service_fees>` section.
 
-Provide information about the API for the product or service. If the API is
-extensive, create a separate API reference document by using the
-`API guide template <https://github.rackspace.com/IX/docs-starter-kit/tree/master/api-guide-template>`_.
-Following is example introductory and reference text:
+Service fees are charged in addition to AWS infrastructure rates. Service
+Fees for AWS Reserved Instances and Spot Instances are calculated based on
+the corresponding on-demand list rates. AWS infrastructure is charged at the
+list rates on the `AWS website <https://aws.amazon.com>`_. You can view your
+service fees in the
+`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws/pricing>`_.
 
-The |product name| API provides developers with HTTP methods to administer
-the service.
-
-The documentation for the |product name| API is located at <URL>.
-
-If the API is not extensive and you want to document it here, group the
-methods into logical categories, as needed, and then use the `HTTP request
-template <https://github.com/rackerlabs/docs-repo-template/blob/master/api-guide-template/api-reference/methods/http-request-template.rst>`_
-to document the methods.
+Please note that the AWS free tier is not available to Fanatical Support
+for AWS accounts.

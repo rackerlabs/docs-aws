@@ -33,7 +33,7 @@ To sign up, visit
   ------------
 
   You can download a PDF version of this documentation by
-  :download:`clicking here <figures/fanaticalsupportforawsproductguide.pdf>`.
+  :download:`clicking here <assets/fanaticalsupportforawsproductguide.pdf>`.
   Note that we frequently update our
   documentation so we encourage you to check back periodically for the
   latest information.

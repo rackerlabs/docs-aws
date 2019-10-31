@@ -1,23 +1,22 @@
-.. _aws_elastic_beanstalk:
+.. _patching_elastic_beanstalk:
 
-=====================
-AWS Elastic Beanstalk
-=====================
+==============================
+Patching AWS Elastic Beanstalk
+==============================
 
-.. Define |product name| in conf.py
+Rackspace's recommended method for securing Elastic Beanstalk environments
+with current software updates is to update the environment in-place to the
+latest version of the environment's platform. Elastic Beanstalk will update
+the Auto-Scaling Group and Launch Configuration with the new AMI version and
+will perform a rolling replacement of instances. For more information, see
+`Updating Your Elastic Beanstalk Environment's Platform Version <https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.platform.upgrade.html>`_
+and
+`Elastic Beanstalk Supported Platforms <https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html>`_.
 
-Document any troubleshooting steps for common issues related to the product
-or service described in the guide. Troubleshooting information typically
-describes an issue, its symptoms, the environment, and the possible causes,
-and provides suggestions for recovering. As such, a troubleshooting topic
-can contain almost any structure, from paragraphs, bullet lists, and numbered
-lists, to sections, tables, and figures.
+Managed Platform Updates
+------------------------
 
-If you have many troubleshooting tips, create separate sections with
-descriptive headings. You can also create separate child files under a parent
-“Troubleshooting” topic.
-
-Following is an example introductory sentence:
-
-If you encounter issues when working with |product name|, use the information
-in this section to help you troubleshoot.
+Additionally, you may wish to enable
+`managed platform updates <https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-platform-update-managed.html>`_,
+which can update the environment's platform version inside a weekly
+maintenance window (not available for the .NET on Windows Server platform).

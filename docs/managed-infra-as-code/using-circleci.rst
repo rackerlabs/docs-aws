@@ -55,7 +55,7 @@ following environment variables:
   TF_VAR_aws_account_id='your-aws-account-number'
 
 
-As mentioned in :ref:`Using Terraform <using-terraform>`, we recommend
+As mentioned in :ref:`Using Terraform <using_terraform>`, we recommend
 using an existing build's output to find out your state bucket name. You
 may also copy and paste the final commands from those builds, bypassing
 the need to set some environment variables.

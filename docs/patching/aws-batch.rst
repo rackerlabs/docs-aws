@@ -1,23 +1,27 @@
-.. _aws_batch:
+.. _patching_batch:
 
-=========
-AWS Batch
-=========
+==================
+Patching AWS Batch
+==================
 
-.. Define |product name| in conf.py
+Managed Compute Environments
+----------------------------
 
-Document any troubleshooting steps for common issues related to the product
-or service described in the guide. Troubleshooting information typically
-describes an issue, its symptoms, the environment, and the possible causes,
-and provides suggestions for recovering. As such, a troubleshooting topic
-can contain almost any structure, from paragraphs, bullet lists, and numbered
-lists, to sections, tables, and figures.
+Rackspace's recommended method for securing AWS Batch *managed compute
+environments* with current software updates is to create a new compute
+environment (defaults to the latest
+`Amazon ECS-Optimized AMI <https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html>`_,
+or rebuild a new custom AMI). This new compute environment can then be
+added to an existing AWS Batch job queue, and the old compute environment
+removed and deleted.
 
-If you have many troubleshooting tips, create separate sections with
-descriptive headings. You can also create separate child files under a parent
-“Troubleshooting” topic.
+Unmanaged Compute Environments
+------------------------------
 
-Following is an example introductory sentence:
+For *unmanaged compute environments*, you manage your own compute resources
+as an ECS cluster, and should follow the
+:ref:`Patching Amazon ECS <patching_ecs>` guidelines to update the ECS cluster.
 
-If you encounter issues when working with |product name|, use the information
-in this section to help you troubleshoot.
+For more information, see
+`Compute Environments <https://docs.aws.amazon.com/batch/latest/userguide/compute_environments.html>`_
+in the AWS Batch User Guide.

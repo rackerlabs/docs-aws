@@ -1,23 +1,16 @@
-.. _amazon_ecs:
+.. _patching_ecs:
 
-==========
-Amazon ECS
-==========
+===================
+Patching Amazon ECS
+===================
 
-.. Define |product name| in conf.py
+Rackspace's recommended method for securing ECS clusters with current software
+updates is to update the environment to the latest available
+`Amazon ECS-Optimized AMI <https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html>`_.
+Following this, rotate (replace) the host instances following the methods
+described in the :ref:`Patching Guide for Amazon EC2 <patching_ec2>` document.
 
-Document any troubleshooting steps for common issues related to the product
-or service described in the guide. Troubleshooting information typically
-describes an issue, its symptoms, the environment, and the possible causes,
-and provides suggestions for recovering. As such, a troubleshooting topic
-can contain almost any structure, from paragraphs, bullet lists, and numbered
-lists, to sections, tables, and figures.
-
-If you have many troubleshooting tips, create separate sections with
-descriptive headings. You can also create separate child files under a parent
-“Troubleshooting” topic.
-
-Following is an example introductory sentence:
-
-If you encounter issues when working with |product name|, use the information
-in this section to help you troubleshoot.
+.. note::
+  If an ECS cluster is using a custom AMI, this AMI will need to be rebuilt
+  with the necessary updates prior to updating the environment with the new
+  AMI and following the rest of the recommended method above.
