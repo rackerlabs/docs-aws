@@ -23,7 +23,7 @@ metric deviates from its expected value. For example, if CPU utilization
 on an EC2 instance exceeds 80% for a period of five minutes or greater, the
 CloudWatch alarm can be configured to send an alert to a Rackspace-managed
 SNS (Simple Notification Service) topic (named *rackspace-support*) tha
- will generate a ticket for further investigation by a Racker.
+will generate a ticket for further investigation by a Racker.
 
 The *rackspace-support* SNS topic is configured in each region when your
 AWS account is first setup for Fanatical Support for AWS. A subscription

@@ -29,12 +29,12 @@ For most deployments, Rackspace recommends having two tiers of Subnets: Public
 and Private.
 
 * EC2 instances in Public Subnets have public IP addresses associated with
-them and have a direct route to an AWS Internet Gateway (IGW), thus having
-the capability (if required) to access or be accessed by the Internet.
+  them and have a direct route to an AWS Internet Gateway (IGW), thus having
+  the capability (if required) to access or be accessed by the Internet.
 * EC2 instances in Private Subnets only have private IP addresses and cannot
-be accessed by the Internet. These EC2 instances have the capability to
-access the Internet via a NAT Gateway in the Public subnets (further info in
-the :ref:`NAT section <recommended_network_configuration_ha_nat>`).
+  be accessed by the Internet. These EC2 instances have the capability to
+  access the Internet via a NAT Gateway in the Public subnets (further info in
+  the :ref:`NAT section <recommended_network_configuration_ha_nat>`).
 
 Assuming a typical two AZ deployment, four subnets would be required (two
 for Public and two for Private).

@@ -16,7 +16,7 @@ Our offers allow you to customize your experience with the ability to
 choose the service options to match your needs. These offers are described
 below. For additional detail about what is included in each service
 block, download our
-:download:`Fanatical Support for AWS with Rackspace Service Blocks Service Overview <assets/service_overview_service_blocks.pdf>`.
+:download:`Fanatical Support for AWS with Rackspace Service Blocks Service Overview <../assets/service_overview_service_blocks.pdf>`.
 
 
 Platform Essentials
@@ -50,7 +50,9 @@ services are built on top. Platform Essentials includes:
     Aggregation of your control plane logs across all AWS accounts
 
 
-Platform Essentials customers receive 24x7 guidance support on their AWS accounts. Rackspace will respond to support requests submitted via tickets in the following timeframes:
+Platform Essentials customers receive 24x7 guidance support on their AWS
+accounts. Rackspace will respond to support requests submitted via tickets in
+the following timeframes:
 
 * Urgent: Production System Outage / Significant Business Impact
   [60 Minute Response Time]

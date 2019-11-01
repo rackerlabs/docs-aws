@@ -33,7 +33,7 @@ This includes:
 * Tagging - to address Rackspace billing and operational processes
 
 You can access the template by downloading it from
-:download:`here <assets/BaseNetwork.template>`.
+:download:`here <../assets/BaseNetwork.template>`.
 
 Note: The template will create AWS resources for which you will be charged
 (for example, EC2 NAT gateways).

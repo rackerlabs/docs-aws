@@ -15,7 +15,7 @@ Navigator and Aviator, which are selected for each AWS account we support.
 
 For details on what is included in each service level, including details on
 levels of support for each AWS service, download our
-:download:`Fanatical Support for AWS Service Overview <assets/service_overview.pdf>`.
+:download:`Fanatical Support for AWS Service Overview <../assets/service_overview.pdf>`.
 
 Features: Tooling and Automation
 --------------------------------
