@@ -4,20 +4,24 @@
 Tagging
 =======
 
-.. Define |product name| in conf.py
+AWS customers use tags to organize their EC2 resources (instances, images,
+load balancers, security groups, and so forth), RDS resources
+(DB instances, option groups, and more), VPC resources (gateways, option
+sets, network ACLS, subnets, and the like), Route 53 health checks, and S3
+buckets. Tags are used to label, collect, and organize resources and become
+increasingly important as customers use AWS in larger and more sophisticated
+ways.
 
-Document any troubleshooting steps for common issues related to the product
-or service described in the guide. Troubleshooting information typically
-describes an issue, its symptoms, the environment, and the possible causes,
-and provides suggestions for recovering. As such, a troubleshooting topic
-can contain almost any structure, from paragraphs, bullet lists, and numbered
-lists, to sections, tables, and figures.
+For example, customers can tag relevant resources and then take advantage
+:ref:`cost allocation via tagging <billing_tagging>`.
 
-If you have many troubleshooting tips, create separate sections with
-descriptive headings. You can also create separate child files under a parent
-“Troubleshooting” topic.
+Rackspace CloudFormation Tagging
+--------------------------------
 
-Following is an example introductory sentence:
+The BaseNetwork CloudFormation template makes use of tagging to drive many
+of the operational functions associated with the Fanatical Support for
+AWS offering. These include:
 
-If you encounter issues when working with |product name|, use the information
-in this section to help you troubleshoot.
+* Service Provider - "Rackspace"
+* Environment - from Parameter Environment
+* Name - Resource name (e.g. IGWBase, SubnetPublicAZ2)

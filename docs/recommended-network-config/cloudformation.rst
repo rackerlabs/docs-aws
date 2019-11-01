@@ -44,7 +44,7 @@ BaseNetwork template can be downloaded from
   * 2 Availability Zones with 4 Subnets
   * 3 Availability Zones with 6 Subnets
 
-.. _recommended_network_configuration__vpc_defaults:
+.. _recommended_network_configuration_vpc_defaults:
 
 * Defaults to using CIDR: 172.18.0.0/16
 
