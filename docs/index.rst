@@ -47,6 +47,7 @@ To sign up, visit
 .. toctree::
    :maxdepth: 2
 
+   self
    getting-started/index.rst
    aws-accounts/index.rst
    service-levels/index.rst
