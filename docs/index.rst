@@ -1,8 +1,8 @@
 .. _index_aws_docs:
 
-======================================
-Rackspace |product name| Product Guide
-======================================
+=======================================
+Fanatical Support for AWS Product Guide
+=======================================
 
 *Last updated:* |today|
 
@@ -46,6 +46,7 @@ To sign up, visit
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    self
    getting-started/index.rst
