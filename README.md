@@ -3,7 +3,7 @@
 This repository contains the source files that generate the Rackspace Fanatical
 Support for AWS Product Guide:
 
-* https://developer.rackspace.com/docs/docs-aws/
+* https://developer.rackspace.com/docs/fanatical-support-aws/
 
 When you commit changes to the master branch of this repository, the
 [Strider CI/CD build job](https://build.developer.rackspace.com/rackerlabs/docs-aws/)
