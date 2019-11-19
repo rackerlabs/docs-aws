@@ -88,4 +88,4 @@ It is recommend that you choose the CIDRs carefully to map with the
 applications' requirements; however, most AWS customers typically allocate
 roughly double the IP addresses for private subnets than public subnets. The
 default CIDRs in the BaseNetwork CloudFormation template are detailed in the
-:ref:`CloudFormation section <recommended_network_configuration_vpc_defaults>`.
+:ref:`CloudFormation section <cloudformation>`.
