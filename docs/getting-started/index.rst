@@ -1,8 +1,8 @@
 .. _aws_getting_started:
 
-===============
-Getting started
-===============
+==============================================
+Getting started with Fanatical Support for AWS
+==============================================
 
 It is extremely easy to get started experiencing Fanatical Support for AWS.
 
