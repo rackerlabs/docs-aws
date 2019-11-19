@@ -1,4 +1,4 @@
-.. _getting_started:
+.. _aws_getting_started:
 
 ===============
 Getting started
