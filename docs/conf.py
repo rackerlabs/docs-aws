@@ -94,9 +94,9 @@ copyright = '2019, Rackspace'
 # built documents.
 #
 # The short X.Y version.
-version = sphinx.__released__
+# version = sphinx.__released__
 # The full version, including alpha/beta/rc tags.
-release = version
+# release = version
 
 # Global variables that are replaced by the specified value during the build
 # process.

@@ -1,8 +1,8 @@
 .. _index_aws_docs:
 
-======================================
-Rackspace |product name| Product Guide
-======================================
+=======================================
+Fanatical Support for AWS Product Guide
+=======================================
 
 *Last updated:* |today|
 
@@ -33,7 +33,7 @@ To sign up, visit
   ------------
 
   You can download a PDF version of this documentation by
-  :download:`clicking here <assets/fanaticalsupportforawsproductguide.pdf>`.
+  `clicking here <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/fanaticalsupportforawsproductguide.pdf>`_.
   Note that we frequently update our
   documentation so we encourage you to check back periodically for the
   latest information.
@@ -46,6 +46,7 @@ To sign up, visit
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
 
    self
    getting-started/index.rst
