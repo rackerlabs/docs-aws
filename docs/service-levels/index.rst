@@ -111,7 +111,7 @@ Fanatical Support to your business 24x7x365. Available via ticket and phone.
 
     * Amazon Linux 2 & Amazon Linux (legacy), Red Hat Enterprise Linux: 6,
       7 & 8, CentOS: 6, 7 & 8, Ubuntu LTS Versions: 16.04 & 18.04, Windows
-      Server 2008 R2/*, Windows Server 2012 R2, Windows Server 2016, Windows
+      Server 2008 R2\*, Windows Server 2012 R2, Windows Server 2016, Windows
       Server 2019.
     * Configuration, Optimization, Patching, Upgrades
 
@@ -140,7 +140,7 @@ Fanatical Support to your business 24x7x365. Available via ticket and phone.
 
   * Service Levels: Aviator only
 
-/* Support for Windows Server 2008 R2 is contingent on enabling an
+\* Support for Windows Server 2008 R2 is contingent on enabling an
 alternative means of access (beyond ScaleFT) for Rackspace to manage your
 instances. Please work with your Support team prior to deploying new
 instances running Windows Server 2008 R2.
