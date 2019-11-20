@@ -49,7 +49,7 @@ To sign up, visit
    :hidden:
 
    self
-   getting-started/index.rst
+   aws-getting-started/index.rst
    aws-accounts/index.rst
    service-levels/index.rst
    pricing/index.rst
