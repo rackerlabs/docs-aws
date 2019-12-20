@@ -22,7 +22,7 @@ Use sentence-style capitalization for all titles and headings. In sentence-style
 Following are some examples:
 
 - Install or upgrade PHP 5.3 for CentOS 5.x
-- Ubuntu Hardy: Using mod_python to serve your application
+- Ubuntu 8.04 LTS (Hardy Heron): Using mod_python to serve your application
 - PHP configuration limits for Cloud Sites
 - Troubleshooting a Vyatta site-to-site VPN connection
 - Differences between IMAP and POP

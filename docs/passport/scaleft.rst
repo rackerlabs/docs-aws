@@ -25,8 +25,8 @@ users that you already have in place.
 Install and Configure
 ^^^^^^^^^^^^^^^^^^^^^
 
-Debian and Ubuntu
-"""""""""""""""""
+Debian and the Ubuntu operating system
+""""""""""""""""""""""""""""""""""""""
 
 1. Add the
    :ref:`ScaleFT package repository <passport_scaleft_agents_and_tools_package_repositories>`
@@ -111,8 +111,8 @@ Mac OS X
 3. Follow the on-screen prompts to login and complete the registration
    process.
 
-Debian and Ubuntu
-"""""""""""""""""
+Debian and the Ubuntu operating system
+""""""""""""""""""""""""""""""""""""""
 
 1. Add the
    :ref:`ScaleFT package repository <passport_scaleft_agents_and_tools_package_repositories>`
@@ -206,8 +206,8 @@ ScaleFT Package Repositories
 ScaleFT distributes client and server packages for Linux via APT and RPM
 repositories.
 
-Debian and Ubuntu
-^^^^^^^^^^^^^^^^^
+Debian and the Ubuntu operating system
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
