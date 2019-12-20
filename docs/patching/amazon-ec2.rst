@@ -253,7 +253,7 @@ of doubt, the latest AMI issued by the vendor should always be used.
 
 * `Amazon Linux - AMI list <https://aws.amazon.com/amazon-linux-ami/>`_
 * `Red Hat Enterprise Linux - How to list AMIs <https://access.redhat.com/solutions/15356>`_
-* `The Ubuntu operating system Linux - AMI list <https://cloud-images.ubuntu.com/locator/ec2/>`_
+* `The Ubuntu operating system - AMI list <https://cloud-images.ubuntu.com/locator/ec2/>`_
 * `CentOS Linux - How to list AMIs <https://wiki.centos.org/Cloud/AWS#head-cc841c2a7d874025ae24d427776e05c7447024b2>`_
 * `Microsoft Windows - AMI list <https://aws.amazon.com/windows/resources/amis/>`_
 
