@@ -70,7 +70,7 @@ Key Concepts
     exist.
     
     .. image:: images/image1.png
-       :width: 400
+       :width: 600
        :alt: AccountLayer Module Relationship Picture
 
 General Terraform Style Guide
