@@ -73,9 +73,6 @@ Key Concepts
        :width: 400
        :alt: AccountLayer Module Relationship Picture
 
-**Training**
-    `FAWS Terraform and Project Phoenix Training Resources <file:///C:\display\maws\FAWS+Terraform+and+Project+Phoenix+Training+Resources>`__
-
 General Terraform Style Guide
 -----------------------------
 
