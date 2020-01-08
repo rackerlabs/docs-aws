@@ -135,7 +135,8 @@ Terraform Environment Standards
 
 Customer account repositories should follow the layered style
 represented in the sample repository
-<https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.1>.
+https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.1
+
 Here are some considerations for building a new customer environment:
 
 1. ``_main`` should be used only for initialisation. Resources should be
@@ -184,7 +185,7 @@ Terraform Module Standards
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Rackspace maintains a number of Terraform modules available at
-<https://github.com/rackspace-infrastructure-automation>. Contributions
+https://github.com/rackspace-infrastructure-automation . Contributions
 should follow these guidelines.
 
 1. When a count is required, use of a variable is strongly recommended
