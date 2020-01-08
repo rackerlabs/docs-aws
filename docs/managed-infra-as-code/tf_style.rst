@@ -541,7 +541,7 @@ existing secret, and we store a new secret. In the first example we are
 using the current version of the person and we look up the password by
 the name which works where the secret is in the same account and region,
 otherwise you need to use the arn argument as documented here:
-<https://www.terraform.io/docs/providers/aws/d/secretsmanager_secret.html>.
+https://www.terraform.io/docs/providers/aws/d/secretsmanager_secret.html .
 
 **Secrets - Data Secrets Manager**::
 
@@ -606,7 +606,9 @@ otherwise you need to use the arn argument as documented here:
 Deprecated Guidance
 ^^^^^^^^^^^^^^^^^^^
 
-.. note:: The following information was the guidance given to customers
+.. note::
+   
+   The following information was the guidance given to customers
    and Rackers in the original Phoenix documentation. While this is still
    a valid solution it is cumbersome for all involved. The information in
    the above subsection should be considered the preferred route to take
@@ -744,7 +746,7 @@ Reference Resources
 +===============================================================================+================================================================================================================+
 | Fanatical Support for AWS Product Guide                                       |  https://manage.rackspace.com/aws/docs/product-guide/miac/using-terraform.html#general-terraform-style-guide   |
 +-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-|  `*Terraform Best Practices* <https://www.terraform-best-practices.com/>`__   |  https://www.terraform-best-practices.com/                                                                     |
+|  `Terraform Best Practices <https://www.terraform-best-practices.com/>`__   |  https://www.terraform-best-practices.com/                                                                     |
 +-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 |                                                                               |                                                                                                                |
 +-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
