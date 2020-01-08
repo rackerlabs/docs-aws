@@ -146,12 +146,12 @@ Here are some considerations for building a new customer environment:
    layers *should* be used. The idea behind the numbered prefixes is
    to deploy lower numbered layers first.
 
-   1. 000base: VPC, Endpoints, Route53 Internal Zone, SSM Service Role,
+   1. ``000base``: VPC, Endpoints, Route53 Internal Zone, SSM Service Role,
       SNS, Peering, VPN, Transit Gateway, Custom IAM, Directory Service
 
-   2. 100data: RDS, DynamoDB, Elasticache, S3, EFS, Elasticsearch
+   2. ``100data``: RDS, DynamoDB, Elasticache, S3, EFS, Elasticsearch
 
-   3. 200compute: EC2, LBs, SQS
+   3. ``200compute``: EC2, LBs, SQS
 
 3. Be sure to update the backend s3 key value in
    **main.tf** for each layer.
@@ -227,7 +227,7 @@ should follow these guidelines.
 
 7. The files in **.circleci** are managed by Rackspace and ***should not***
    be changed. There is no requirement to modify files found
-   in **.circlec**i when adding an additional module.
+   in **.circleci** when adding an additional module.
 
 8. Use
    `Github’s .gitignore contents for Terraform <https://github.com/github/gitignore/blob/master/Terraform.gitignore>`__.
