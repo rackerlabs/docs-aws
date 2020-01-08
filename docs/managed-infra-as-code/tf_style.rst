@@ -1,159 +1,148 @@
-Phoenix - Terraform Style Guide (FAWS Best Practice)
-====================================================
+.. _tf_style:
 
-*1. Key Concepts*
-=================
+===========================
+Terraform Style Conventions
+===========================
 
-1.1 Account Environment
------------------------
+.. _tf_concepts:
 
-*Account Environment is a collection of 1 or more Layers defined within
-a single Account Repository. An Account Environment describes the
-complete infrastructure deployed for a single customer account. *
-
-1.2 Layer
----------
-
-A layer is a logical grouping of related resources, data sources, and
-modules that should be managed together by Terraform. Layers are used to
-break complex environments into multiple logical subsets. Each layer
-should independently define configuration for all needed providers.
-Layers can represent different environments within an account, such as
-"production" and "test", different regions a customer application is
-hosted, or application tiers, like "database", "web server", or
-"network". When designing layers, the following considerations should be
-taken:
-
--  Resources that are frequently modified together should be in the same
-   layer, for example an EC2 instance, and its related IAM Role and
-   policies should remain in a single layer.
-
--  Smaller layers will limit blast radius and make Terraform state
-   refreshes and updates quicker and safer.
-
--  Dependencies between layers should always flow one way, taking
-   000base, 100data, and 200compute layers as an example, 000base should
-   not reference anything in 100data or 200compute, and 100data should
-   not reference anything in 200compute.
-
--  Use a data source (`see
-   below <https://one.rackspace.com/pages/viewpage.action?pageId=558926488#Phoenix-TerraformStyleGuide(FAWSBestPractice)-3.CodeStructure>`__)
-   to read another layer's state. Never write to another layer's state
-   directly.
-
-1.3 Module
-----------
-
-Module is a collection of connected resources which together perform the
-common action (for
-eg,\ `aws-terraform-vpc\_basenetwork <https://github.com/rackspace-infrastructure-automation/aws-terraform-vpc_basenetwork>`__
-module creates VPC, subnets, NAT gateway, etc). It depends on provider
-configuration(s), which should normally be defined at a higher level.
-Rackspace maintains a number of
-`modules <https://github.com/rackspace-infrastructure-automation/aws-terraform-internal/blob/master/README.md#module-list>`__,
-and customer specific modules can be created as needed.
-
-1.4 Resource
+Key Concepts
 ------------
 
-Resource is aws\_vpc, aws\_db\_instance, etc. Resource belongs to
-provider, accepts arguments, outputs attributes and has lifecycles.
-Resource can be created, retrieved, updated, and deleted.
+**Account Environment**
+    A collection of one or more layers defined within
+    a single account repository. An account environment describes the
+    complete infrastructure deployed for a single customer account.
 
-1.5 Data Source
----------------
+**Layer**
+    A layer is a logical grouping of related resources, data sources, and
+    modules that should be managed together by Terraform. Layers are used to
+    break complex environments into multiple logical subsets. Each layer
+    should independently define configuration for all needed providers.
+    Layers can represent different environments within an account, such as
+    "production" and "test", different regions a customer application is
+    hosted, or application tiers, like "database", "web server", or
+    "network". When designing layers, the following considerations should be
+    taken:
 
-Data source performs read-only operation and is dependent on provider
-configuration, it can be used in modules and layers to lookup
-information about the Account Environment.
+    - Resources that are frequently modified together should be in the same
+      layer, for example an EC2 instance, and its related IAM Role and
+      policies should remain in a single layer.
 
-Data source terraform\_remote\_state can be used to output from one
-layer to another (`see
-below <https://one.rackspace.com/pages/viewpage.action?pageId=558926488#Phoenix-TerraformStyleGuide(FAWSBestPractice)-3.CodeStructure>`__).
+    - Smaller layers will limit blast radius and make Terraform state
+      refreshes and updates quicker and safer.
 
-The HTTP data source makes an HTTP GET request to the given URL and
-exports information about the response which is often useful to get
-information from endpoints where native Terraform provider does not
-exist.
-.. image:: images/image1.png
-  :width: 400
-  :alt: AccountLayer Module Relationship Picture
+    - Dependencies between layers should always flow one way, taking
+      000base, 100data, and 200compute layers as an example, 000base should
+      not reference anything in 100data or 200compute, and 100data should
+      not reference anything in 200compute.
 
-1.6 Training
-------------
+    - Use a data source (:ref:`tf_code_structure`)
+      to read another layer's state. Never write to another layer's state
+      directly.
 
-`FAWS Terraform and Project Phoenix Training
-Resources <file:///C:\display\maws\FAWS+Terraform+and+Project+Phoenix+Training+Resources>`__
+**Module**
+    Module is a collection of connected resources which together perform the
+    common action (for example,
+    `aws-terraform-vpc\_basenetwork <https://github.com/rackspace-infrastructure-automation/aws-terraform-vpc_basenetwork>`__
+    module creates VPC, subnets, NAT gateway, etc). It depends on provider
+    configuration(s), which should normally be defined at a higher level.
+    Rackspace maintains a number of
+    `modules <https://github.com/rackspace-infrastructure-automation/aws-terraform-internal/blob/master/README.md#module-list>`__,
+    and customer specific modules can be created as needed.
 
-*2. General Terraform Style Guide*
-==================================
+**Resource**
+    Resource is ``aws_vpc``, ``aws_db_instance``, and so on. Resource
+    belongs to provider, accepts arguments, outputs attributes and
+    has lifecycles. Resource can be created, retrieved, updated, and deleted.
 
-Terraform files should obey the syntax rules for the `HashiCorp
-Configuration Language
-(HCL) <https://github.com/hashicorp/hcl/blob/master/README.md>`__ and
-`the general formatting
-guidelines <https://www.terraform.io/docs/commands/fmt.html>`__ provided
-by the Terraform Project through the fmt command.
+**Data Source**
+    Data source performs read-only operation and is dependent on provider
+    configuration, it can be used in modules and layers to lookup
+    information about the Account Environment.
+
+    Data source ``terraform_remote_state`` can be used to output from one
+    layer to another (:ref:`tf_code_structure`).
+    
+    The HTTP data source makes an HTTP GET request to the given URL and
+    exports information about the response which is often useful to get
+    information from endpoints where native Terraform provider does not
+    exist.
+    
+    .. image:: images/image1.png
+       :width: 400
+       :alt: AccountLayer Module Relationship Picture
+
+**Training**
+    `FAWS Terraform and Project Phoenix Training Resources <file:///C:\display\maws\FAWS+Terraform+and+Project+Phoenix+Training+Resources>`__
+
+General Terraform Style Guide
+-----------------------------
+
+Terraform files should obey the syntax rules for the
+`HashiCorp Configuration Language (HCL) <https://github.com/hashicorp/hcl/blob/master/README.md>`__
+and
+`the general formatting guidelines <https://www.terraform.io/docs/commands/fmt.html>`__
+provided by the Terraform Project through the ``fmt`` command.
 
 In addition, Rackspace follows the following standards when writing
 Terraform:
 
-1. Use `snake\_case <https://en.wikipedia.org/wiki/Snake_case>`__
+1. Use `snake_case <https://en.wikipedia.org/wiki/Snake_case>`__
    (lowercase with
    `underscore <https://en.wikipedia.org/wiki/Underscore>`__ character)
-   for all Terraform resource / object names
+   for all Terraform resource or object names.
 
 2. Variable defaults and arguments:
 
    -  Declare all variable blocks for a module in
-      `variables.tf <http://variables.tf>`__, including a description
-      and type
+      **variables.tf**, including a description and type
 
-   -  When working within a layer: provide **NO** defaults defined in
-      `variables.tf <http://variables.tf>`__, with all variable
-      arguments being provided in terraform.tfvars
+   -  When working within a layer: provide **no** defaults defined in
+      **variables.tf** with all variable
+      arguments being provided in ``terraform.tfvars``
 
    -  When working within a module: provide sensible defaults where
       appropriate; defaults can be empty string/list/map where variable
       is optional and being empty is handled gracefully
 
-3. Declare all outputs in `outputs.tf <http://outputs.tf>`__, including
-   a description
+3. Declare all outputs in **outputs.tf**, including a description.
 
-4. Pin all modules to a specific tag
+4. Pin all modules to a specific tag.
 
-5. Pin all providers to major version. (e.g.\`\`\`~> 1.2: any non-beta
-   version >= 1.2.0 and < 2.0.0, e.g. 1.X.Y\`\`\`)
+5. Pin all providers to major version. (for example, \`\`\`~> 1.2: any non-beta
+   version >= 1.2.0 and < 2.0.0, e.g. 1.X.Y\`\`\`).
 
-6. Always use relative paths and `the file()
-   helper <https://www.terraform.io/docs/configuration/interpolation.html#file-path->`__
+6. Always use relative paths and
+   `the file() helper <https://www.terraform.io/docs/configuration/interpolation.html#file-path->`__.
 
-7. Prefer separate resources over inline blocks (e.g.
-   aws\_security\_group\_rule over aws\_security\_group)
+7. Prefer separate resources over inline blocks (for example,
+   ``aws_security_group_rule`` over ``aws_security_group``).
 
-8. Always define AWS region in the provider block
+8. Always define AWS region in the provider block.
 
-9. Terraform versions and provider versions should be pinned, as `it’s
-   not possible to safely downgrade a state
-   file <https://github.com/hashicorp/terraform/issues/16879>`__ once it
-   has been used with a newer version of Terraform
+9. Terraform versions and provider versions should be pinned, as
+   `it’s not possible to safely downgrade a state file <https://github.com/hashicorp/terraform/issues/16879>`__
+   once it has been used with a newer version of Terraform.
 
-*3. Code Structure *
-====================
+.. _tf_code_structure:
 
-3.1 Terraform Environment Standards
------------------------------------
+Code Structure
+--------------
+
+Terraform Environment Standards
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Customer account repositories should follow the layered style
 represented in the sample repository
-https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.1.
-Here are some considerations for building a new customer environment.
+<https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.1>.
+Here are some considerations for building a new customer environment:
 
-1. \_main should be used for initialisation only. Resources should be
+1. ``_main`` should be used only for initialisation. Resources should be
    added to newly created layers.
 
 2. Unless there is a logical reason to deviate, the following default
-   layers **SHOULD** be used. The idea behind the numbered prefixes is
+   layers *should* be used. The idea behind the numbered prefixes is
    to deploy lower numbered layers first.
 
    1. 000base: VPC, Endpoints, Route53 Internal Zone, SSM Service Role,
@@ -164,41 +153,38 @@ Here are some considerations for building a new customer environment.
    3. 200compute: EC2, LBs, SQS
 
 3. Be sure to update the backend s3 key value in
-   `main.tf <http://main.tf>`__ for each layer
+   **main.tf** for each layer.
 
-4. Security Groups **SHOULD** be defined within the layer in which the
+4. Security Groups should be defined within the layer in which the
    resource it is to be attached to resides. Take the following into
    consideration when defining security group rules:
 
-   1. if the source\_security\_group\_id is in a previous layer, import
-      via remote state
+   - If the ``source_security_group_id`` is in a previous layer, import
+     via remote state
 
-   2. if the source\_security\_group\_id is in the same layer, proceed
-      as normal
+   - If the ``source_security_group_id`` is in the same layer, proceed
+     as normal
 
-   3. if the source\_security\_group\_id is in a following layer, the
-      rule should be moved into the following layer alongside the source
-      group once it is created
+   - If the ``source_security_group_id`` is in a following layer, the
+     rule should be moved into the following layer alongside the source
+     group once it is created
 
 5. Leverage data source outputs to reference required information in
-   another layer
+   another layer. For example, see
+   `Terraform Standards Examples <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.1.4>`_.
 
-   1. `example click
-      here <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.1.4>`__
-
-1. `README.md <http://README.md>`__ files MUST exist and describe the
+6. **README.md** files *must* exist and describe the
    contents of each layer. An example of documentation can be found
-   `here for layer
-   module <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.1/layers/000base>`__. 
+   `here for layer modules <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.1/layers/000base>`__. 
 
-   1. terraform-docs is a tool to help create the documentation, and can
-      found `here <https://github.com/segmentio/terraform-docs>`__.
+   ``terraform-docs`` is a tool to help create the documentation, and can found
+   `here <https://github.com/segmentio/terraform-docs>`_.
 
-3.2 Terraform Module Standards
-------------------------------
+Terraform Module Standards
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Rackspace maintains a number of Terraform modules available at
-https://github.com/rackspace-infrastructure-automation. Contributions
+<https://github.com/rackspace-infrastructure-automation>. Contributions
 should follow these guidelines.
 
 1. When a count is required, use of a variable is strongly recommended
@@ -210,95 +196,95 @@ should follow these guidelines.
 
    -  eg. ref required
 
-3. Modules ***SHOULD*** use "semantic versioning" (major.minor.revision)
+3. Modules should use "semantic versioning" (major.minor.revision)
    for customer shared module repositories. Good release notes should be
    included.
 
-4. Modules ***MUST*** include the following files, even if empty:
-   `main.tf <http://main.tf>`__, `variables.tf <http://variables.tf>`__,
-   `outputs.tf <http://outputs.tf>`__
+4. Modules *must* include the following files, even if empty:
+   **main.tf**, **variables.tf**, and **outputs.tf**.
 
-   -  Additional Terraform files ***MAY*** be included in order to
-      logically separate resources into multiple files.
+   - Additional Terraform files can be included in order to
+     logically separate resources into multiple files.
 
-5. Modules ***MUST*** include an examples directory. If CI\\CD testing
-   is available, modules ***SHOULD*** contain a tests directory. Each
+5. Modules *must* include an examples directory. If CI\CD testing
+   is available, modules should contain a tests directory. Each
    distinct test or example should be placed in a descriptively named
-   subdirectory. Subdirectory contents should meet all defined standards
+   subdirectory. Subdirectory contents should meet all defined standards.
 
-   -  `example click
-      here <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.2.5>`__
+   For example, see the
+   `Terraform Standards Examples <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.2.5>`__.
 
-6. `README.md <http://README.md>`__ files MUST exist and contain a
+6. **README.md** files *must* exist and contain a
    description of the module as well as documentation of variables and
-   outputs. An example of documentation can be found `here for layer
-   module <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.1/layers/000base>`__. 
+   outputs. An example of documentation can be found
+   `here for layer modules <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/tree/master/example_3.1/layers/000base>`__. 
 
-   -  terraform-docs is a tool to help create the documentation, and can
-          found `here <https://github.com/segmentio/terraform-docs>`__.
-          Version v0.6.0 of terraform-docs is used to generate
-          documentation for all Rackspace managed modules.
+   terraform-docs is a tool to help create the documentation, and can
+   found `here <https://github.com/segmentio/terraform-docs>`__.
+   Version v0.6.0 of terraform-docs is used to generate
+   documentation for all Rackspace managed modules.
 
-1. The files in .circleci are managed by Rackspace and ***SHOULD NOT***
+7. The files in **.circleci** are managed by Rackspace and ***should not***
    be changed. There is no requirement to modify files found
-   in .circleci when adding an additional module.
+   in **.circlec**i when adding an additional module.
 
-2. Use `Github’s .gitignore contents for
-   Terraform <https://github.com/github/gitignore/blob/master/Terraform.gitignore>`__.
+8. Use
+   `Github’s .gitignore contents for Terraform <https://github.com/github/gitignore/blob/master/Terraform.gitignore>`__.
 
-3.3 Getting started with structuring of Terraform configurations
-----------------------------------------------------------------
+Getting started with structuring Terraform configurations
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Please make sure you understand the key concepts
+Refer back to the :ref:`tf_concepts` section if you are unsure what each Terraform
+structure is for.
 
-3.3.1 Layout
-~~~~~~~~~~~~
+Layout
+~~~~~~
 
-***Layer***
+The following diagram shows how the layer should be structured::
 
-| layers/
-| ├── \_main
-| │   ├── main.tf
-| │   └── variables.tf
-| ├── 000base
-| │   ├── README.md
-| │   ├── main.tf
-| │   ├── outputs.tf
-| │   ├── terraform.tfvars
-| │   └── variables.tf
-| └── 100data
-| \|   ├── README.md
-| \|   ├── main.tf
-| \|   ├── outputs.tf
-| \|   ├── terraform.tfvars
-| \|   └── variables.tf
+   | layers/
+   | ├── _main
+   | │   ├── main.tf
+   | │   └── variables.tf
+   | ├── 000base
+   | │   ├── README.md
+   | │   ├── main.tf
+   | │   ├── outputs.tf
+   | │   ├── terraform.tfvars
+   | │   └── variables.tf
+   | └── 100data
+   | |   ├── README.md
+   | |   ├── main.tf
+   | |   ├── outputs.tf
+   | |   ├── terraform.tfvars
+   | |   └── variables.tf
+   | └── 200compute
+   |    ├── README.md
+   |    ├── main.tf
+   |    ├── outputs.tf
+   |    ├── terraform.tfvars
+   |    └── variables.tf
 
-| └── 200compute
-|    ├── README.md
-|    ├── main.tf
-|    ├── outputs.tf
-|    ├── terraform.tfvars
-|    └── variables.tf
+The following diagram shows how the modules should be structured::
 
-**module**
+   | modules/
+   | ├── example
+   | │   └── main.tf
+   | ├── globals
+   | │   ├── main.tf
+   | │   └── outputs.tf
+   | └── s3_cf_website
+   |     ├── README.md
+   |     ├── examples
+   |     │   ├── main.tf
+   |     │   └── variables.tf
+   |     ├── main.tf
+   |     ├── outputs.tf
+   |     └── variables.tf
 
-| modules/
-| ├── example
-| │   └── main.tf
-| ├── globals
-| │   ├── main.tf
-| │   └── outputs.tf
-| └── s3\_cf\_website
-|     ├── README.md
-|     ├── examples
-|     │   ├── main.tf
-|     │   └── variables.tf
-|     ├── main.tf
-|     ├── outputs.tf
-|     └── variables.tf
 
-3.3.2 Resource and data source arguments
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Resource and data source arguments
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Resource names should be descriptive and avoid duplication of the
    resource type, where possible. Shorter resource names should be
@@ -306,90 +292,80 @@ Please make sure you understand the key concepts
    resource type in part or whole is preferred over the use of
    non-descriptive names, such as this, that, or thing.
 
-   -  **Bad:** resource "aws\_cloudwatch\_log\_group" "this" { -
-      Non-descriptive resource name
+   - **Bad:** resource ``aws_cloudwatch_log_group`` "this" { -
+     Non-descriptive resource name
 
-   -  **Good:** resource "aws\_cloudwatch\_log\_group" "log\_group" { -
-      Descriptive resource name
+   - **Good:** resource ``aws_cloudwatch_log_group`` "log\_group" { -
+     Descriptive resource name
 
-   -  **Best:** resource "aws\_cloudwatch\_log\_group" "apache" { -
-      Descriptive resource name without duplication of resource type.
+   - **Best:** resource ``aws_cloudwatch_log_group`` "apache" { -
+     Descriptive resource name without duplication of resource type.
 
-2. Prefer the use of singular nouns for names. If an individual resource
+2. Using singular nouns for names is preferred. If an individual resource
    is commonly referred to in the plural (eg, logs when referring to a
    CloudWatch Log Group), then a plural noun is acceptable.
 
-   -  **Good:** file
+   - **Good:** file
 
-   -  **Good:** bucket
+   - **Good:** bucket
 
-   -  **Good:** logs
+   - **Good:** logs
 
-   -  **Bad:** files
+   - **Bad:** files
 
 3. Include count argument inside resource blocks as the first argument
    at the top and separate by newline after it.
 
-   -  **Good:** `example click
-      here <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.3/good.tf>`__
+   -  `Good example <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.3/good.tf>`__
 
-   -  **Bad:** `example click
-      here <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.3/bad.tf>`__
+   -  `Bad example <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.3/bad.tf>`__
 
 4. Any **resource property** that **requires multiple lines** should
    fall below all properties that can be defined on a single line. Each
    **resource property** that requires multiple lines should have
    **blank lines** between itself and any other property.
 
-   -  **Good:** `example click
-      here <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.4/good.tf>`__
+   -  `Good example <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.4/good.tf>`__
 
-   -  **Bad:** `example click
-      here <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.4/bad.tf>`__
+   -  `Bad example <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.4/bad.tf>`__
 
-5. When present, depends\_on and lifecycle should be the last two
+5. When present, ``depends_on`` and ``lifecycle`` should be the last two
    resource properties defined respectively. Each should be separated by
    a single blank line.
 
-   -  **Good:** `example click
-      here <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.5/good.tf>`__
+   -  `Good example <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.5/good.tf>`__
 
-   -  **Bad:** `example click
-      here <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.5/bad.tf>`__
+   -  `Bad example <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.2.5/bad.tf>`__
 
 6. Boolean values should not be used to directly set the value in count.
    Instead, a condition should be used.
 
-   -  **Bad:** count = "${var.create\_public\_subnets}"
+   -  **Bad:** ``count = "${var.create_public_subnets}"``
 
-   -  **Good:** count = "${var.create\_public\_subnets ? 1 : 0}"
+   -  **Good:** ``count = "${var.create_public_subnets ? 1 : 0}"``
 
-   -  **Good:** count = "${var.disable\_nat\_gateway ? 0 : 1}"
+   -  **Good:** ``count = "${var.disable_nat_gateway ? 0 : 1}"``
 
-3.3.3 Example Terraform Files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Example Terraform Files
+~~~~~~~~~~~~~~~~~~~~~~~
 
--  `main.tf <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.3/abc_example/main.tf>`__
-   - call modules, locals and data-sources to create all resources
+-  `main.tf <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.3/abc_example/main.tf>`__:
+   call modules, locals and data-sources to create all resources
 
--  `variables.tf <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.3/abc_example/variables.tf>`__
-   - contains declarations of variables used in
-   `main.tf <http://main.tf>`__
+-  `variables.tf <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.3/abc_example/variables.tf>`__:
+   contains declarations of variables used in **main.tf**
 
--  `outputs.tf <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.3/abc_example/outputs.tf>`__
-   - contains outputs from the resources and modules created in
-   `main.tf <http://main.tf>`__
+-  `outputs.tf <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.3/abc_example/outputs.tf>`__:
+   contains outputs from the resources and modules created in **main.tf**
 
--  `terraform.tfvars <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.3/abc_example/terraform.tfvars>`__
-   - should only be used in layers.
+-  `terraform.tfvars <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.3/abc_example/terraform.tfvars>`__:
+   should only be used in layers.
 
--  `README.md <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.3/abc_example/README.md>`__
-   - description of layer or module, including variables and
-   outputs.\ `*
-   * <https://one.rackspace.com/key-concepts#composition>`__
-
-*4. Secret storage using Terraform*
-===================================
+-  `README.md <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.3/abc_example/README.md>`__:
+   description of layer or module, including variables and outputs.
+   
+Secret storage using Terraform
+------------------------------
 
 Irrelevant of the strategy used to manage the creation and/or usage of
 passwords in Terraform it is important to understand how these are
@@ -410,8 +386,8 @@ It is the state containing these passwords in plaintext - as well as
 generally being a very poor, unmanageable, and non-scaleable option -
 that makes storing the state files along with the code a very bad idea.
 
-4.1 Guidance
-------------
+Guidance
+^^^^^^^^
 
 Secrets are typically going to fall into one of two categories: they
 exist and we need to use them, or they do not exist and we need to
@@ -435,27 +411,19 @@ https://www.terraform.io/docs/providers/random/index.html
 
 This is a basic use of the random provider to create a random string:
 
-**Secrets - Random String**
+**Secrets - Random String**::
 
-provider "random" {
+   provider "random" {
+     version = "~> 2.1"
+   }
 
-version = "~> 2.1"
-
-}
-
-resource "random\_string" "rds\_password" {
-
-length = 20
-
-lower = true
-
-upper = true
-
-number = true
-
-special = false
-
-}
+   resource "random_string" "rds_password" {
+     length = 20
+     lower = true
+     upper = true
+     number = true
+     special = false
+   }
 
 This example will give us a 20 character string containing upper- and
 lowercase alphanumerical characters. You can then use the output of this
@@ -463,58 +431,39 @@ in other resources including the password argument of a RDS module call,
 or the value of an AWS SSM Parameter Store parameter. The next example
 shows creating, storing, and using the password (shortened for brevity).
 
-**Secrets - Random String Store and Use**
+**Secrets - Random String Store and Use**::
 
-provider "aws" {
+   provider "aws" {
+     version = "~> 2.20"
+   }
 
-version = "~> 2.20"
+   provider "random" {
+     version = "~> 2.1"
+   }
 
-}
+   resource "random_string" "rds_password" {
+     length = 20
+     lower = true
+     upper = true
+     number = true
+     special = false
+   }
 
-provider "random" {
+   resource "aws_ssm_parameter" "rds_password" {
+     name = "${lower(var.environment)}-rds-password"
+     type = "SecureString"
+     value = "${random_string.rds_password.result}"
+     tags = "${local.tags}"
+   }
 
-version = "~> 2.1"
+   module "rds" {
+     source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-rds//?ref=v0.0.11"
 
-}
+   [..]
+   password = "${random_string.rds_password.result}"
+   [..]
 
-resource "random\_string" "rds\_password" {
-
-length = 20
-
-lower = true
-
-upper = true
-
-number = true
-
-special = false
-
-}
-
-resource "aws\_ssm\_parameter" "rds\_password" {
-
-name = "${lower(var.environment)}-rds-password"
-
-type = "SecureString"
-
-value = "${random\_string.rds\_password.result}"
-
-tags = "${local.tags}"
-
-}
-
-module "rds" {
-
-source =
-"git@github.com:rackspace-infrastructure-automation/aws-terraform-rds//?ref=v0.0.11"
-
-[..]
-
-password = "${random\_string.rds\_password.result}"
-
-[..]
-
-}
+   }
 
 This example takes our random string and adds it to an AWS SSM parameter
 as a SecureString and then uses it as the input to the password argument
@@ -532,47 +481,33 @@ Some in the security community would recommend using random words rather
 than more traditional patterns; for completeness here is an example of
 that:
 
-**Secrets - Random Pet**
+**Secrets - Random Pet**::
 
-$ cat example.tf
+   $ cat example.tf
 
-provider "random" {
+   provider "random" {
+     version = "~> 2.1"
+   }
 
-version = "~> 2.1"
+   resource "random_pet" "pet" {
+     count = 5
+     
+     length = "${count.index + 1}"
+     separator = ""
+   }
 
-}
+   output "pets" {
+     value = "${random_pet.pet.*.id}"
+   }
 
-resource "random\_pet" "pet" {
-
-count = 5
-
-length = "${count.index + 1}"
-
-separator = ""
-
-}
-
-output "pets" {
-
-value = "${random\_pet.pet.\*.id}"
-
-}
-
-$ terraform output
-
-pets = [
-
-katydid,
-
-summaryliger,
-
-mainlyexcitinggrubworm,
-
-merelygentlysteadycub,
-
-openlypresumablylikelyblessedpeacock
-
-]
+   $ terraform output
+   pets = [
+   katydid,
+   summaryliger,
+   mainlyexcitinggrubworm,
+   merelygentlysteadycub,
+   openlypresumablylikelyblessedpeacock
+   ]
 
 There could be occurrences where a customer wants to provide a password
 or wants a specific pattern that we can't capture in code (because, as
@@ -582,32 +517,22 @@ As well as creating resources in AWS SSM Parameter Store we can also
 pull values from the store as well. Using our RDS example, here we can
 pull the password value and pass this into our RDS module:
 
-**Secrets - Data SSM Parameter**
+**Secrets - Data SSM Parameter**::
 
-provider "aws" {
+   provider "aws" {
+     version = "~> 2.20"
+   }
 
-version = "~> 2.20"
+   data "aws_ssm_parameter" "rds_password" {
+     name = "customer-provided-rds-password"
+   }
+   module "rds" {
+     source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-rds//?ref=v0.0.11"
 
-}
-
-data "aws\_ssm\_parameter" "rds\_password" {
-
-name = "customer-provided-rds-password"
-
-}
-
-module "rds" {
-
-source =
-"git@github.com:rackspace-infrastructure-automation/aws-terraform-rds//?ref=v0.0.11"
-
-[..]
-
-password = "${data.aws\_ssm\_parameter.rds\_password.value}"
-
-[..]
-
-}
+   [..]
+   password = "${data.aws_ssm_parameter.rds_password.value}"
+   [..]
+   }
 
 The examples so far have focused on AWS SSM Parameter store but we can
 also use AWS Secrets Manager. In the next two examples we use an
@@ -615,109 +540,76 @@ existing secret, and we store a new secret. In the first example we are
 using the current version of the person and we look up the password by
 the name which works where the secret is in the same account and region,
 otherwise you need to use the arn argument as documented here:
-https://www.terraform.io/docs/providers/aws/d/secretsmanager_secret.html
+<https://www.terraform.io/docs/providers/aws/d/secretsmanager_secret.html>.
 
-**Secrets - Data Secrets Manager**
+**Secrets - Data Secrets Manager**::
 
-provider "aws" {
+   provider "aws" {
+     version = "~> 2.20"
+   }
 
-version = "~> 2.20"
+   data "aws_secretsmanager_secret" "rds_password" {
+     name = "customer-provided-rds-password"
+   }
 
-}
+   data "aws_secretsmanager_secret_version" "rds_password" {
+     secret_id = "${data.aws_secretsmanager_secret.rds_password.id}"
+   }
 
-data "aws\_secretsmanager\_secret" "rds\_password" {
+   module "rds" {
+     source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-rds//?ref=v0.0.11"
 
-name = "customer-provided-rds-password"
+   [..]
+   password = "${data.aws_secretsmanager_secret_version.rds_password.secret_string}"
+   [..]
+   }
 
-}
+**Secrets - Secrets Manager Store and Use**::
 
-data "aws\_secretsmanager\_secret\_version" "rds\_password" {
+   provider "aws" {
+     version = "~> 2.20"
+   }
 
-secret\_id = "${data.aws\_secretsmanager\_secret.rds\_password.id}"
+   provider "random" {
+     version = "~> 2.1"
+   }
 
-}
+   resource "random_string" "rds_password" {
+     length = 20
+     lower = true
+     upper = true
+     number = true
+     special = false
+   }
 
-module "rds" {
+   resource "aws_secretsmanager_secret" "rds_password" {
+     name                    = "${lower(var.environment)}-rds-password"
+     recovery_window_in_days = 7
 
-source =
-"git@github.com:rackspace-infrastructure-automation/aws-terraform-rds//?ref=v0.0.11"
+     tags = "${local.tags}"
+   }
 
-[..]
+   resource "aws_secretsmanager_secret_version" "rds_password" {
+     secret_id = "${aws_secretsmanager_secret.rds_password.id}"
+     secret_string = "${random_string.rds_password.result}"
+   }
 
-password =
-"${data.aws\_secretsmanager\_secret\_version.rds\_password.secret\_string}"
+   module "rds" {
+     source = "git@github.com:rackspace-infrastructure-automation/aws-terraform-rds//?ref=v0.0.11"
 
-[..]
+     [..]
+     password = "${random_string.rds_password.result}"
+     [..]
+   }
 
-}
+Deprecated Guidance
+^^^^^^^^^^^^^^^^^^^
 
-**Secrets - Secrets Manager Store and Use**
-
-provider "aws" {
-
-version = "~> 2.20"
-
-}
-
-provider "random" {
-
-version = "~> 2.1"
-
-}
-
-resource "random\_string" "rds\_password" {
-
-length = 20
-
-lower = true
-
-upper = true
-
-number = true
-
-special = false
-
-}
-
-resource "aws\_secretsmanager\_secret" "rds\_password" {
-
-name = "${lower(var.environment)}-rds-password"
-
-recovery\_window\_in\_days = 7
-
-tags = "${local.tags}"
-
-}
-
-resource "aws\_secretsmanager\_secret\_version" "rds\_password" {
-
-secret\_id = "${aws\_secretsmanager\_secret.rds\_password.id}"
-
-secret\_string = "${random\_string.rds\_password.result}"
-
-}
-
-module "rds" {
-
-source =
-"git@github.com:rackspace-infrastructure-automation/aws-terraform-rds//?ref=v0.0.11"
-
-[..]
-
-password = "${random\_string.rds\_password.result}"
-
-[..]
-
-}
-
-4.2 Deprecated Guidance
------------------------
-
-***NOTE:** the following information was the guidance given to customers
-and Rackers in the original Phoenix documentation. Whilst this is still
-a valid solution it is cumbersome for all involved. The information in
-the above subsection should be considered the preferred route to take
-when dealing with secrets.*
+.. note:: The following information was the guidance given to customers
+   and Rackers in the original Phoenix documentation. While this is still
+   a valid solution it is cumbersome for all involved. The information in
+   the above subsection should be considered the preferred route to take
+   when dealing with secrets.
 
 Rackspace recommends storing secrets for Terraform using AWS KMS; embed
 ciphertext values as data sources in Terraform configurations. Here’s
@@ -728,160 +620,100 @@ some of the specifics and considerations:
    key, because federated accounts can’t access KMS keys using the
    default policy statements (e.g. most Rackers and Customers):
 
-**Example aws\_kms\_key**
+**Example aws\_kms\_key**::
 
-resource "aws\_kms\_key" "terraform\_config" {
+   resource "aws_kms_key" "terraform_config" {
+     description = "terraform_config"
+     is_enabled = true
 
-description = "terraform\_config"
+     policy = <<EOF
+     {
+       "Version": "2012-10-17",
+       "Id": "key-default-1",
+       "Statement": [
+         {
+           "Sid": "Default IAM policy for KMS keys",
+           "Effect": "Allow",
+           "Principal": {
+             "AWS": "arn:aws:iam::123456789012:root"
+           },
+           "Action": "kms:"*",
+           "Resource": "*"
+         },
+         {
+           "Sid": "Enable IAM user to perform kms actions as well",
+           "Effect": "Allow",
+           "Principal": {
+             "AWS": "${module.terraform_circleci_iam.circleci_user_arn}"
+           },
+           "Action": "kms:*",
+           "Resource": "*"
+         }
+       ]
+     }
+   EOF
+   }
 
-is\_enabled = true
+You must manually use the AWS CLI (and the key-id for the key
+you created in the previous step) to encrypt your secrets (mind any
+line endings if you use ``file://`` to encrypt):
 
-policy = <<EOF
+**Example aws kms encrypt**::
 
-{
+   $ aws kms encrypt \
+       --key-id 438290482-e36a-4803-a7d0-db436278 \
+       --plaintext "super_secret" \
+       --encryption-context resource=my_database,key=password \
+       --output text --query CiphertextBlob
 
-"Version": "2012-10-17",
-
-"Id": "key-default-1",
-
-"Statement": [
-
-{
-
-"Sid": "Default IAM policy for KMS keys",
-
-"Effect": "Allow",
-
-"Principal": {
-
-"AWS": "arn:aws:iam::123456789012:root"
-
-},
-
-"Action": "kms:\*",
-
-"Resource": "\*"
-
-},
-
-{
-
-"Sid": "Enable IAM user to perform kms actions as well",
-
-"Effect": "Allow",
-
-"Principal": {
-
-"AWS": "${module.terraform\_circleci\_iam.circleci\_user\_arn}"
-
-},
-
-"Action": "kms:\*",
-
-"Resource": "\*"
-
-}
-
-]
-
-}
-
-EOF
-
-}
-
--  You will need to manually use the AWS CLI (and the key-id for the key
-   you created in the previous step) to encrypt your secrets (mind any
-   line endings if you use file:// to encrypt):
-
-**Example aws kms encrypt**
-
-$ aws kms encrypt \\
-
---key-id 438290482-e36a-4803-a7d0-db436278 \\
-
---plaintext "super\_secret" \\
-
---encryption-context resource=my\_database,key=password \\
-
---output text --query CiphertextBlob
-
--  Equipped with the ciphertext from the previous command, you can now
-   use
-   `aws\_kms\_secrets <https://www.terraform.io/docs/providers/aws/d/kms_secrets.html>`__
-   to expose the secret as a data source for further use in Terraform:
+Equipped with the ciphertext from the previous command, you can now use
+`aws\_kms\_secrets <https://www.terraform.io/docs/providers/aws/d/kms_secrets.html>`__
+to expose the secret as a data source for further use in Terraform.
 
 **Example aws\_kms\_secrets**
 
-data "aws\_kms\_secrets" "example" {
+   data "aws_kms_secrets" "example" {
+     secret {
+       # ... potentially other configuration ...
+       name = "master_password"
+       payload = "base64secret=="
+       
+       context {
+         resource = "db01"
+         key = "password"
+       }
+     }
+     
+     secret {
+       # ... potentially other configuration ...
+       name = "master_username"
+       payload = "base64secret=="
+       
+       context {
+         resource = "db01"
+         key = "username"
+       }
+     }
+   }
 
-secret {
+   resource "aws_rds_cluster" "my_database" {
+     # ... other configuration ...
+     master_password = "${data.aws_kms_secrets.example.plaintext["master_password"]}"
+     master_username = "${data.aws_kms_secrets.example.plaintext["master_username"]}"
+   }
 
-# ... potentially other configuration ...
-
-name = "master\_password"
-
-payload = "base64secret=="
-
-context {
-
-resource = "db01"
-
-key = "password"
-
-}
-
-}
-
-secret {
-
-# ... potentially other configuration ...
-
-name = "master\_username"
-
-payload = "base64secret=="
-
-context {
-
-resource = "db01"
-
-key = "username"
-
-}
-
-}
-
-}
-
-resource "aws\_rds\_cluster" "my\_database" {
-
-# ... other configuration ...
-
-master\_password =
-"${data.aws\_kms\_secrets.example.plaintext["master\_password"]}"
-
-master\_username =
-"${data.aws\_kms\_secrets.example.plaintext["master\_username"]}"
-
-}
-
--  Note the use of context values; these are used as `encryption context
-   key
-   pairs <https://docs.aws.amazon.com/kms/latest/developerguide/encryption-context.html>`__
+-  Note the use of context values; these are used as
+   `encryption context key pairs <https://docs.aws.amazon.com/kms/latest/developerguide/encryption-context.html>`__
    in KMS. These context values can be used by KMS to ensure a specific
    secret is always accompanied by the same context values (integrity),
    and may be emitted in CloudTrail logs or included in error messages
    (debugging).
 
-*5. Appendix*
-=============
-
-|image0|\ Appendix
+Appendix
+--------
 
 Article History
----------------
-
-|image1|\ Article History
+^^^^^^^^^^^^^^^
 
 +-------------------+-------------------------------+
 | **Approved on**   | **Activity**                  |
@@ -893,8 +725,7 @@ Article History
 |                   |                               |
 +-------------------+-------------------------------+
 
-**
-Approved by **
+**Approved by**
 
 +------------+------------------+
 | **Name**   | **Department**   |
@@ -905,9 +736,7 @@ Approved by **
 +------------+------------------+
 
 Reference Resources
--------------------
-
-|image2|\ Reference Resources
+^^^^^^^^^^^^^^^^^^^
 
 +-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 | **Source**                                                                    | **URL**                                                                                                        |
@@ -919,12 +748,3 @@ Reference Resources
 |                                                                               |                                                                                                                |
 +-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 
-.. |image0| image:: media/image1.tmp
-   :width: 0.16667in
-   :height: 0.16667in
-.. |image1| image:: media/image1.tmp
-   :width: 0.16667in
-   :height: 0.16667in
-.. |image2| image:: media/image1.tmp
-   :width: 0.16667in
-   :height: 0.16667in
