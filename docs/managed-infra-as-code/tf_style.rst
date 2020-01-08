@@ -63,12 +63,12 @@ Key Concepts
 
     Data source ``terraform_remote_state`` can be used to output from one
     layer to another (:ref:`tf_code_structure`).
-    
+
     The HTTP data source makes an HTTP GET request to the given URL and
     exports information about the response which is often useful to get
     information from endpoints where native Terraform provider does not
     exist.
-    
+
     .. image:: images/image1.png
        :width: 600
        :alt: AccountLayer Module Relationship Picture
@@ -361,7 +361,7 @@ Example Terraform Files
 
 -  `README.md <https://github.com/rackspace-infrastructure-automation/terraform-standards-examples/blob/master/example_3.3.3/abc_example/README.md>`__:
    description of layer or module, including variables and outputs.
-   
+
 Secret storage using Terraform
 ------------------------------
 
@@ -489,7 +489,7 @@ that:
 
    resource "random_pet" "pet" {
      count = 5
-     
+
      length = "${count.index + 1}"
      separator = ""
    }
@@ -604,7 +604,7 @@ Deprecated Guidance
 ^^^^^^^^^^^^^^^^^^^
 
 .. note::
-   
+
    The following information was the guidance given to customers
    and Rackers in the original Phoenix documentation. While this is still
    a valid solution it is cumbersome for all involved. The information in
@@ -615,7 +615,7 @@ Rackspace recommends storing secrets for Terraform using AWS KMS; embed
 ciphertext values as data sources in Terraform configurations. Here’s
 some of the specifics and considerations:
 
--  Use ***aws\_kms\_key*** to create a KMS key for use by Terraform; you
+-  Use **aws\_kms\_key** to create a KMS key for use by Terraform; you
    should apply a key policy that allows IAM roles and users to use the
    key, because federated accounts can’t access KMS keys using the
    default policy statements (e.g. most Rackers and Customers):
@@ -670,25 +670,25 @@ Equipped with the ciphertext from the previous command, you can now use
 `aws\_kms\_secrets <https://www.terraform.io/docs/providers/aws/d/kms_secrets.html>`__
 to expose the secret as a data source for further use in Terraform.
 
-**Example aws\_kms\_secrets**
+**Example aws\_kms\_secrets**::
 
    data "aws_kms_secrets" "example" {
      secret {
        # ... potentially other configuration ...
        name = "master_password"
        payload = "base64secret=="
-       
+
        context {
          resource = "db01"
          key = "password"
        }
      }
-     
+
      secret {
        # ... potentially other configuration ...
        name = "master_username"
        payload = "base64secret=="
-       
+
        context {
          resource = "db01"
          key = "username"
@@ -738,13 +738,4 @@ Article History
 Reference Resources
 ^^^^^^^^^^^^^^^^^^^
 
-+-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-| **Source**                                                                    | **URL**                                                                                                        |
-+===============================================================================+================================================================================================================+
-| Fanatical Support for AWS Product Guide                                       |  https://manage.rackspace.com/aws/docs/product-guide/miac/using-terraform.html#general-terraform-style-guide   |
-+-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-|  `Terraform Best Practices <https://www.terraform-best-practices.com/>`__   |  https://www.terraform-best-practices.com/                                                                     |
-+-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-|                                                                               |                                                                                                                |
-+-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-
+`Terraform Best Practices <https://www.terraform-best-practices.com/>`__
