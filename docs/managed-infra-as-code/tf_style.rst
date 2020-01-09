@@ -709,33 +709,3 @@ to expose the secret as a data source for further use in Terraform.
    and may be emitted in CloudTrail logs or included in error messages
    (debugging).
 
-Appendix
---------
-
-Article History
-^^^^^^^^^^^^^^^
-
-+-------------------+-------------------------------+
-| **Approved on**   | **Activity**                  |
-+===================+===============================+
-| 20 Feb 2019       |  updating content for Draft   |
-+-------------------+-------------------------------+
-|                   |                               |
-+-------------------+-------------------------------+
-|                   |                               |
-+-------------------+-------------------------------+
-
-**Approved by**
-
-+------------+------------------+
-| **Name**   | **Department**   |
-+============+==================+
-|            |                  |
-+------------+------------------+
-|            |                  |
-+------------+------------------+
-
-Reference Resources
-^^^^^^^^^^^^^^^^^^^
-
-`Terraform Best Practices <https://www.terraform-best-practices.com/>`__
