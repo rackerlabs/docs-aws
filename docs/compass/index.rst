@@ -1,35 +1,32 @@
-.. _compass:
-.. |CompassTM|  raw:: html
+.. _cloudhealth:
+.. |CloudHealth|  raw:: html
 
-    Compass&trade;
+   
 
-=======
-Compass
-=======
+===========
+CloudHealth
+===========
 
-|CompassTM| is a set of tools that help you understand several dimensions of
-your AWS account(s). We perform an automated analysis of control plane
-(e.g. data visible through the AWS APIs) details to provide a thorough
-look at opportunities to improve the cost, reliability, redundancy, and
-security of your environment. We also present robust inventory information
-that provides an at-a-glance view of what resources you are running across
-all AWS public regions.
+CloudHealth is the industry-leading cloud management platform that helps you easily visualize cloud spend, quickly view cost savings opportunities and automate cloud governance. Rackspace is the first CloudHealth partner to fully integrate with their platform to include everything from account setup to user management. For example, you can use single sign-on from the Rackspace portal into CloudHealth. Users have full access to CloudHealth with near real-time cost data, savings opportunities, inventory, and much more
 
-For Navigator accounts, our AWS experts are available to provide support
-and guidance on Compass recommendations. For Aviator accounts, our
-Fanatical Support for AWS support teams will work with you to proactively
-execute on Compass recommendations to help reduce AWS spend, improve your
-security posture, and implement other optimizations.
+CloudHealth is included in Platform Essentials, Navigator and Aviator for all customers. Our Fanatical Support for AWS experts will work with you to:
 
-You can access Compass by clicking the Compass link in the
+* Review costs and savings potential
+
+* Suggest tagging strategies to identify departmental owners for spend
+
+* Configure reports for spend breakdown
+
+* Understand cost savings constructs like Reserved Instances and Savings Plans
+
+
+You can access CloudHealth by clicking the CloudHealth link in the
 `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
 
-.. _compass_permissions:
+.. _cloudhealth_permissions:
 
 Permissions
 -----------
 
-Compass provides views of individual AWS accounts for which you have
-AWS control plane access. If you have access to all AWS accounts on your
-Rackspace account you will also be able to view a multi-account view that
-includes aggregated data about all of your AWS accounts.
+CloudHealth provides views of individual AWS accounts for which you have
+AWS control plane access. Users with Account Administrator privileges are granted Power User permissions in CloudHealth. Please contact your Technical Account Manager with any questions related to your CloudHealth and Fanatical Support for AWS Control Panel permissions. 
