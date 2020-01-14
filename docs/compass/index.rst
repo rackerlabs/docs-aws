@@ -7,6 +7,7 @@
 CloudHealth
 ===========
 
+
 CloudHealth is the industry-leading cloud management platform that helps you easily visualize cloud spend, quickly view cost
 savings opportunities, and automate cloud governance. Rackspace is the first CloudHealth partner to fully integrate with their
 platform to include everything from account setup to user management. For example, you can use single sign-on from the
@@ -15,6 +16,7 @@ inventory, and much more.
 
 For all customers, Platform Essentials, Navigator, and Aviator include CloudHealth. Our Fanatical Support&reg; for AWS experts
 work with you to do the following tasks:
+
 
 * Review costs and savings potential
 
@@ -37,3 +39,4 @@ CloudHealth provides views of individual AWS accounts for which you have
 AWS control plane access. Users with Account Administrator privileges are granted Power User permissions in CloudHealth.
 Contact your technical account manager with any questions related to your CloudHealth and Fanatical Support for AWS Control 
 Panel permissions. 
+
