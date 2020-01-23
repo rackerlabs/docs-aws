@@ -62,7 +62,7 @@ To sign up, visit
    compliance/index.rst
    passport/index.rst
    logbook/index.rst
-   compass/index.rst
+   cloudhealth/index.rst
    waypoint/index.rst
    watchman/index.rst
    aws-instance-scheduler/index.rst
