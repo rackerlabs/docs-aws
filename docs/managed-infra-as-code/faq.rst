@@ -63,7 +63,7 @@ development phase and iterating quickly. Once a module has become
 relatively stable, it can be relocated to your Shared Repository and used
 in multiple accounts.
 
-**How do protect resources from accidental deletion?**
+**How do I protect resources from accidental deletion?**
 
 Some Terraform-created resources should be protected from deletion, either
 due to external dependencies or because they contain data that shouldn't

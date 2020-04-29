@@ -11,7 +11,7 @@ Fanatical Support for AWS Product Guide
   **IMPORTANT:** This is a PDF version of the Product Guide, and is intended
   to be used for point-in-time offline reference purposes only. The
   authoritative version of this document lives online at
-  `https://manage.rackspace.com/aws/docs <https://manage.rackspace.com/aws/docs>`_
+  `https://developer.rackspace.com/docs/fanatical-support-aws <https://developer.rackspace.com/docs/fanatical-support-aws>`_
   and will contain the latest updates. |vspace|
 
 This Product Guide is designed to provide a detailed look at how Rackspace
@@ -69,5 +69,6 @@ To sign up, visit
    support/index.rst
    patching/index.rst
    aws-marketplace/index.rst
+   cloud-native-security/index.rst
    managed-infra-as-code/index.rst
    service-blocks/index.rst

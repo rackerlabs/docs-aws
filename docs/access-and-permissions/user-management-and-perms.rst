@@ -40,9 +40,9 @@ them permissions on a per AWS account basis.
 To create and manage users:
 
 1. Log in to the
-   `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
-2. Click your **user name** at the top right to activate the account menu
-3. Select **User Management**
+   `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+2. Click your **user name** at the top right to activate the account menu.
+3. Select **User Management**.
 
 From the **User Management** page you'll have the ability to create new
 users, manage existing users, and assign permissions to users.
@@ -50,13 +50,8 @@ users, manage existing users, and assign permissions to users.
 Identity Federation
 -------------------
 
-.. note:: Identity Federation is available as part of a **public beta**. It
-   is available to all customers, but phone support is not available for
-   federated users. All support requests will need to be submitted via the
-   `Rackspace ticketing portal <https://portal.rackspace.com/tickets>`_.
-
 Rackspace Identity Federation enables you to configure your corporate
-ecurity and identity systems to enable your employees to use their
+security and identity systems to enable your employees to use their
 regular company credentials to authenticate to Rackspace accounts. For more
 information about Identity Federation, see the
 `Rackspace Identity Federation User Guide <https://developer.rackspace.com/docs/rackspace-federation/>`_.
@@ -88,6 +83,11 @@ Users with the **Account Administrator** right have the following privileges:
 * Ability to configure Rackspace account-wide settings including enabling
   multi-factor authentication, configuring session duration, etc.
 * Ability to cancel the Rackspace account
+
+The **Account Administrator** permission does not determine user status
+within CloudHealth. Please see **Account Owner** and the Product
+Permissions section for CloudHealth user status controls.
+
 
 Understanding and Managing Permissions
 --------------------------------------
@@ -149,7 +149,7 @@ Rackspace specific permissions can be set to one of three values:
 Permission Example
 ------------------
 
-You have 2 AWS accounts managed by Rackspace, both at the Aviator service
+You have two AWS accounts managed by Rackspace, both at the Aviator service
 level. They are named **App1-Staging** and **App1-Production**.
 
 You might grant a junior developer working on this application the following
@@ -181,3 +181,40 @@ Product Permissions
   will disable Passport access but Compass and Logbook are still available.
 * ``ViewOnlyAccess`` IAM policy to limit his **AWS Console and API** access
   to view-only.
+
+CloudHealth Permissions
+^^^^^^^^^^^^^^^^^^^^^^^
+
+CloudHealth views are available at a default organization or
+sub-organization level. The default organization is a view of all AWS
+accounts under your Rackspace account. The sub-organization view is only
+the individual AWS accounts for which you have AWS control plane access.
+
+CloudHealth access is given at either a Power User or Standard User
+permission. A Power User has full operational privileges across all data.
+A Standard User can view but not edit or delete data within CloudHealth.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Rackspace Role
+     - CloudHealth User Status
+     - CloudHealth Organization
+   * - Account Owner
+     - Power User
+     - Default Org
+   * - Product Access: Admin
+     - Power User
+     - Default Org
+   * - Product Access: Observer
+     - Standard User
+     - Default Org
+   * - Fanatical Support for AWS: Admin
+     - Power User
+     - Sub-Org
+   * - Fanatical Support for AWS: Observer
+     - Standard User
+     - Sub-Org
+
+
+Please contact your Rackspace Customer Success Manager with any questions about permissions.

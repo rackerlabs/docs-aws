@@ -37,8 +37,8 @@ all changes to your environment are managed with CloudFormation.
 Why use CloudFormation?
 -----------------------
 
-If you are comfortable to work with a strict change management process and
-to give up the ability to make changes via the AWS console, managing your
+If you are comfortable working with a strict change management process and
+giving up the ability to make changes via the AWS console, managing your
 environment using CloudFormation can provide the following benefits:
 
 * Ability to automatically and consistently rebuild or duplicate environments
