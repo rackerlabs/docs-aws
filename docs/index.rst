@@ -69,5 +69,6 @@ To sign up, visit
    support/index.rst
    patching/index.rst
    aws-marketplace/index.rst
+   cloud-native-security/index.rst
    managed-infra-as-code/index.rst
    service-blocks/index.rst

@@ -1,7 +1,7 @@
 .. _cloudhealth:
 .. |CloudHealth|  raw:: html
 
-   
+
 
 ===========
 CloudHealth
@@ -35,8 +35,8 @@ You can access CloudHealth by clicking the CloudHealth link in the
 Permissions
 -----------
 
-CloudHealth provides views of individual AWS accounts for which you have
-AWS control plane access. Users with Account Administrator privileges are
-granted Power User permissions in CloudHealth. Please contact your
-Technical Account Manager with any questions related to your CloudHealth
-and Fanatical Support for AWS Control Panel permissions. 
+For detailed information on CloudHealth permissions, please see
+:ref:`User Management and Permissions <user_management_and_perms>`.
+
+Please contact your Customer Success Manager with any questions related to
+your CloudHealth and Fanatical Support for AWS Control Panel permissions.

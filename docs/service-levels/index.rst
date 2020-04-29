@@ -13,9 +13,18 @@ Navigator and Aviator, which are selected for each AWS account we support.
 * Aviator: "I want Rackspace to operate and manage my AWS environments for
   me or with me."
 
+Navigator and Aviator are now legacy service levels that existing customers
+can maintain on their accounts.
+
+Starting in July 2019, Service Blocks are the standard support offers. Please
+see the :ref:`Service Blocks <service_blocks>` section of the Product
+Guide for further information about these offers.
+
 For details on what is included in each service level, including details on
 levels of support for each AWS service, download our
-`Fanatical Support for AWS Service Overview <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/service_overview.pdf>`_.
+`Fanatical Support for AWS Service Overview - Navigator and Aviator Version <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/service_overview.pdf>`_
+or the
+`Fanatical Support for AWS Service Overview - Service Blocks Version <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/service_overview_service_blocks.pdf>`_.
 
 Features: Tooling and Automation
 --------------------------------
@@ -37,30 +46,23 @@ A curated set of Rackspace developed and best of breed AWS ecosystem tools:
 * Access to
   `AWS Trusted Advisor <https://aws.amazon.com/premiumsupport/trustedadvisor/>`_
 
-  * Service Levels: Navigator and Aviator
+  * Service Levels: Navigator, Aviator, Platform Essentials
   * Features
 
     * Access to all Trusted Advisor checks
 
-* :ref:`Rackspace Compass <compass>`
+* :ref:`CloudHealth <cloudhealth>`
 
-  * Service Levels: Navigator and Aviator
+  * Service Levels: Navigator, Aviator, Platform Essentials
   * Features
 
-    * Best Practices: More than 350 automated best practice checks evaluated
-      against your AWS accounts
-    * Cost Optimization: Billing dashboards, savings reports, cost alerting,
-      and Reserved Instance purchase recommendations
-    * Inventory Management: Cross-account and cross-region resource
-      inventory, per service usage details, resource tagging reports, and more
-    * Security: CloudTrail, Config, VPC and security group analysis,
-      perimeter assessments, and IAM and permission reporting
-    * Utilization: CPU and network heat maps and CloudWatch historical data
-      retention and analysis
+    * Cost and usage visualizations
+    * Savings recommendations
+    * Governance through policies and actions
 
 * :ref:`Rackspace Passport <passport>`
 
-  * Service Levels: Aviator only (customer and Rackspace use)
+  * Service Levels: Aviator, Manage & Operate (customer and Rackspace use)
   * Features
 
     * On-demand provisioning of bastions for secure network access to VPC
@@ -71,7 +73,7 @@ A curated set of Rackspace developed and best of breed AWS ecosystem tools:
 
 * In-Instance Credential Management Service (powered by ScaleFT)
 
-  * Service Levels: Aviator only (customer and Rackspace use)
+  * Service Levels: Aviator, Manage & Operate (customer and Rackspace use)
   * Features
 
     * Automatic certificate authority and SSH key rotation across your fleet
@@ -80,7 +82,7 @@ A curated set of Rackspace developed and best of breed AWS ecosystem tools:
 
 * :ref:`AWS Instance Scheduler <instance_scheduler>`
 
-  * Service Levels: Aviator only
+  * Service Levels: Aviator, Manage & Operate
   * Features
 
     * Deployment, configuration and management of AWS Instance Scheduler
@@ -97,25 +99,26 @@ Fanatical Support to your business 24x7x365. Available via ticket and phone.
 * AWS best practice and architecture consultation from 100% AWS certified
   experts
 
-  * Service Levels: Navigator (standard use cases) and Aviator (customized
-    to your specific application)
+  * Service Levels: Navigator, Platform Essentials (standard use cases) and
+    Aviator, Manage & Operate (customized to your specific application)
 
 * Hands-on management and assistance for all supported AWS services
 
-  * Service Levels: Aviator only
+  * Service Levels: Aviator, Manage & Operate
 
 * EC2 operating system management
 
-  * Service Levels: Aviator only
+  * Service Levels: Aviator, Manage & Operate
   * Features
 
-    * Amazon Linux 2 & Amazon Linux (legacy), Red Hat Enterprise Linux: 6,
-      7 & 8, CentOS: 6, 7 & 8, Ubuntu LTS Versions: 16.04 & 18.04, Windows
+    * Amazon Linux 2 & Amazon Linux (legacy), Red Hat Enterprise Linux:
+      6, 7 & 8, CentOS: 6, 7 & 8, Ubuntu LTS Versions: 16.04 & 18.04, Windows
       Server 2008 R2\*, Windows Server 2012 R2, Windows Server 2016, Windows
       Server 2019.
     * Configuration, Optimization, Patching, Upgrades
 
-  * Prerequisites: The following agents must be installed and working on your EC2 instances in order to be supported by Rackspace
+  * Prerequisites: The following agents must be installed and working on your
+  EC2 instances in order to be supported by Rackspace
 
     * Passport - The ScaleFT server agent allows Rackspace support team to
       access your instances via SSH (Linux) or RDP (Windows)
@@ -125,7 +128,7 @@ Fanatical Support to your business 24x7x365. Available via ticket and phone.
 
 * :ref:`Rackspace Watchman <watchman>`
 
-  * Service Levels: Aviator only
+  * Service Levels: Aviator, Manage & Operate
   * Features
 
     * Rackspace AWS certified engineer response to CloudWatch alarms 24x7x365
@@ -134,11 +137,11 @@ Fanatical Support to your business 24x7x365. Available via ticket and phone.
 
 * Custom CloudFormation template creation
 
-  * Service Levels: Aviator only
+  * Service Levels: Aviator, Architect & Deploy
 
 * Data restoration support (for EC2 and RDS exclusively)
 
-  * Service Levels: Aviator only
+  * Service Levels: Aviator, Manage & Operate
 
 \* Support for Windows Server 2008 R2 is contingent on enabling an
 alternative means of access (beyond ScaleFT) for Rackspace to manage your

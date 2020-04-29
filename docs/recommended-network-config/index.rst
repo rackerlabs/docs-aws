@@ -35,8 +35,11 @@ This includes:
 You can access the template by downloading it from
 `here <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/BaseNetwork.template>`_.
 
-Note: The template will create AWS resources for which you will be charged
-(for example, EC2 NAT gateways).
+.. note::
+
+   The template will create AWS resources for which you will be charged
+   (for example, EC2 NAT gateways).
+
 
 ----
 

@@ -27,7 +27,6 @@ applying a change, the Rackspace Support team will be happy to help.
    change-workflow.rst
    using-github.rst
    using-terraform.rst
-   tf_style.rst
    using-circleci.rst
    deploying-code.rst
    faq.rst

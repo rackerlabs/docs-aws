@@ -1,4 +1,4 @@
-.. _passport:
+.. _passport_v2:
 .. |PassportTM|  raw:: html
 
     Passport&trade;
@@ -7,30 +7,39 @@
 Passport
 ========
 
+.. note::
+   This documentation refers to Passport v2, our newly released tool based on
+   AWS Systems Manager. See :ref:`Passport (Legacy) <passport>` for
+   documentation on our original Passport tool.
+
 The Fanatical Support for AWS offering includes access to our
 |PassportTM| service at the :ref:`Aviator service level <service_levels>`.
 This is the same capability that Rackers use to access your environment.
-Passport manages the provisioning of short-lived, access-limited,
-fully-audited bastion servers within your AWS account's VPC that can either
-be used directly or as a jump host for direct connectivity to other EC2
-instances in the same VPC. Passport solves for both network connectivity
-and authentication into your environment.
+Passport leverages
+`AWS Systems Manager <https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html>`_
+to provision short lived users onto your EC2 instances and provide network
+access into your VPC.
 
-Passport's primary concept is an **Access Request**. Each access request
+Passport v2 offers several improvements over our original Passport tool,
+including:
+
+* User accounts are created on demand and cleaned up after use
+* Public subnets and bastion hosts are no longer required in customer VPCs
+* EC2 instances with multiple Elastic Network Interfaces (ENIs) are now
+  supported
+
+Passport’s primary concept is an **Access Request**. Each access request
 defines who is accessing your account, which specific EC2 instances they are
-accessing, which bastion instance is being used, the duration of the access
-request, and the reason for the access. Access requests default to expiring
-after 55 minutes (in order to optimize for the hourly billing of the bastion
-instances), but can be extended up to 11 hours and 55 minutes. A bastion
-instance will only ever be used by a single user, helping to ensure the
-integrity of the bastion operating system for each subsequent access request.
+accessing, the duration of the access request, and the reason for the
+access. Access requests default to expiring after 1 hour but can be
+extended up to 12 hours.
 
-As an example, a Racker receiving a CloudWatch monitoring alarm for CPU
-utilization on your database server might create an access request
+As an example, a Racker receiving a CloudWatch monitoring alarm for
+CPU utilization on your application server might create an access request
 referencing the alert ticket and granting them access to your active and
 passive database instances. Once troubleshooting and remediation is
-complete, the Racker completes the access request, immediately removing the
-bastion instance and all associated access.
+complete, the Racker completes the access request, immediately removing
+the short-lived user from your instances.
 
 All access request actions, from access request creation through
 expiration, are logged in :ref:`Logbook <logbook>`.
@@ -39,8 +48,8 @@ expiration, are logged in :ref:`Logbook <logbook>`.
 .. toctree::
    :maxdepth: 1
 
-   getting-started.rst
-   overview.rst
-   scaleft.rst
-   advanced-usage.rst
+   installation.rst
+   cli_usage.rst
+   permissions.rst
    architecture.rst
+   passport_v1/index.rst

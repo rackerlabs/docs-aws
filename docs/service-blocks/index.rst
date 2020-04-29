@@ -215,5 +215,78 @@ activities include:
 * Big Data, Serverless, and Container experts
 
 
+Additional Rackspace Service Blocks
+===================================
+
+Rackspace offers additional services that can be layered on top of your
+Fanatical Support for AWS Service Blocks to create a fully managed cloud
+solution for your business needs.
+
+
+Managed Security - Proactive Detection & Response
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+With Rackspace Managed Security – Proactive Detection and Response, our
+security experts defend your business against advanced cyber threats with
+24x7x365 support from our Security Operations Center (SOC). Proactive
+Detection and Response includes:
+
+* 24x7x365 monitoring and detection from security analysts using best-of-breed,
+  curated technology (host-based detection, network detection, and a security
+  analytics platform)
+
+* Proactive cyber hunting to scan for anomalous activity
+
+* Real-time response and remediation of threats with pre-approved actions
+
+* Auto-Discovery and agent deployment of new compute instances with real time
+  agent health status and environment coverage map
+
+* Weekly and monthly reporting to communicate observations, alerts, and action
+
+* Access to the Rackspace security dashboard that shows top vulnerabilities,
+  hunt missions, events, and environment coverage map
+
+
+Managed Security - Compliance Assistance
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+With Compliance Assistance, our Managed Security compliance experts assist
+customers with defining, managing, and validating selected Governance Risk
+and Compliance (GRC) requirements. Compliance Assistance includes:
+
+* Configuration Hardening Monitoring
+
+* Patch Monitoring
+
+* File Integrity Monitoring
+
+* User Access Monitoring
+
+* Monthly and ad hoc compliance reports
+
+
+Application Managed Services
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Your business success is tied to the applications you rely on — from servicing
+customers, to managing supply chains, to getting new products to market.
+Application Managed Services from Rackspace helps optimize your application
+environment, so you can deliver on your service level agreements, free up
+resources and reduce costs. Services include:
+
+* Advanced Configuration and Optimization: System engineers will custom-tailor
+  your applications to fit your individual environment, and optimize
+  performance and cost
+
+* Administration, Monitoring and Maintenance: Application specialists will
+  reduce the burden on your staff by administering, maintaining and
+  continuously monitoring your applications
+
+* Data Services: Data specialists will apply best practices and automated
+  technology to modernize your database footprint and maximize the utility
+  of your data
+
+
 Please talk to your Account Manager if you are interested in learning more
 about the service block offers.
