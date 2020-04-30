@@ -46,10 +46,10 @@ expiration, are logged in :ref:`Logbook <logbook>`.
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    installation.rst
-   cli_usage.rst
+   cli-usage.rst
    permissions.rst
    architecture.rst
    passport_v1/index.rst
