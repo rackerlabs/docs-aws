@@ -46,7 +46,7 @@ expiration, are logged in :ref:`Logbook <logbook>`.
 
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    installation.rst
    cli_usage.rst

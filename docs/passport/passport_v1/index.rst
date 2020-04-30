@@ -36,8 +36,8 @@ are logged in :ref:`Logbook <logbook>`.
 .. toctree::
    :maxdepth: 2
 
-   getting_started.rst
+   getting-started.rst
    overview.rst
-   scaleft_agents_and_tools.rst
-   advanced_usage.rst
+   scaleft.rst
+   advanced-usage.rst
    architecture.rst
