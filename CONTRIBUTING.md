@@ -1,26 +1,11 @@
 # Contributor guidelines
 
-These guidelines provide the general process for maintaining source code for the instructions and templates in the docs-starter-kit repository (repo).
+These guidelines provide the general process for updating the Fanatical Support for AWS Product Guide.
 
-- [Repo description](#repo-description)
 - [Updating and adding content](#updating-and-adding-content)
 - [Using writing guidelines](#using-writing-guidelines)
 - [Submitting your content](#submitting-changes)
 - [Previewing changes](#previewing-changes)
-
-## Repo description
-
-This repo contains instructions and templates for use by those who want
-to create their own documentation repo.
-
--  Content for user guides and API guides  is written in
-   [reStructuredText](http://sphinx-doc.org/rest.html), which is the markup
-   syntax and parser component of [Python Docutils](http://docutils.sourceforge.net/index.html).
--  Content for How-To articles is written in
-   [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-
-For more information about the contents of this repo and how to get started,
-see the [Docs Starter Kit User Guide] (https://pages.github.rackspace.com/IX/docs-starter-kit-user-guide).
 
 ## Updating and adding content
 
@@ -33,7 +18,6 @@ To update existing source files or add new ones, follow the
 * Update source files by using the GitHub editor or any plain text editor.
 * Format RST source files with
   [reStructuredText syntax](http://www.sphinx-doc.org/en/stable/rest.html), and for quick syntax checking, try the [Online reStructuredText editor](http://rst.ninjs.org/).
-* Format Markdown (.md) source files with [Markdown syntax](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 ## Using writing guidelines
 
@@ -44,7 +28,7 @@ section.
 
 ## Submitting changes
 
-When you've completed your changes, submit a PR. Someone on the
+When you've completed your changes, submit a PR and the post a link to the PR in the #docs channel in Slack. Someone on the
 Information Development team will review your PR.
 
 - Minor updates and corrections get a quick review to ensure that content is
