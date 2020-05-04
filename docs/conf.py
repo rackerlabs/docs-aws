@@ -32,7 +32,7 @@ except:
 # -- General configuration ------------------------------------------------
 
 # Exclude content from elastic search index
-deconst_default_unsearchable = True
+# deconst_default_unsearchable = True
 
 # If your documentation needs a minimal Sphinx version, state it here.
 # needs_sphinx = '1.0'
