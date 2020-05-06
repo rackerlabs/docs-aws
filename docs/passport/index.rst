@@ -7,11 +7,6 @@
 Passport
 ========
 
-.. note::
-   This documentation refers to Passport v2, our newly released tool based on
-   AWS Systems Manager. See :ref:`Passport (Legacy) <passport>` for
-   documentation on our original Passport tool.
-
 The Fanatical Support for AWS offering includes access to our
 |PassportTM| service at the :ref:`Aviator service level <service_levels>`.
 This is the same capability that Rackers use to access your environment.
@@ -52,4 +47,4 @@ expiration, are logged in :ref:`Logbook <logbook>`.
    cli-usage.rst
    permissions.rst
    architecture.rst
-   passport_v1/index.rst
+
