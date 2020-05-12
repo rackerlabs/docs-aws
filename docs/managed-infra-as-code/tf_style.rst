@@ -672,68 +672,43 @@ to expose the secret as a data source for further use in Terraform.
 
 **Example aws\_kms\_secrets**
 
-   data "aws_kms_secrets" "example" {
-     secret {
-       # ... potentially other configuration ...
-       name = "master_password"
-       payload = "base64secret=="
+    data "aws_kms_secrets" "example" {
+      secret {
+        # ... potentially other configuration ...
+        name = "master_password"
+        payload = "base64secret=="
 
-       context {
-         resource = "db01"
-         key = "password"
-       }
-     }
+        context {
+          resource = "db01"
+          key = "password"
+        }
+      }
 
-     secret {
-       # ... potentially other configuration ...
-       name = "master_username"
-       payload = "base64secret=="
+      secret {
+        # ... potentially other configuration ...
+        name = "master_username"
+        payload = "base64secret=="
 
-       context {
-         resource = "db01"
-         key = "username"
-       }
-     }
-   }
+        context {
+          resource = "db01"
+          key = "username"
+        }
+      }
+    }
 
-   resource "aws_rds_cluster" "my_database" {
-     # ... other configuration ...
-     master_password = "${data.aws_kms_secrets.example.plaintext["master_password"]}"
-     master_username = "${data.aws_kms_secrets.example.plaintext["master_username"]}"
-   }
+    resource "aws_rds_cluster" "my_database" {
+      # ... other configuration ...
+      master_password = "${data.aws_kms_secrets.example.plaintext["master_password"]}"
+      master_username = "${data.aws_kms_secrets.example.plaintext["master_username"]}"
+    }
 
--  Note the use of context values; these are used as
-   `encryption context key pairs <https://docs.aws.amazon.com/kms/latest/developerguide/encryption-context.html>`__
-   in KMS. These context values can be used by KMS to ensure a specific
-   secret is always accompanied by the same context values (integrity),
-   and may be emitted in CloudTrail logs or included in error messages
-   (debugging).
 
-Appendix
---------
-
-Article History
-^^^^^^^^^^^^^^^
-
-+-------------------+-------------------------------+
-| **Approved on**   | **Activity**                  |
-+===================+===============================+
-| 20 Feb 2019       |  updating content for Draft   |
-+-------------------+-------------------------------+
-|                   |                               |
-+-------------------+-------------------------------+
-|                   |                               |
-+-------------------+-------------------------------+
-
-**Approved by**
-
-+------------+------------------+
-| **Name**   | **Department**   |
-+============+==================+
-|            |                  |
-+------------+------------------+
-|            |                  |
-+------------+------------------+
+Note the use of context values; these are used as
+`encryption context key pairs <https://docs.aws.amazon.com/kms/latest/developerguide/encryption-context.html>`__
+in KMS. These context values can be used by KMS to ensure a specific
+secret is always accompanied by the same context values (integrity),
+and may be emitted in CloudTrail logs or included in error messages
+(debugging).
 
 Reference Resources
 ^^^^^^^^^^^^^^^^^^^
@@ -743,7 +718,7 @@ Reference Resources
 +===============================================================================+================================================================================================================+
 | Fanatical Support for AWS Product Guide                                       |  https://manage.rackspace.com/aws/docs/product-guide/miac/using-terraform.html#general-terraform-style-guide   |
 +-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
-|  `Terraform Best Practices <https://www.terraform-best-practices.com/>`__   |  https://www.terraform-best-practices.com/                                                                     |
+|  `Terraform Best Practices <https://www.terraform-best-practices.com/>`__     |  https://www.terraform-best-practices.com/                                                                     |
 +-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
 |                                                                               |                                                                                                                |
 +-------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+
