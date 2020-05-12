@@ -1,7 +1,4 @@
 .. _cloudhealth:
-.. |CloudHealth|  raw:: html
-
-
 
 ===========
 CloudHealth
