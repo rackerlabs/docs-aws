@@ -71,7 +71,7 @@ A curated set of Rackspace developed and best of breed AWS ecosystem tools:
       Credential Management Service
     * Full logging
 
-* In-Instance Credential Management Service (powered by ScaleFT)
+* In-Instance Credential Management Service
 
   * Service Levels: Aviator, Manage & Operate (customer and Rackspace use)
   * Features
@@ -120,7 +120,7 @@ Fanatical Support to your business 24x7x365. Available via ticket and phone.
   * Prerequisites: The following agents must be installed and working on your
   EC2 instances in order to be supported by Rackspace
 
-    * Passport - The ScaleFT server agent allows Rackspace support team to
+    * Passport - The server agent allows Rackspace support team to
       access your instances via SSH (Linux) or RDP (Windows)
     * SSM - The AWS Systems Manager agent allows Rackspace to manage your EC2
       instances remotely (instance configuration, maintenance of agent
@@ -144,7 +144,7 @@ Fanatical Support to your business 24x7x365. Available via ticket and phone.
   * Service Levels: Aviator, Manage & Operate
 
 \* Support for Windows Server 2008 R2 is contingent on enabling an
-alternative means of access (beyond ScaleFT) for Rackspace to manage your
+alternative means of access for Rackspace to manage your
 instances. Please work with your Support team prior to deploying new
 instances running Windows Server 2008 R2.
 
