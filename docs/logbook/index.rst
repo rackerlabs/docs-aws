@@ -20,11 +20,12 @@ aggregated from a number of different sources:
 * Fanatical Support for AWS shared management system and user interfaces: view
   control panel logins and other actions (such as creating a new AWS account
   or modifying user permissions)
-* Fanatical Support for AWS environment access: any time a Racker or one of
-  your employees accesses your AWS environment by creating an access request
-  and provisioning a temporary bastion, view the specific resources they had
-  access to, the source of their access request, and other associated
-  details throughout the duration of the access request
+* Fanatical Support for AWS environment access: any time a Racker, or one
+  of your employees, accesses your AWS environment by creating a
+  :ref:`Passport access request <passport_v2>`, you can view the specific
+  instances they had access to, the source of their Passport access
+  request, and other associated details throughout the duration of
+  the Passport access request.
 
 The |LogbookTM| section of the
 `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
