@@ -184,3 +184,36 @@ Rackspace and we will escalate to AWS directly, if needed.
   non-immediate tasks, our initial response to your support request submitted
   to us via a ticket will occur within 24 hours at the Aviator and Navigator
   service levels.
+
+Supported Operating Systems
+---------------------------
+
+Fanatical Support for AWS supports the following operating systems (OSs):
+
++-------------------------------------------------+-----------------+
+| Operating System                                | Supported Until |
++=================================================+=================+
+| Amazon Linux 2                                  | June 30, 2023   |
++-------------------------------------------------+-----------------+
+| Red Hat® Enterprise Linux® (RHEL) and CentOS® 7 | June 30, 2024   |
++-------------------------------------------------+-----------------+
+| RHEL and CentOS 8                               | May 2029        |
++-------------------------------------------------+-----------------+
+| Ubuntu 16.04 LTS                                | April 30, 2021  |
++-------------------------------------------------+-----------------+
+| Ubuntu 18.04 LTS                                | April 30, 2023  |
++-------------------------------------------------+-----------------+
+| Ubuntu 20.04 LTS                                | April 30, 2025  |
++-------------------------------------------------+-----------------+
+
+The following OSs are approaching End of Life (EOL) as determined by the OS vendor:
+
++------------------------------+-------------------+
+| Operating System             | EOL Date          |
++==============================+===================+
+| RHEL and CentOS 6            | November 2020     |
++------------------------------+-------------------+
+| Amazon Linux (legacy)        | December 2020     |
++------------------------------+-------------------+
+| Ubuntu 16.04 LTS             | April 2021        |
++------------------------------+-------------------+
