@@ -188,7 +188,7 @@ Rackspace and we will escalate to AWS directly, if needed.
 Supported Operating Systems
 ---------------------------
 
-Fanatical Support for AWS supports the following operating systems (OS):
+Fanatical Support for AWS supports the following operating systems (OSs):
 
 +-------------------------------------------------+-----------------+
 | Operating System                                | Supported Until |
@@ -206,7 +206,7 @@ Fanatical Support for AWS supports the following operating systems (OS):
 | Ubuntu 20.04 LTS                                | April 30, 2025  |
 +-------------------------------------------------+-----------------+
 
-The following OSes are approaching End of Life (EOL) as determined by the OS vendor:
+The following OSs are approaching End of Life (EOL) as determined by the OS vendor:
 
 +------------------------------+-------------------+
 | Operating System             | EOL Date          |
