@@ -52,15 +52,17 @@ Note that transferring an existing AWS account to Rackspace does not count
 against the limit of new AWS accounts you are able to provision via the
 `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
 
+Please note that Reserved Instance and Savings Plan sharing between AWS
+accounts may be disrupted during the account transition process. For details,
+please consult your Rackspace Onboarding Manager or Customer Success Manager.
+
 Minimum Account Requirements
 ----------------------------
 
 In order for an existing AWS account to be transitioned to Rackspace, it
 must meet our minimum account requirements, which include:
 
-* `No access keys exist for the root account <https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#root-password>`_
-* `No EC2 Classic <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-vpc.html>`_
-  in use
+* `No access keys exist for the root user of the AWS account <https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#root-password>`_
 * The account is not consolidated under a payer account or serving as a
   payer account with linked child accounts
 
