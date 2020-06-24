@@ -52,23 +52,9 @@ Note that transferring an existing AWS account to Rackspace does not count
 against the limit of new AWS accounts you are able to provision via the
 `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
 
-For AWS accounts that currently belong to a different AWS organization (i.e. 
-that are linked to another AWS account for consolidated billing purposes), 
-please note that the process for moving AWS accounts between organizations can 
-take more than one day to complete. During this process, Reserved Instances
-and Savings Plans that are normally shared with your AWS account from other
-AWS accounts in the original AWS organization will no longer be shared with
-the AWS account that you are moving to Rackspace unless and until those 
-sharing accounts move into the same AWS organization that your account is 
-moved to. Similarly, if your AWS account was previously sharing these 
-discounts with other AWS accounts in its original AWS organization, that 
-sharing may be disrupted or change in behavior during or after the account 
-transfer process. Although we are happy to raise a request on your behalf, 
-there is no guarantee that Amazon will provide any credit to cover the 
-increased costs that may result. Therefore, we recommend working closely 
-with Rackspace and/or Amazon to plan your account moves in a way that
-maximizes your ability to utilize these discount mechanisms during the 
-transition process.  
+Please note that Reserved Instance and Savings Plan sharing between AWS
+accounts may be disrupted during the account transition process. For details,
+please consult your Rackspace Onboarding Manager or Customer Success Manager.
 
 Minimum Account Requirements
 ----------------------------
