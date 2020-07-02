@@ -6,7 +6,7 @@ Support for AWS Product Guide:
 * https://developer.rackspace.com/docs/fanatical-support-aws/
 
 When you commit changes to the master branch of this repository, the
-[Strider CI/CD build job](https://build.developer.rackspace.com/rackerlabs/docs-aws/)
+OpenShift CI/CD build job
 builds the documentation. Successful builds are deployed to production.
 
 ### Support and feedback
