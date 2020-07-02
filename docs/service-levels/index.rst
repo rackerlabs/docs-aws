@@ -201,7 +201,7 @@ Fanatical Support for AWS supports the following operating systems (OSs):
 +-------------------------------------------------+-----------------+
 | Ubuntu 20.04 LTS                                | April 30, 2025  |
 +-------------------------------------------------+-----------------+
-| Windows Server® 2012 R2\*                       | October 2023    |
+| Windows Server® 2012 R2                         | October 2023    |
 +-------------------------------------------------+-----------------+
 | Windows Server 2016                             | January 2027    |
 +-------------------------------------------------+-----------------+
@@ -209,10 +209,6 @@ Fanatical Support for AWS supports the following operating systems (OSs):
 +-------------------------------------------------+-----------------+
 
 
-\* Support for Windows Server 2008 R2 is contingent on enabling an
-alternative means of access for Rackspace to manage your
-instances. Please work with your Support team prior to deploying new
-instances running Windows Server 2008 R2.
 
 The following OSs are approaching End of Life (EOL) as determined by the OS vendor:
 
