@@ -111,17 +111,15 @@ Fanatical Support to your business 24x7x365. Available via ticket and phone.
   * Service Levels: Aviator, Manage & Operate
   * Features
 
-    * Amazon Linux 2 & Amazon Linux (legacy), Red Hat Enterprise Linux:
-      6, 7 & 8, CentOS: 6, 7 & 8, Ubuntu LTS Versions: 16.04 & 18.04, Windows
-      Server 2008 R2\*, Windows Server 2012 R2, Windows Server 2016, Windows
-      Server 2019.
+    * Supported operating systems are listed in the
+      :ref:`Supported Operating Systems <supported_os>` section
     * Configuration, Optimization, Patching, Upgrades
 
   * Prerequisites: The following agents must be installed and working on your
   EC2 instances in order to be supported by Rackspace
 
     * Passport - The server agent allows Rackspace support team to
-      access your instances via SSH (Linux) or RDP (Windows)
+      access your instances via SSH (Linux®) or RDP (Windows®)
     * SSM - The AWS Systems Manager agent allows Rackspace to manage your EC2
       instances remotely (instance configuration, maintenance of agent
       versions and updates, OS patching, software inventory monitoring)
@@ -143,10 +141,6 @@ Fanatical Support to your business 24x7x365. Available via ticket and phone.
 
   * Service Levels: Aviator, Manage & Operate
 
-\* Support for Windows Server 2008 R2 is contingent on enabling an
-alternative means of access for Rackspace to manage your
-instances. Please work with your Support team prior to deploying new
-instances running Windows Server 2008 R2.
 
 Response Time SLAs
 ------------------
@@ -185,6 +179,8 @@ Rackspace and we will escalate to AWS directly, if needed.
   to us via a ticket will occur within 24 hours at the Aviator and Navigator
   service levels.
 
+.. _supported_os:
+
 Supported Operating Systems
 ---------------------------
 
@@ -199,12 +195,24 @@ Fanatical Support for AWS supports the following operating systems (OSs):
 +-------------------------------------------------+-----------------+
 | RHEL and CentOS 8                               | May 2029        |
 +-------------------------------------------------+-----------------+
-| Ubuntu 16.04 LTS                                | April 30, 2021  |
+| Ubuntu® 16.04 LTS                               | April 30, 2021  |
 +-------------------------------------------------+-----------------+
 | Ubuntu 18.04 LTS                                | April 30, 2023  |
 +-------------------------------------------------+-----------------+
 | Ubuntu 20.04 LTS                                | April 30, 2025  |
 +-------------------------------------------------+-----------------+
+| Windows Server® 2012 R2\*                       | October 2023    |
++-------------------------------------------------+-----------------+
+| Windows Server 2016                             | January 2027    |
++-------------------------------------------------+-----------------+
+| Windows Server 2019                             | January 2029    |
++-------------------------------------------------+-----------------+
+
+
+\* Support for Windows Server 2008 R2 is contingent on enabling an
+alternative means of access for Rackspace to manage your
+instances. Please work with your Support team prior to deploying new
+instances running Windows Server 2008 R2.
 
 The following OSs are approaching End of Life (EOL) as determined by the OS vendor:
 
