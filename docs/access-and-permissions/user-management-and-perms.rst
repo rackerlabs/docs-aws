@@ -74,12 +74,12 @@ Users with the **Account Administrator** right have the following privileges:
 * Ability to add additional AWS accounts for Rackspace to manage
 * Ability to create and delete users on the Rackspace account and manage
   their permissions on a per AWS account basis
+* Ability to make other users Account Administrators
 
 **Account Administrators** do **NOT** have the following permissions:
 
 * Ability to view or modify the Account Owner or other users with the
   Account Administrator permission
-* Ability to make other users Account Administrators
 * Ability to configure Rackspace account-wide settings including enabling
   multi-factor authentication, configuring session duration, etc.
 * Ability to cancel the Rackspace account
@@ -112,6 +112,9 @@ Support for AWS.
   to your Rackspace Account support tickets.  You can prevent users from
   seeing tickets.  You can also allow users to only see tickets, however,
   they will not be able to create tickets.
+* **Rackspace Managed Security** - Helps secure your Rackspace-supported
+  cloud — across AWS, VMware, Microsoft Azure, Microsoft HyperV and 
+  traditional dedicated environments.
 
 2. Product Permissions
 ^^^^^^^^^^^^^^^^^^^^^^
