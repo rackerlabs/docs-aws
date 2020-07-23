@@ -20,11 +20,6 @@ Starting in July 2019, Service Blocks are the standard support offers. Please
 see the :ref:`Service Blocks <service_blocks>` section of the Product
 Guide for further information about these offers.
 
-For details on what is included in each service level, including details on
-levels of support for each AWS service, download our
-`Fanatical Support for AWS Service Overview - Navigator and Aviator Version <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/service_overview.pdf>`_
-or the
-`Fanatical Support for AWS Service Overview - Service Blocks Version <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/service_overview_service_blocks.pdf>`_.
 
 Features: Tooling and Automation
 --------------------------------

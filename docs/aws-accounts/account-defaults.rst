@@ -33,14 +33,8 @@ Fanatical Support.
     EC2 instances to provide access to
     `AWS Systems Manager <https://aws.amazon.com/systems-manager/>`_ and the
     `CloudWatch EC2 Agent <https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html>`_.
-  * Create an IAM role named "rackspace-passport-bastion" with an IAM policy
-    that allows bastion logs to be written to
-    `CloudWatch Logs <https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html>`_.
   * Create an IAM role named "EC2ActionsAccess" for use by CloudWatch alarms
     to trigger actions on instances.
-  * Create an EC2 Instance Profile named
-    "rackspace-passport-bastion-instance-profile" with the
-    "rackspace-passport-bastion" role attached.
 
 * AWS S3 (Simple Storage Service)
 
@@ -66,12 +60,6 @@ Fanatical Support.
   * Configure an SNS topic named "rackspace-cloudtrail" in each region and
     subscribe it to a region-specific Shared Management Services SQS queue
     for use by the :ref:`Rackspace Logbook <logbook>` service
-
-* AWS CloudWatch
-
-  * Create a "rackspace-passport-bastion"
-    `CloudWatch Logs Group <https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogsConcepts.html>`_
-    where logs are shipped for Rackspace operational purposes.
 
 * AWS Config
 
