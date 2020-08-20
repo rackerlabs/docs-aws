@@ -71,7 +71,8 @@ runbook might include:
   or crypto-currency activities)
 * Customer escalation process (who to contact and when)
 * Any actions Rackspace can perform as part of remediation without explicit
-  approval (e.g. isolate compromised instances, invalidate compromised credentials, patch vulnerabilities)
+  approval (e.g. isolate compromised instances, invalidate compromised
+  credentials, patch vulnerabilities)
 * Any known IP whitelists or threat lists
 
 Monitoring
@@ -148,6 +149,18 @@ by Rackspace and the customer. When the current setting does not generate too
 many findings, we can reduce the minimum severity level and start responding
 to findings with a lower severity. Likewise, if the current setting is
 generating too many findings, we can increase the minimum severity level.
+
+From time to time, customers might want Rackspace to investigate a finding
+that is below the defined minimum severity level. Such functionality is
+available directly in the Security Hub user interface of the AWS console
+on the master account. Select a finding and choose
+**Send to Rackspace** in the **Actions** drop-down menu, the finding is
+sent to the Rackspace SIEM and investigated by a specialist. Standard
+charges apply for findings sent to Rackspace using this method. In
+order to protect customers from unintended over-charges, the
+**Send to Rackspace** action supports single findings only. In order to
+send multiple findings to Rackspace, customers should repeat the
+process for each finding individually.
 
 Billing
 -------
