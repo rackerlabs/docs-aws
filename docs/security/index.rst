@@ -47,7 +47,7 @@ AWS Account Best Practices
 
 As outlined in the :ref:`AWS Accounts section <account_defaults>` we always
 enable AWS CloudTrail and AWS Config in all regions for each new account. We
-also have checks within :ref:`Rackspace Compass <compass>` that ensure these
+also have checks within :ref:`CloudHealth <cloudhealth>` that ensure these
 remain enabled and configured per our best practices.
 
 Activity Logging

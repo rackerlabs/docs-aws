@@ -26,8 +26,8 @@ Fanatical Support.
     * Not one of the previous 24 passwords used
 
   * Create an IAM role named "AWSConfig" for use by the AWS Config service
-  * Create an IAM role named "RackspaceTools" to allow us to provide you with
-    :ref:`Compass <compass>`
+  * Create an IAM role named "CloudHealth-Role" to allow us to provide you
+    with :ref:`CloudHealth <cloudhealth>`
   * Create an IAM role named "RackspaceDefaultEC2Role" along with an attached
     IAM policy named "RackspaceDefaultEC2Policy" which can be attached to
     EC2 instances to provide access to

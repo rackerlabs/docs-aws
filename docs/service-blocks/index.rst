@@ -38,8 +38,8 @@ services are built on top. Platform Essentials includes:
 * Industry leading tooling that provides you better insight into your AWS
   environment:
 
-  * `Compass <https://manage.rackspace.com/aws/docs/product-guide/compass.html>`_:
-    AWS inventory, best practice checks, cost analytics, and cost optimization
+  * :ref:`Cloudhealth <cloudhealth>`: AWS inventory, best practice checks, cost
+    analytics, and cost optimization
 
   * `Waypoint <https://manage.rackspace.com/aws/docs/product-guide/waypoint.html>`_:
     Rackspace account summary to track spend and critical information
