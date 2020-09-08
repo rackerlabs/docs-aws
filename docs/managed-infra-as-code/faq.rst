@@ -36,7 +36,7 @@ the same repository. In order to protect against the exfiltration of
 build data, our CI system won't build from a fork. Please push your
 forked branch to a branch on the original repository.
 
-**I'm seeing authentication failures in CloudTrail and in Compass when
+**I'm seeing authentication failures in CloudTrail when
 Terraform runs. What are these and what can I do about them?**
 
 Unfortunately, the ``DescribeVpcClassicLinkDnsSupport`` API call, used by

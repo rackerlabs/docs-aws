@@ -4,7 +4,7 @@
 Billing
 =======
 
-When you signup for Fanatical Support for AWS, Rackspace establishes
+When you sign up for Fanatical Support for AWS, Rackspace establishes
 one or more AWS accounts for you and becomes your reseller of AWS
 services. This means that all billing of both infrastructure and
 management fees is provided through a consolidated Rackspace bill, and
@@ -29,7 +29,7 @@ Customers that choose the AUD billing option should be aware of the following:
   credit card, 2% for customers billed via an invoice. This will be added to
   the spot exchange rate.
 * The exchange rate will be displayed on the invoice.
-* Compass, Waypoint, and Usage Details will show pre-converted costs in
+* CloudHealth, Waypoint, and Usage Details will show pre-converted costs in
   USD. The invoice will show costs in AUD.
 * It is not possible to change the billing currency on existing accounts.
 

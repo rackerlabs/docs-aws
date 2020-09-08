@@ -113,7 +113,7 @@ Support for AWS.
   seeing tickets.  You can also allow users to only see tickets, however,
   they will not be able to create tickets.
 * **Rackspace Managed Security** - Helps secure your Rackspace-supported
-  cloud — across AWS, VMware, Microsoft Azure, Microsoft HyperV and 
+  cloud — across AWS, VMware, Microsoft Azure, Microsoft HyperV and
   traditional dedicated environments.
 
 2. Product Permissions
@@ -132,7 +132,7 @@ There are three Fanatical Support for AWS permissions:
   will have within the
   `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
   This permission applies to **all** Rackspace features including Passport,
-  Logbook, Compass, and Usage.  This permission is configured on a per
+  Logbook, CloudHealth, and Usage.  This permission is configured on a per
   AWS account basis.
 * **AWS Console and APIs** - Controls what access, if any, the user will
   have when federating to the AWS Console or retrieving AWS temporary API
@@ -181,7 +181,7 @@ Product Permissions
 
 * ``Observer`` access to **Fanatical Support for AWS** so he can view but
   not make changes to the production AWS Account via Rackspace tooling. This
-  will disable Passport access but Compass and Logbook are still available.
+  will disable Passport access but CloudHealth and Logbook are still available.
 * ``ViewOnlyAccess`` IAM policy to limit his **AWS Console and API** access
   to view-only.
 
