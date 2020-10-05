@@ -120,10 +120,10 @@ Fanatical Support to your business 24x7x365. Available via ticket and phone.
       versions and updates, OS patching, software inventory monitoring)
 
       * IAM role "RackspaceMinimumSSMRole" with attached IAM policy
-        "AmazonSSMManagedInstanceCore" will be attached to EC2 instance(s)
+        "AmazonSSMManagedInstanceCore" will be attached to EC2 instances
         that are provisioned without a role/instance profile attached.
-      * IAM policy "AmazonSSMManagedInstanceCore" will be applied to EC2-attached instance roles
-        in which the policy is absent.
+      * IAM policy "AmazonSSMManagedInstanceCore" will be applied to EC2-attached
+        instance roles in which the policy is absent.
       * Security group and network policies must allow access to SSM endpoints.
 
 * :ref:`Rackspace Watchman <watchman>`
