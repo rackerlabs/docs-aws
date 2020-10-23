@@ -57,8 +57,11 @@ following environment variables:
 
 As mentioned in :ref:`Using Terraform <using_terraform>`, we recommend
 using an existing build's output to find out your state bucket name. You
-may also copy and paste the final commands from those builds, bypassing
-the need to set some environment variables.
+can find the state bucket name in the `terraform_all_outputs.log` file
+under the Artifacts tab of the plan stage under the most recent build.
+
+You may also copy and paste the final commands from those builds,
+bypassing the need to set some environment variables.
 
 Workflow Execution
 ------------------
