@@ -47,4 +47,5 @@ expiration, are logged in :ref:`Logbook <logbook>`.
    cli-usage.rst
    permissions.rst
    architecture.rst
+   changelog.rst
 
