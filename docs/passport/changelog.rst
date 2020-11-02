@@ -6,6 +6,6 @@ Changelog
 2020-10-02
 ----------
 
-SHA: `TODO`
+Version: `TODO`
 
 - Coming soon
