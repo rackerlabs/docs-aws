@@ -6,7 +6,7 @@ Changelog
 2020-11-03
 ----------
 
-Version: `TODO`
+Version: `5bba0a79`
 
 Support for SHA-2 Certificate Signing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
