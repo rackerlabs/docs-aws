@@ -13,9 +13,7 @@ services - all backed by AWS certified engineers and architects.
 
 Our offers allow you to customize your experience with the ability to choose
 the service options to match your needs. These offers are described
-below. For additional detail about what is included in each service block,
-download our
-`Fanatical Support for AWS with Rackspace Service Blocks Service Overview <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/service_overview_service_blocks.pdf>`_.
+below.
 
 
 Platform Essentials
