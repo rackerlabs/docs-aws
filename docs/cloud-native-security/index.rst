@@ -4,14 +4,10 @@
 Cloud Native Security
 =====================
 
-AWS is constantly expanding its portfolio of native security products. Thanks
-to its more holistic access to backend data and resources, Amazon is able to
-offer security features that 3rd party tools are unable to provide. Rackspace
-is expanding its managed security services to provide support for native
-AWS security products.
+AWS is constantly expanding its portfolio of native security products. Thanks to its more holistic access to backend data and resources, Amazon can offer security features that third-party tools cannot provide. Rackspace is expanding its managed security services to provide SOC-as-a-Service for native AWS security products.
 
 AWS customers who want to improve their security posture by using products
-like AWS `Security Hub <https://aws.amazon.com/security-hub/>`_,
+like `AWS Security Hub <https://aws.amazon.com/security-hub/>`_,
 `Amazon GuardDuty <https://aws.amazon.com/guardduty/>`_ and
 `IAM Access Analyzer <https://aws.amazon.com/iam/features/analyze-access/>`_
 but do not have the expertise or the resources to invest in a 24x7x365 Security
@@ -34,10 +30,10 @@ functions.
 **AWS Security Hub** provides the aggregation point for GuardDuty and IAM
 Access Analyzer findings across multiple AWS accounts, acts as the conduit
 to Rackspace systems, and serves as a single pane of glass for all native
-security services which emit findings. It also provides compliance standard
+security services which generate findings. It also provides security standard
 checks against industry best practices (e.g. CIS AWS Foundations). Security
 Hub will be enabled for all Cloud Native Security customers, but the
-compliance standards feature will be optional.
+security standards feature is optional.
 
 This Service Block requires Security Hub, but the other native security
 products are optional and can be disabled by creating a ticket with Rackspace.
@@ -126,76 +122,48 @@ include: review of the customer’s runbook, summary of findings and
 remediations, compliance status, review of reoccurring findings, review of
 IP lists.
 
-Minimum Severity Level
-----------------------
+Findings and Events
+-------------------
 
-Every security finding processed by Security Hub includes an associated
-normalized severity level – Critical, High, Medium, Low, Informational.
+Native security products produce findings (rather than raw data points). Every security finding aggregated by Security Hub includes an associated normalized severity level – Critical, High, Medium, Low, Informational.
 
-In order to give customers some control over costs (which have a direct
-correlation with the amount of findings Rackspace responds to) and to help
-with prioritization, we will define a minimum severity level for each
-customer. Rackspace will only respond to findings that are at or above the
-defined minimum severity level. Findings with lower severity level will not
-be processed by Rackspace and the customer won’t be charged for those. The
-minimum severity level will be agreed upon between the customer and Rackspace.
+Findings that are at or above the defined minimum severity level are sent to Rackspace SIEM, where they go through correlation rules and transformed into events. Every event includes one or more correlated findings. Rackspace security specialists respond to these events.
 
-Initial selection of the minimum severity level for Rackspace response can
-either be based on a review of the native security products in the
-customer’s environment (if they are already enabled) or simply be set to the
-highest severity level (i.e. Critical/High) to start with. As part of the
-regular monthly account reviews, the minimum severity level will be reviewed
-by Rackspace and the customer. When the current setting does not generate too
-many findings, we can reduce the minimum severity level and start responding
-to findings with a lower severity. Likewise, if the current setting is
-generating too many findings, we can increase the minimum severity level.
-
-From time to time, customers might want Rackspace to investigate a finding
-that is below the defined minimum severity level. Such functionality is
-available directly in the Security Hub user interface of the AWS console
-on the master account. Select a finding and choose
-**Send to Rackspace** in the **Actions** drop-down menu, the finding is
-sent to the Rackspace SIEM and investigated by a specialist. Standard
-charges apply for findings sent to Rackspace using this method. In
-order to protect customers from unintended over-charges, the
-**Send to Rackspace** action supports single findings only. In order to
-send multiple findings to Rackspace, customers should repeat the
-process for each finding individually.
+From time to time, customers might want Rackspace to investigate a finding that is below the defined minimum severity level. Such functionality is available directly in the Security Hub user interface of the AWS console on the master account. Selecting a finding and choosing **Send to Rackspace** in the **Actions** drop-down menu sends the finding to the Rackspace SIEM to be investigated by a specialist. Standard charges apply for findings sent to Rackspace using this method for customers who opted for the per-event billing model. **Note:** The **Send to Rackspace** action supports single findings only. To send multiple findings to Rackspace, customers should repeat the process for each finding individually.
 
 Billing
 -------
 
-Cloud Native Security has a utility billing model. The monthly charge for the
-service is calculated as the product of the number of events multiplied by
-the cost per event, or the minimum monthly fee, whichever is greater.
+Cloud Native Security service fees do not include the cost of the native security products themselves. The cost of the native products as well as the costs of the infrastructure supporting the integration with the Rackspace SIEM are included in the AWS infrastructure charges portion of the customer's Rackspace bill.
 
-Native security products produce findings. Findings that are at or above the
-defined minimum severity level are sent to Rackspace SIEM, where they go
-through correlation rules and transformed into events. Every event includes one
-or more correlated findings. Rackspace security specialists will respond to
-these events. The per-event fee will apply to events (SIEM-correlated
-findings). For example, if the native security products generate five findings
-that are delivered to the SIEM and, after correlation, the SIEM generates two
-events (one for two related findings and one for three related findings), the
-customer will be charged for two events only.
+Initial deployment and configuration are charged as a one-time onboarding fee.
 
-Cloud Native Security service fees do not include the cost of the native
-security products themselves. The cost of the native products as well as the
-costs of supporting infrastructure components that are required to integrate
-the native products with the Rackspace SIEM are included in the AWS
-infrastructure charges portion of the customer's Rackspace bill.
+Customers can choose between 2 billing models for Cloud Native Security – percentage of AWS infrastructure billing model or per-event billing model.
 
-Initial deployment and configuration will be charged as a one-time
-onboarding fee.
+Percentage of AWS infrastructure billing model
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Customers that opt for this billing model are charged a set percentage of their total AWS infrastructure costs on accounts that are in scope for Cloud Native Security. Charges are based on usage of all AWS services and marketplace fees on accounts in scope for Cloud Native Security.
+
+To provide valuable service and to help with prioritization, Rackspace defined a minimum severity level for each native AWS security product (source of findings). Rackspace ingests, and responds to, only findings that are at or above the defined minimum severity level for each product. Findings with severities below this threshold are not processed by Rackspace. The minimum severity levels for each product are defined as:
+
+* IAM Access Analyzer – **LOW**
+* Amazon GuardDuty – **MEDIUM**
+* AWS Security Hub (Security Standards) – **HIGH**
+
+Per-event billing model
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Customers that opt for this billing model are charged a set fee for every security event Rackspace responds to. The monthly charge for the service is calculated as the product of the number of events multiplied by the cost per event, or the minimum monthly fee, whichever is greater.
+
+The per-event fee applies to events (SIEM-correlated findings). For example, if the native security products generate five findings that are delivered to the SIEM and, after correlation, the SIEM generates two events (one for two related findings and one for three related findings), the customer is charged for two events only.
+
+To give customers some control over costs (which have a direct correlation with the amount of findings Rackspace responds to) and to help with prioritization, we define a minimum severity level for each customer. Rackspace ingests, and responds to, only findings that are at or above the defined minimum severity level. Findings with lower severity level are not processed by Rackspace and the customer is not charged for those. The minimum severity level will be agreed upon between the customer and Rackspace.
+
+Initial selection of the minimum severity level for Rackspace response can either be based on a review of the native security products in the customer’s environment (if they are already enabled) or simply be set to the highest severity level (that is, ``Critical`` or ``High``) to start with. As part of the regular monthly account reviews, Rackspace and the customer review the minimum severity level. When the current setting does not generate too many findings, we can reduce the minimum severity level and start responding to findings with a lower severity. Likewise, if the current setting is generating too many findings, we can increase the minimum severity level.
 
 Additional Services
 -------------------
 
-Cloud Native Security (as the name suggests) provides managed security services
-using native AWS security products. Customers interested in improving their
-security posture over and above what is possible from the Cloud Native Security
-Service Block alone can purchase the
-`Rackspace Proactive Detection and Response <https://www.rackspace.com/managed-security-services>`_
-service block. Proactive Detection and Response includes all the capabilities
-of Cloud Native Security, plus additional 3rd party products, agent-based OS
-level threat detection, threat hunting and threat intelligence.
+Cloud Native Security provides SOC-as-a-Service for native AWS security products. Customers interested in improving their security posture over and above what is possible from the Cloud Native Security Service Block alone can purchase `add-on services <https://www.rackspace.com/security>`_ for agent-based OS-level threat detection, threat hunting, and threat intelligence.
+
