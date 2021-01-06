@@ -1,0 +1,17 @@
+
+[build.environment]
+  HUGO_VERSION = "0.77.0"
+  NPM_VERSION = "6.14.8"
+  NODE_VERSION = "12.16.3"
+
+[build]
+  publish = "build/html"
+  command = "npm run build"
+
+[context.production]
+  publish = "build/html"
+  command = "npm run build"
+
+[context.deploy-preview]
+  publish = "build/html"
+  command = "npm run build"
