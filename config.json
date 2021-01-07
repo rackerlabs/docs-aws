@@ -1,6 +1,6 @@
 {
     "index_name": "test_PRODUCT_DOCS",
-    "start_urls": ["https://docs.rackspace.com/docs/portal-onboarding-guide/"],
+    "start_urls": ["https://docs.rackspace.com/docs/"],
     "selectors": {
       "lvl0": "header",
       "title": "header",
