@@ -14,3 +14,15 @@
 [context.deploy-preview]
   publish = "docs/_build/html"
   command = "npm run build"
+
+[[redirects]]
+  from = "/"
+  to = "/docs/fanatical-support-aws/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/*"
+  to = "/docs/fanatical-support-aws/:splat"
+  status = 301
+  force = false
