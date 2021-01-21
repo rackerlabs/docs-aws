@@ -43,3 +43,5 @@ node_modules
 Gemfile.lock
 .env
 Pipfile.lock
+docs/_build/
+docs/build

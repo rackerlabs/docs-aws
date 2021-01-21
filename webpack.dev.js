@@ -1,8 +1,7 @@
 const path = require("path");
 const merge = require("webpack-merge");
 const exec = require("child_process").exec;
-const WatchPlugin = require("webpack-watch-files-plugin").default;
-const ShellPlugin = require("webpack-shell-plugin");
+const ShellPlugin = require("webpack-shell-plugin-next");
 const common = require("./webpack.common.js");
 
 
@@ -10,7 +9,7 @@ module.exports = merge(common, {
   mode: "development",
   watch: true,
   devServer: {
-    contentBase: "build/html",
+    contentBase: "docs/_build/html",
     port: 1919,
     open: false,
     hot: false,
@@ -22,11 +21,8 @@ module.exports = merge(common, {
     }
   },
   plugins: [
-    new WatchPlugin({
-      files: ["./**/*.rst", "./**/*.py"]
-    }),
     new ShellPlugin({
-      onBuildStart: ["make html"],
+      onBuildStart: ["cd docs && make html && cd .."],
     })
   ]
 });

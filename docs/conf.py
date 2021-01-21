@@ -1,9 +1,27 @@
 
+# -*- coding: utf-8 -*-
+"""
+Fanatical Support for AWS documentation build configuration file.
+This file is execfile()d with the current directory set to its
+containing dir.
+Note that not all possible configuration values are present.
+All configuration values have a default; values that are commented out
+serve to show the default.
+"""
 
 import sys
 from datetime import datetime
 from os import path
 
+try:
+    import sphinx_rtd_theme
+except ImportError:
+    sphinx_rtd_theme = None
+
+try:
+    from sphinxcontrib import spelling
+except:
+    spelling = None
 # If your extensions are in another directory, add it here. If the directory
 # is relative to the documentation root, use os.path.abspath to make it
 # absolute, like shown here.
@@ -22,7 +40,10 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.viewcode'
+    'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages',
+    'sphinx.ext.ifconfig',
+    'sphinx.ext.todo'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -56,7 +77,7 @@ language = 'en'
 # non-false value, then it is used:
 #today = ''
 # Else, today_fmt is used as the format for a strftime call.
-#today_fmt = '%B %d, %Y'
+today_fmt = '%B %d, %Y'
 
 # List of documents that shouldn't be included in the build.
 #unused_docs = []
@@ -68,7 +89,7 @@ rst_epilog = """
 .. |product name| replace:: Fanatical Support for AWS
 """
 
-exclude_patterns = ['build']
+exclude_patterns = ['_build', 'samples', 'README.rst']
 
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
@@ -147,7 +168,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = "Fanatical Support for AWS Product Guide"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -232,6 +253,8 @@ htmlhelp_basename = 'Rackspace Technology Service Blocks'
 # If false, no module index is generated.
 #latex_use_modindex = True
 
+# If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
+html_show_copyright = True
 
 # Options for the linkcheck builder
 # ---------------------------------
@@ -281,6 +304,15 @@ coverage_ignore_pyobjects = [
 
 ]
 
+# SCVersioning.
+#scv_banner_greatest_tag = True
+scv_grm_exclude = ('.gitignore', '.nojekyll', 'README.rst')
+scv_show_banner = True
+#scv_banner_recent_tag = True
+svc_banner_main_ref = 'master'
+scv_sort = ('semver', 'time')
+scv_root_ref = 'master'
+svc_priority = 'branches'
 
 # Options for the InterSphinx extension
 # -------------------------------------

@@ -37,7 +37,7 @@
 
   {# FAVICON #}
   {% if favicon %}
-    <link rel="shortcut icon" href="/_static/favicon.ico"/>
+  <link rel="shortcut icon" href="https://solution-docs-boilerplate.netlify.app/_static/favicons/favicon.ico"/>
   {% endif %}
 
   {# CANONICAL URL (deprecated) #}
@@ -49,10 +49,7 @@
   {%- if pageurl %}
     <link rel="canonical" href="{{ pageurl|e }}" />
   {%- endif %}
-  <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/instantsearch.css@7/themes/algolia-min.css"
-    />
+  <link rel="stylesheet" href="https://solution-docs-boilerplate.netlify.app/bundle.css"/>
   {# JAVASCRIPTS #}
   {%- block scripts %}
   <!--[if lt IE 9]>
@@ -219,6 +216,6 @@
       SphinxRtdTheme.Navigation.enable({{ 'true' if theme_sticky_navigation|tobool else 'false' }});
   });
 </script>
-<script type="text/javascript" src="/bundle.js"></script>
+<script type="text/javascript" src="https://solution-docs-boilerplate.netlify.app/bundle.js"></script>
 </body>
 </html>

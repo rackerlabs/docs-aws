@@ -1,8 +1,8 @@
 :orphan:
 
-======================================
-fanatical Support for AWS
-======================================
+=================================================
+Rackspace Fanatical Support for AWS Product Guide
+=================================================
 
 This repository contains the source files that generate the Rackspace Fanatical
 Support for AWS Product Guide:
