@@ -1,9 +1,0 @@
-{
-    "index_name": "test_PRODUCT_DOCS",
-    "start_urls": ["https://docs.rackspace.com/docs/"],
-    "selectors": {
-      "lvl0": "header",
-      "title": "header",
-      "content": "p, ul, ol, div, section"
-    }
-}
