@@ -1,15 +1,16 @@
+
 [build.environment]
   NPM_VERSION = "6.14.8"
   NODE_VERSION = "12.16.3"
 
 [build]
-  publish = "docs/_build/html"
-  command = "cd docs && make clean html && cd .."
+  publish = "docs/_build/dirhtml"
+  command = "cd docs && make clean dirhtml && cd .."
 
 [context.production]
-  publish = "docs/_build/html"
-  command = "cd docs && make clean html && cd .."
+  publish = "docs/_build/dirhtml"
+  command = "cd docs && make clean dirhtml && cd .."
 
 [context.deploy-preview]
-  publish = "docs/_build/html"
-  command = "cd docs && make clean html && cd .."
+  publish = "docs/_build/dirhtml"
+  command = "cd docs && make clean dirhtml && cd .."

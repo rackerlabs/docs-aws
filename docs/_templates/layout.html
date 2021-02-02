@@ -34,7 +34,7 @@
   {%- for cssfile in extra_css_files %}
     <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
   {%- endfor %}
-
+  <link rel="stylesheet" href="https://solution-docs-boilerplate.netlify.app/bundle.css"/>
   {# FAVICON #}
   {% if favicon %}
   <link rel="shortcut icon" href="https://solution-docs-boilerplate.netlify.app/_static/favicons/favicon.ico"/>
@@ -49,7 +49,6 @@
   {%- if pageurl %}
     <link rel="canonical" href="{{ pageurl|e }}" />
   {%- endif %}
-  <link rel="stylesheet" href="https://solution-docs-boilerplate.netlify.app/bundle.css"/>
   {# JAVASCRIPTS #}
   {%- block scripts %}
   <!--[if lt IE 9]>
@@ -127,29 +126,21 @@
     <div class="row">
      {% include "search-modal.html" %}
     {# SIDE NAV, TOGGLES ON MOBILE #}
-    <div class="col-sm-12 col-md-4 col-lg-4">
+    <div class="col-sm-12 col-md-5 col-lg-3">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
 
         {% block navigation %}
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          <a href="https://github.com/rackerlabs/docs-aws/issues" target="_blank" class="github-link">
+          <a href="https://github.com/rackerlabs/docs-portal-onboarding-guide/issues" target="_blank" class="github-link">
             <span class="icon fa fa-github"></span>
             <span class="link-text">Submit an issue</span>
           </a>
           {% block menu %}
-          {#
-            The singlehtml builder doesn't handle this toctree call when the
-            toctree is empty. Skip building this for now.
-          #}
-          {% if 'singlehtml' not in builder %}
-            {% set global_toc = toctree(maxdepth=theme_navigation_depth|int,
-                                        collapse=theme_collapse_navigation|tobool,
-                                        includehidden=theme_includehidden|tobool,
-                                        titles_only=theme_titles_only|tobool) %}
-          {% endif %}
-          {% if global_toc %}
-            {{ global_toc }}
+          {% set toctree = toctree(maxdepth=4, collapse=theme_collapse_navigation, includehidden=True) %}
+    
+          {% if toctree %}
+            {{ toctree }}
           {% else %}
             <!-- Local TOC -->
             <div class="local-toc">{{ toc }}</div>
@@ -162,7 +153,7 @@
   </div>
 
 
-<div class="col-sm-12 col-md-8 col-lg-8">
+<div class="col-sm-12 col-md-7 col-lg-9">
       <div class="wy-nav-content">
       {%- block content %}
         {% if theme_style_external_links|tobool %}
@@ -183,22 +174,6 @@
           </div>
           {%- endblock %}
         </div>
-        {%- if (theme_prev_next_buttons_location == 'bottom' or theme_prev_next_buttons_location == 'both') and (next or prev) %}
-        <div class="rst-footer-buttons row justify-content-between" role="navigation" aria-label="footer navigation">
-          {%- if prev %}
-          <div class="prev col-sm-12 col-md-6 col-lg-6 float-left">
-          <span class="label" aria-hidden="true">Previous</span>
-          <a href="{{ prev.link|e }}" title="{{ prev.title|striptags|e }}" accesskey="p" rel="prev">{{ prev.title|striptags|e }}</a>
-          </div>
-          {%- endif %}
-          {%- if next %}
-          <div class="next col-sm-12 col-md-6 col-lg-6 float-right">
-            <span class="label" aria-hidden="true">Next</span>
-            <a href="{{ next.link|e }}" title="{{ next.title|striptags|e }}" accesskey="n" rel="next">{{ next.title|striptags|e }}</a>
-          </div>
-          {%- endif %}
-        </div>
-      {%- endif %}
       {%- endblock %}
       </div>
   
@@ -209,6 +184,22 @@
       </div>
       </div>
     </div>
+    {%- if (theme_prev_next_buttons_location == 'bottom' or theme_prev_next_buttons_location == 'both') and (next or prev) %}
+    <div class="rst-footer-buttons row justify-content-between" role="navigation" aria-label="footer navigation">
+      <div class="prev col-sm-12 col-md-6 col-lg-6 float-left">
+      {%- if prev %}
+      <span class="label" aria-hidden="true">Previous</span>
+      <a href="{{ prev.link|e }}" title="{{ prev.title|striptags|e }}" accesskey="p" rel="prev">{{ prev.title|striptags|e }}</a>
+      {%- endif %}
+      </div>
+      <div class="next col-sm-12 col-md-6 col-lg-6 float-right">
+        {%- if next %}
+        <span class="label" aria-hidden="true">Next</span>
+        <a href="{{ next.link|e }}" title="{{ next.title|striptags|e }}" accesskey="n" rel="next">{{ next.title|striptags|e }}</a>
+        {%- endif %}
+      </div>
+    </div>
+  {%- endif %}
     {% include "footer.html" %}
 </div>
 <script type="text/javascript">
