@@ -55,7 +55,7 @@ A curated set of Rackspace developed and best of breed AWS ecosystem tools:
     * Savings recommendations
     * Governance through policies and actions
 
-* :ref:`Rackspace Passport <passport>`
+* :ref:`Rackspace Passport <passport_v2>`
 
   * Service Levels: Aviator, Manage & Operate (customer and Rackspace use)
   * Features

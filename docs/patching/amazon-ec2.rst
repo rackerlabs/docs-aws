@@ -37,7 +37,7 @@ be divided into two categories. The following decision diagram provides an
 overview of categorizing your EC2 instances, and simplified steps for
 patching instances in both categories:
 
-.. image:: ../images/patching_ec2_simple.png
+.. image:: /_static/img/patching_ec2_simple.png
    :width: 100%
 
 #. Standalone instances (not in an Auto Scaling Group)
@@ -114,7 +114,7 @@ first - the majority of instances will follow one of two simplified paths
 in red. Processes that are automatable with the SSM documents are shaded in
 purple:
 
-.. image:: ../images/patching_ec2.png
+.. image:: /_static/img/patching_ec2.png
    :width: 100%
 
 (Click through for a larger version of this or any other image)
@@ -173,7 +173,7 @@ Systems Manager API
    * Documentation on installing the SSM agent can be
      `found in the AWS Systems Manager User Guide <https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html>`_
 
-.. image:: ../images/patching_ec2_troubleshootssm.png
+.. image:: /_static/img/patching_ec2_troubleshootssm.png
    :width: 100%
 
 If you need to troubleshoot further, or manually resolve either issue,
@@ -286,7 +286,7 @@ an existing AMI or from an existing instance. For examples, please see the
 :ref:`Rackspace SSM documents <patching_ec2_meltdownspectre>` targeting AMI
 generation for Meltdown/Spectre remediation.
 
-.. image:: ../images/patching_ec2_generateami.png
+.. image:: /_static/img/patching_ec2_generateami.png
    :width: 100%
 
 If for an reason you cannot use the Rackspace-authored SSM documents, below
@@ -356,7 +356,7 @@ template does not contain a RollingUpdate ``UpdatePolicy`` for the ASG - then
 you will need to perform a manual rolling replacement of the instances in the
 ASG. This process is illustrated using the diagram below:
 
-.. image:: ../images/patching_ec2_rollingreplacement.png
+.. image:: /_static/img/patching_ec2_rollingreplacement.png
    :width: 100%
 
 Alternatively, you may wish to update the CloudFormation stack template to

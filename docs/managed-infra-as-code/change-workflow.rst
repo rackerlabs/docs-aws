@@ -4,7 +4,7 @@
 Change Workflow
 ===============
 
-.. image:: ../images/change-flow-overview.png
+.. image:: /_static/img/change-flow-overview.png
 
 Initiating a change
 -------------------

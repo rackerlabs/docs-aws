@@ -26,7 +26,7 @@ that is used for customer users, and it can optionally be connected via SAML
 to an on-premise identity store via Rackspace Identity Federation. Racker
 permissions are stored in Rackspace's internal identity store.
 
-.. image:: ../images/passport-v2-architecture.png
+.. image:: /_static/img/passport-v2-architecture.png
 
 
 1. **User creates an access request via Passport.** The user specifies

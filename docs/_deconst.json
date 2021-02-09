@@ -1,8 +1,8 @@
 {
-  "contentIDBase": "https://github.com/rackerlabs/docs-aws/",
-  "githubUrl": "https://github.com/rackerlabs/docs-aws/",
-  "githubBranch": "master",
-  "meta": {
-    "preferGithubIssues": true
+    "contentIDBase": "https://github.com/rackerlabs/docs-aws/",
+    "githubUrl": "https://github.com/rackerlabs/docs-aws/",
+    "githubBranch": "master",
+    "meta": {
+      "preferGithubIssues": true
+    }
   }
-}

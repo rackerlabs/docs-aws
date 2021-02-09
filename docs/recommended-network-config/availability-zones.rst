@@ -30,11 +30,11 @@ application-centric requirements:
   survive a single AZ failure that contains the primary and a secondary in a
   three-node cluster.
 
-  .. image:: ../images/recommended_network_configuration_mongodb.png
+  .. image:: /_static/img/recommended_network_configuration_mongodb.png
 
 * Example 2: Applications that have strict load and availability requirements
   that cannot be met by relying on Auto Scaling Groups require
   over-provisioning. Adding a third AZ could be considered to reduce costs
   by lowering needed the over-provisioning.
 
-  .. image:: ../images/recommended_network_configuration_autoscale_costs.png
+  .. image:: /_static/img/recommended_network_configuration_autoscale_costs.png

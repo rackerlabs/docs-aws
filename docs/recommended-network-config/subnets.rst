@@ -39,13 +39,13 @@ Public and Private.
 Assuming a typical two AZ deployment, four subnets would be required (two for
 Public and two for Private).
 
-.. image:: ../images/recommended_network_configuration_two_subnets.png
+.. image:: /_static/img/recommended_network_configuration_two_subnets.png
 
 In situations where a third AZ is required (e.g. MongoDB servers in the
 Private subnets) then six subnets would be required (three for Public and
 three for Private).
 
-.. image:: ../images/recommended_network_configuration_three_subnets.png
+.. image:: /_static/img/recommended_network_configuration_three_subnets.png
 
 It is important to note that within each tier, all the subnets will have the
 same network mask to simplify the operational processes (e.g. /22 for all

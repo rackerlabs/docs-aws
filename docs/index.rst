@@ -18,7 +18,7 @@ This Product Guide is designed to provide a detailed look at how Rackspace
 delivers our **Fanatical Support for AWS** offering. It covers core concepts
 such as the :ref:`AWS account structure <aws_accounts>` and Rackspace
 :ref:`service levels <service_levels>`, and advanced concepts such as
-provisioning bastion access via :ref:`Rackspace Passport <passport>` and
+provisioning bastion access via :ref:`Rackspace Passport <passport_v2>` and
 accessing audit logs via :ref:`Rackspace Logbook <logbook>`.
 
 For general information on the offering, please visit
@@ -49,7 +49,7 @@ To sign up, visit
    :hidden:
 
    self
-   aws-getting-started/index.rst
+   getting-started/index.rst
    aws-accounts/index.rst
    service-levels/index.rst
    pricing/index.rst

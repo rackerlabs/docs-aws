@@ -19,7 +19,7 @@ subnet to access the Internet. In the recommended *two AZ deployment*,
 Rackspace recommends leveraging one NAT gateway in each AZ - not sharing a
 NAT gateway with more than one AZ.
 
-.. image:: ../images/recommended_network_configuration_ha_nat_gateway.png
+.. image:: /_static/img/recommended_network_configuration_ha_nat_gateway.png
 
 NAT gateways are created via the CloudFormation template which:
 

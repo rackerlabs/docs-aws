@@ -45,9 +45,9 @@ htmlvers:
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
 html:
-	$(SPHINXBUILD) -E -q -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
+	$(SPHINXBUILD) -E -q -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html/docs/fanatical-support-aws
 	@echo
-	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
+	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html/docs/fanatical-support-aws."
 
 dirhtml:
 	$(SPHINXBUILD) -b dirhtml $(ALLSPHINXOPTS) $(BUILDDIR)/dirhtml
