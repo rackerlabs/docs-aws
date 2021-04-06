@@ -50,10 +50,9 @@ To sign up, visit
 
    self
    getting-started/index.rst
+   rackspace-elastic-engineering-and-optimizer/index.rst
    aws-accounts/index.rst
-   service-levels/index.rst
    pricing/index.rst
-   aviator-infrastructure-management/index.rst
    recommended-network-config/index.rst
    billing/index.rst
    reserved-instances/index.rst
@@ -71,4 +70,7 @@ To sign up, visit
    aws-marketplace/index.rst
    cloud-native-security/index.rst
    managed-infra-as-code/index.rst
+   legacy-service-offers/index.rst
+   service-levels/index.rst
+   aviator-infrastructure-management/index.rst
    service-blocks/index.rst
