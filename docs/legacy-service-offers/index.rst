@@ -4,6 +4,8 @@
 Legacy Service Offers
 =====================
 
-(:ref:`service_levels`)
-(:ref:`aviator_infrastructure_management`)
-(:ref:`service_blocks`)
+:ref:`service_levels`
+
+:ref:`aviator_infrastructure_management`
+
+:ref:`service_blocks`
