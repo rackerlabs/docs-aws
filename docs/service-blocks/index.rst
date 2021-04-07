@@ -1,8 +1,13 @@
 .. _service_blocks:
 
-==============
-Service Blocks
-==============
+================================
+Service Blocks (Legacy offering)
+================================
+
+.. note::
+
+For a list of current offerings, refer to
+:ref:`rackspace_elastic_engineering_and_optimizer`.
 
 Rackspace knows that our customers have varying needs at different stages
 of their cloud journey. That's why we provide a set of support offers that

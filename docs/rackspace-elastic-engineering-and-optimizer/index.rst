@@ -1,22 +1,23 @@
 .. _rackspace_elastic_engineering_and_optimizer:
 
-===============================================
+=============================================
 Rackspace Elastic Engineering and Optimizer +
-===============================================
+=============================================
 
-Rackspace knows that our customers have varying needs at different stages of their
-cloud journey. That’s why we provide a set of support offers that solve your needs
-at any stage of your cloud lifecycle. Our services provide access to the following
-pwersonnel:
+Rackspace knows that our customers have varying needs at different stages of
+their cloud journey. That’s why we provide a set of support offers that solve
+your needs at any stage of your cloud lifecycle. Our services provide access to
+the following pwersonnel:
 
-- Certified cloud specialists through a flexible pod-based model
-- Experts who can implement industry best cloud monitoring technologies and cost optimization recommendations
-- Experts to solve your IT challenges
+- Certified cloud specialists through a flexible pod-based model - Experts who
+can implement industry best cloud monitoring technologies and cost optimization
+recommendations - Experts to solve your IT challenges
 
-We also deliver other value-added services&mdash;all backed by AWS certified engineers and architects.
+We also deliver other value-added services&mdash;all backed by AWS certified
+engineers and architects.
 
-The following offers allow you to customize your experience so you can choose the service options
-to match your needs.
+The following offers allow you to customize your experience so you can choose
+the service options to match your needs.
 
 
 .. _elastic_egnineering:
@@ -24,18 +25,20 @@ to match your needs.
 Rackspace Elastic Engineering
 -----------------------------
 
-Rackspace Elastic Engineering is a managed support model that provides on-demand access to public
-cloud experts through ongoing sprints to continually remediate, innovate, evolve, and improve the
-customer’s environments. Rackspace Elastic Engineering has tiers of service that include a number
-of hours per month.
+Rackspace Elastic Engineering is a managed support model that provides on-demand
+access to public cloud experts through ongoing sprints to continually remediate,
+innovate, evolve, and improve the customer’s environments. Rackspace Elastic
+Engineering has tiers of service that include a number of hours per month.
 
-This flexible, collaborative approach to professional services enables customers to dynamically
-change scope and priorities based on business needs while collaborating side-by-side with highly
-skilled Rackspace Technology cloud experts to build, migrate, optimize, and maintain the customer’s
-cloud environments.
+This flexible, collaborative approach to professional services enables customers
+to dynamically change scope and priorities based on business needs while
+collaborating side-by-side with highly skilled Rackspace Technology cloud
+experts to build, migrate, optimize, and maintain the customer’s cloud
+environments.
 
-The following table provides a sample of the types of services provided with Rackspace Elastic
-Engineering. We coordinate tasks, scheduling, and priorities between Rackspace Technology and the
+The following table provides a sample of the types of services provided with
+Rackspace Elastic Engineering. We coordinate tasks, scheduling, and priorities
+between Rackspace Technology and the
 customer.
 
 +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -76,32 +79,34 @@ customer.
 Advanced Monitoring and Resolution
 -----------------------------------
 
-Built for customers' critical workloads and always vigilant 24x7x365, our team of operations
-engineers monitors and responds to alerts in customer environments. Advanced Monitoring and
-Resolution (AMR) is an optionated deployment of cloud services monitors that act as an
-extension of customer operational teams by providing automation where possible and human
-actions for activities that are beyond automation.
+Built for customers' critical workloads and always vigilant 24x7x365, our team
+of operations engineers monitors and responds to alerts in customer
+environments. Advanced Monitoring and Resolution (AMR) is an optionated
+deployment of cloud services monitors that act as an extension of customer
+operational teams by providing automation where possible and human actions for
+activities that are beyond automation.
 
-With Rackspace Technology acting as an extension of your 24x7 operational team, you can focus
-on what matters most to your business.
+With Rackspace Technology acting as an extension of your 24x7 operational team,
+you can focus on what matters most to your business.
 
 AMR services
 ^^^^^^^^^^^^
 
-AMR provides real-time monitoring and alerting for your cloud environment. An expert team of
-operations engineers monitors and responds to any alerts in your environment. Rackspace
-Technology has the breadth of knowledge required to operate the most complex cloud deployments
-on a global scale. By combining with the Rackspace Elastic Engineering service, you gain the
-peace of mind that comes with having an environment cared for by a team of cloud-certified
-operations engineers that help drive continuous innovation.
+AMR provides real-time monitoring and alerting for your cloud environment. An
+expert team of operations engineers monitors and responds to any alerts in your
+environment. Rackspace Technology has the breadth of knowledge required to
+operate the most complex cloud deployments on a global scale. By combining with
+the Rackspace Elastic Engineering service, you gain the peace of mind that comes
+with having an environment cared for by a team of cloud-certified operations
+engineers that help drive continuous innovation.
 
 AMR includes:
 
 * Optionated deployment of cloud services monitoring using known best-practices
-* 24x7x365 monitoring coverage backed by cloud experts
-* Improved resolution timelines by leveraging Rackspace Technology automation
-* Guidance for a default list of alerts and thresholds, which we can customized to meet customer needs
-* On-going support to adjust monitoring as the customer environment grows
+* 24x7x365 monitoring coverage backed by cloud experts * Improved resolution
+timelines by leveraging Rackspace Technology automation * Guidance for a default
+list of alerts and thresholds, which we can customized to meet customer needs *
+On-going support to adjust monitoring as the customer environment grows
 
 .. note::
 

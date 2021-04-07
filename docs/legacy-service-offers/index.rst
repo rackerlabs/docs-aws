@@ -9,3 +9,8 @@ Legacy Service Offers
 :ref:`aviator_infrastructure_management`
 
 :ref:`service_blocks`
+
+.. note::
+
+For a list of current offerings, refer to
+:ref:`rackspace_elastic_engineering_and_optimizer`.
