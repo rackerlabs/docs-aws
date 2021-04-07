@@ -8,20 +8,20 @@ Fanatical Support for AWS Product Guide
 
 .. only:: latex
 
-  **IMPORTANT:** This is a PDF version of the Product Guide, and is intended
-  to be used for point-in-time offline reference purposes only. The
-  authoritative version of this document lives online at
-  `https://developer.rackspace.com/docs/fanatical-support-aws <https://developer.rackspace.com/docs/fanatical-support-aws>`_
-  and will contain the latest updates. |vspace|
+  **IMPORTANT:** Use this is PDF version of the Product Guide
+  for point-in-time offline reference purposes only. You can find the
+  authoritative version of this document with the latest updates at
+  `https://developer.rackspace.com/docs/fanatical-support-aws <https://developer.rackspace.com/docs/fanatical-support-aws>`_.
+  |vspace|
 
-This Product Guide is designed to provide a detailed look at how Rackspace
+This Product Guide provides a detailed look at how Rackspace
 delivers our **Fanatical Support for AWS** offering. It covers core concepts
 such as the :ref:`AWS account structure <aws_accounts>` and Rackspace
-:ref:`service levels <service_levels>`, and advanced concepts such as
+:ref:`service levels <service_levels>` and advanced concepts such as
 provisioning bastion access via :ref:`Rackspace Passport <passport_v2>` and
 accessing audit logs via :ref:`Rackspace Logbook <logbook>`.
 
-For general information on the offering, please visit
+For general information on the offering, visit
 `https://www.rackspace.com/aws <https://www.rackspace.com/managed-aws>`_.
 
 To sign up, visit
@@ -32,10 +32,8 @@ To sign up, visit
   PDF Download
   ------------
 
-  You can download a PDF version of this documentation by
-  `clicking here <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/fanaticalsupportforawsproductguide.pdf>`_.
-  Note that we frequently update our
-  documentation so we encourage you to check back periodically for the
+  You can download a _`PDF version of this documentation<https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/fanaticalsupportforawsproductguide.pdf>`_.
+  We frequently update our documentation, so we encourage you to check back periodically for the
   latest information.
 
 .. |vspace| raw:: latex
