@@ -28,6 +28,7 @@
   package = "@netlify/plugin-sitemap"
   [plugins.inputs]
   buildDir = "_build"
+  filePath = "/html/docs/fanatical-support-aws"
   prettyURLs = true
   trailingSlash = true
 
