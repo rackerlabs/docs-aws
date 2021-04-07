@@ -15,8 +15,46 @@
   publish = "docs/_build/html"
   command = "cd docs && make clean html && cd .."
 
+[functions]
+  directory = "functions"
+
 [[redirects]]
   from = "/*"
   to = "/docs/fanatical-support-aws/:splat"
   status = 301
   force = false
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+  [plugins.inputs]
+  buildDir = "_build"
+  prettyURLs = true
+  trailingSlash = true
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+[[plugins]]
+  package = 'netlify-plugin-search-index'
+  [plugins.inputs]
+    generatedFunctionName = 'null'
+    publishDirJSONFileName = 'searchIndex' # you can use / to nest in a directory
+
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+	[plugins.inputs]
+
+	# The base url of your site (optional, default = main URL set in Netlify)
+	baseUrl = "https://docs.rackspace.com/docs/fanatical-support-aws"
+
+	# Path to the sitemap URL (optional, default = /sitemap.xml)
+	sitemapPath = "/sitemap.xml"
+
+	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
+	providers = [
+		"google",
+		"bing",
+		"yandex"
+	]
