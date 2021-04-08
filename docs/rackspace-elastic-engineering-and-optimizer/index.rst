@@ -7,7 +7,7 @@ Rackspace Elastic Engineering and Optimizer +
 Rackspace knows that our customers have varying needs at different stages of
 their cloud journey. That’s why we provide a set of support offers that solve
 your needs at any stage of your cloud lifecycle. Our services provide access to
-the following pwersonnel:
+the following personnel:
 
 - Certified cloud specialists through a flexible pod-based model - Experts who
 can implement industry best cloud monitoring technologies and cost optimization
