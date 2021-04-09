@@ -6,18 +6,14 @@ Rackspace Elastic Engineering and Optimizer +
 
 Rackspace knows that our customers have varying needs at different stages of
 their cloud journey. That’s why we provide a set of support offers that solve
-your needs at any stage of your cloud lifecycle. Our services provide access to
-the following personnel:
+for your needs at any stage of your cloud lifecycle. Our services provide you
+access to certified cloud specialists through a flexible POD-based model,
+experts who can implement industry best cloud monitoring technologies, cost
+optimization recommendations, experts to solve your IT challenges, and other
+value-added services, all backed by AWS certified engineers and architects.
 
-- Certified cloud specialists through a flexible pod-based model - Experts who
-can implement industry best cloud monitoring technologies and cost optimization
-recommendations - Experts to solve your IT challenges
-
-We also deliver other value-added services&mdash;all backed by AWS certified
-engineers and architects.
-
-The following offers allow you to customize your experience so you can choose
-the service options to match your needs.
+Our offers allow you to customize your experience with the ability to choose the
+service options to match your needs.
 
 
 .. _elastic_egnineering:
@@ -38,8 +34,9 @@ environments.
 
 The following table provides a sample of the types of services provided with
 Rackspace Elastic Engineering. We coordinate tasks, scheduling, and priorities
-between Rackspace Technology and the
-customer.
+between Rackspace Technology and the customer.
+
+.. list-table::
 
 +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 |  Service                    | Description                                                                                                                                      |
@@ -102,11 +99,11 @@ engineers that help drive continuous innovation.
 
 AMR includes:
 
-* Optionated deployment of cloud services monitoring using known best-practices
-* 24x7x365 monitoring coverage backed by cloud experts * Improved resolution
-timelines by leveraging Rackspace Technology automation * Guidance for a default
-list of alerts and thresholds, which we can customized to meet customer needs *
-On-going support to adjust monitoring as the customer environment grows
+- Optionated deployment of cloud services monitoring using known best-practices
+- 24x7x365 monitoring coverage backed by cloud experts 
+- Improved resolution timelines by leveraging Rackspace Technology automation 
+- Guidance for a default list of alerts and thresholds, which we can customized to meet customer needs 
+- On-going support to adjust monitoring as the customer environment grows
 
 .. note::
 
