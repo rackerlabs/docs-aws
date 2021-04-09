@@ -11,7 +11,7 @@ docutils==0.14
 filelock==3.0.9
 idna==2.7
 imagesize==1.1.0
-jinja2==2.10.1
+jinja2==2.11.3
 markdown==3.0.1
 markupsafe==1.0
 packaging==18.0
