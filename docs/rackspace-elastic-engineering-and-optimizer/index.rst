@@ -37,7 +37,6 @@ Rackspace Elastic Engineering. We coordinate tasks, scheduling, and priorities
 between Rackspace Technology and the customer.
 
 .. list-table:: Rackspace Elastic Engineering Services
-   :widths: 40 110
    :header-rows: 1
 
    * - Service
