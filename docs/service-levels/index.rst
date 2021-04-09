@@ -1,8 +1,13 @@
 .. _service_levels:
 
-==============
-Service Levels
-==============
+================================
+Service Levels (Legacy offering)
+=================================
+
+.. note::
+
+For a list of current offerings, refer to
+:ref:`rackspace_elastic_engineering_and_optimizer`.
 
 Fanatical Support for AWS combines tooling and automation with human
 experts to deliver a world-class experience. We offer two service levels,
