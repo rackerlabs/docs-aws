@@ -9,12 +9,15 @@ AWS Systems Manager Agent
 All EC2 instances must have
 `AWS Systems Manager Agent 2.3.672.0 or higher <https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html>`_
 installed to work with Passport. Each EC2 instance must also be
-`configured with an instance profile <https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-profile.html`_
+:ref:`configured with an instance profile <instance>`
 that allows AWS Systems Manager to perform actions on your instances. Rackspace
 recommends using the ``AmazonSSMManagedInstanceCORE`` managed IAM policy.
 
 You can learn more about how AWS Systems Manager is used in the
 :ref:`Architecture section <v2_architecture>`.
+
+.. _instance: https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-profile.html
+
 
 Passport CLI
 ------------
@@ -64,4 +67,4 @@ Download and run the installer by using the following links:
 
 Once the AWS Systems Manager Agent and Passport CLI are install, you're ready
 to start using Passport. You can learn more about how to use the Passport CLI
-in the `CLI Usage <cli_usage>` section.
+in the :ref:`CLI Usage <cli_usage>` section.
