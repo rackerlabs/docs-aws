@@ -27,14 +27,12 @@ For general information on the offering, visit
 To sign up, visit
 `https://cart.rackspace.com/aws <https://cart.rackspace.com/aws>`_.
 
-.. only:: html
+PDF Download
+------------
 
-  PDF Download
-  ------------
-
-  You can download a _`PDF version of this documentation <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/fanaticalsupportforawsproductguide.pdf>`_.
-  We frequently update our documentation, so we encourage you to check back periodically for the
-  latest information.
+You can download a _`PDF version of this documentation <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/fanaticalsupportforawsproductguide.pdf>`_.
+We frequently update our documentation, so we encourage you to check back periodically for the
+latest information.
 
 .. |vspace| raw:: latex
 
