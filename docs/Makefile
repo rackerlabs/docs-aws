@@ -81,3 +81,11 @@ latexpdf:
 	@echo "Running LaTeX files through pdflatex..."
 	$(MAKE) -C $(BUILDDIR)/latex all-pdf
 	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
+
+LINKCHECKDIR  = build/linkcheck
+
+.PHONY: checklinks
+  checklinks:
+  $(SPHINXBUILD) -b linkcheck $(ALLSPHINXOPTS) $(LINKCHECKDIR)
+  @echo
+  @echo "Check finished. Report is in $(LINKCHECKDIR)."
