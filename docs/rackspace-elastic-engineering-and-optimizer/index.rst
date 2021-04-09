@@ -36,7 +36,41 @@ The following table provides a sample of the types of services provided with
 Rackspace Elastic Engineering. We coordinate tasks, scheduling, and priorities
 between Rackspace Technology and the customer.
 
-.. list-table::
+.. list-table:: Rackspace Elastic Engineering Services
+   :widths: 40 110
+   :header-rows: 1
+
+   * - Service
+     - Description
+   * - Infrastructure Builds
+     - * Deploy infrastructure or applications into the environment
+       * Modify infrastructure to reduce cost, increase performance, and scale optimization
+   * - DevOps and Automation
+     - * Manage, maintain, and enhance automation systems for operational effectiveness, stability and security
+       * Change existing automation systems, or develop new automation systems
+   * - Performance Management
+     - * Identify performance targets and continuously adjust infrastructure to deliver the desired performance at the optimal cost
+       * Tune applications, provide detailed analysis of application-level performance problems
+   * - Database Management
+     - * Scale databases, provide performance management and maintenance services
+       * Create database clusters, read slaves, and so on
+   * - Application Operations
+     - * Manage the configuration and patching of common, off-the-shelf applications
+       * Provide custom upgrades and patches for off-the-shelf applications, develop configuration frameworks and methodologies for custom applications
+   * - Security Management
+     - * Use architectural best practices to maintain environment security
+       * Respond to security incidents identified by the Customer Security Team
+       * Deploy customer-provided third-party security tools
+       * Create reports or contribute to reports that a customer needs as part of an infrastructure audit for certification purposes
+   * - Disaster Recovery Planning
+     - * Run disaster recovery solutions, extend existing solutions, and run customer-directed tests of disaster recovery systems
+   * - Planned Maintenance
+     - * Perform preventative maintenance so that infrastructure, database, and application operations are stable and secure
+       * Perform optional maintenance and customer-directed changes, which can include applying security patches on a regular basis
+   * - Cost Optimization
+     - * Implement architectural changes to support cost management decisions
+   * - Advice and Support
+     - * Answer questions related to cloud usage, best practices, and make recommendations
 
 +-----------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------+
 |  Service                    | Description                                                                                                                                      |
