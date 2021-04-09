@@ -8,7 +8,7 @@ Fanatical Support for AWS Product Guide
 
 .. only:: latex
 
-  **IMPORTANT:** Use this is PDF version of the Product Guide
+  **IMPORTANT:** Tis is a PDF version of the Product Guide
   for point-in-time offline reference purposes only. You can find the
   authoritative version of this document with the latest updates at
   `https://developer.rackspace.com/docs/fanatical-support-aws <https://developer.rackspace.com/docs/fanatical-support-aws>`_.
@@ -16,7 +16,7 @@ Fanatical Support for AWS Product Guide
 
 This Product Guide provides a detailed look at how Rackspace
 delivers our **Fanatical Support for AWS** offering. It covers core concepts
-such as the :ref:`AWS account structure <aws_accounts>` and Rackspace
+such as the :ref:`AWS account structure <aws_accounts>`, Rackspace
 :ref:`service levels <service_levels>` and advanced concepts such as
 providing access requests to instances via :ref:`Rackspace Passport <passport_v2>` and
 accessing audit logs via :ref:`Rackspace Logbook <logbook>`.
@@ -30,7 +30,7 @@ To sign up, visit
 PDF Download
 ------------
 
-You can download a _`PDF version of this documentation <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/fanaticalsupportforawsproductguide.pdf>`_.
+You can download a `PDF version of this documentation <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/fanaticalsupportforawsproductguide.pdf>`_.
 We frequently update our documentation, so we encourage you to check back periodically for the
 latest information.
 
