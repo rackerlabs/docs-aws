@@ -36,7 +36,8 @@ The following table provides a sample of the types of services provided with
 Rackspace Elastic Engineering. We coordinate tasks, scheduling, and priorities
 between Rackspace Technology and the customer.
 
-.. list-table:: Rackspace Elastic Engineering Services
+.. list-table::
+   :widths: 40 110
    :header-rows: 1
 
    * - Service
