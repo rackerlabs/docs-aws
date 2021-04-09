@@ -15,8 +15,20 @@
   publish = "docs/_build/html"
   command = "cd docs && make clean html && cd .."
 
+[functions]
+  directory = "functions"
+
 [[redirects]]
   from = "/*"
   to = "/docs/fanatical-support-aws/:splat"
   status = 301
   force = false
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+  [plugins.inputs]
+  prettyURLs = true
+  trailingSlash = true
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
