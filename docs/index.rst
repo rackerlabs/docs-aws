@@ -18,7 +18,7 @@ This Product Guide provides a detailed look at how Rackspace
 delivers our **Fanatical Support for AWS** offering. It covers core concepts
 such as the :ref:`AWS account structure <aws_accounts>` and Rackspace
 :ref:`service levels <service_levels>` and advanced concepts such as
-provisioning bastion access via :ref:`Rackspace Passport <passport_v2>` and
+providing access requests to instances via :ref:`Rackspace Passport <passport_v2>` and
 accessing audit logs via :ref:`Rackspace Logbook <logbook>`.
 
 For general information on the offering, visit
