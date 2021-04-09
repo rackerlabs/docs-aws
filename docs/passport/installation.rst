@@ -67,4 +67,4 @@ Download and run the installer by using the following links:
 
 Once the AWS Systems Manager Agent and Passport CLI are install, you're ready
 to start using Passport. You can learn more about how to use the Passport CLI
-in the :ref:`CLI Usage <cli_usage>` section.
+in the :ref:`cli_usage` section.
