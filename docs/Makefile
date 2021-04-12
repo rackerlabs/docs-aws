@@ -40,7 +40,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 htmlvers:
-	$(SPHINXVERS) -l conf.py build $(DOCDIR)/ $(BUILDDIR)/html/
+	$(SPHINXVERS) -l conf.py build $(DOCDIR)/ $(BUILDDIR)/html
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
