@@ -40,7 +40,7 @@ clean:
 	rm -rf $(BUILDDIR)/*
 
 htmlvers:
-	$(SPHINXVERS) -l conf.py build $(DOCDIR)/ $(BUILDDIR)/html
+	$(SPHINXVERS) -l conf.py build $(DOCDIR)/ $(BUILDDIR)/html/
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
@@ -81,8 +81,3 @@ latexpdf:
 	@echo "Running LaTeX files through pdflatex..."
 	$(MAKE) -C $(BUILDDIR)/latex all-pdf
 	@echo "pdflatex finished; the PDF files are in $(BUILDDIR)/latex."
-
-checklinks:
-    $(SPHINXBUILD) -b linkcheck $(ALLSPHINXOPTS) $(LINKCHECKDIR)
-    @echo
-    @echo "Check finished. Report is in $(LINKCHECKDIR)."
