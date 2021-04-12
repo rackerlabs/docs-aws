@@ -1,8 +1,13 @@
 .. _aviator_infrastructure_management:
 
-=================================
-Aviator Infrastructure Management
-=================================
+===================================================
+Aviator Infrastructure Management (Legacy offering)
+===================================================
+
+.. note::
+
+For a list of current offerings, refer to
+:ref:`rackspace_elastic_engineering_and_optimizer`.
 
 Summary
 -------

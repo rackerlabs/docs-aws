@@ -15,7 +15,7 @@ access with Passport. First, the user must have their Fanatical Support
 for AWS permission for an AWS account set to "Admin". If the permission is set
 to either "Observer" or "None", the user will not have access to any instances
 in that AWS account. Second, the user must have an IAM policy that allows
-the ``ssm:StartSession`` action to be performed against the target
+the ``ssm:StartSession`` and ``ssm:TerminateSession`` action to be performed against the target
 instance. This setting allows you to choose which instances within an
 AWS account a user will have access to. Together, these two settings give
 you granular control over which instances can be accessed using Passport.
@@ -30,11 +30,11 @@ commonly used with Passport:
 * **AmazonSSMFullAccess** grants access to all actions and resources within
   AWS Systems Manager. It will allow a user to access any instance in the
   account using Passport.
-* **RackspacePassportOnly** grants `ssm:StartSession` on all instances. It will
+* **RackspacePassportOnly** grants ``ssm:StartSession`` and ``ssm:TerminateSession`` on all instances. It will
   allow a user to access any instance in the account using Passport, but the
   user won't have any other permissions in the AWS console.
 * **RackspaceReadOnlyWithPassport** grants read-only access to most AWS
-  resources as well as ``ssm:StartSession`` on all instances. It will allow
+  resources as well as ``ssm:StartSession`` and ``ssm:TerminateSession`` on all instances. It will allow
   a user to access any instance in the account using Passport.
 
 Additionally, you can define custom IAM policies that allow you to further

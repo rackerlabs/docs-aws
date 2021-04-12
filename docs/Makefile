@@ -181,3 +181,9 @@ spelling:
 	$(SPHINXBUILD) -b spelling $(ALLSPHINXOPTS) $(BUILDDIR)/spelling
 	@echo
 	@echo "Build finished. The spelling files are in $(BUILDDIR)/spelling."
+
+checklinks:
+    $(SPHINXBUILD) -b linkcheck $(ALLSPHINXOPTS) $(LINKCHECKDIR)
+    @echo
+    @echo "Check finished. Report is in $(LINKCHECKDIR)."
+
