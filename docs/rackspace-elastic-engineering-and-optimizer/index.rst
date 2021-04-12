@@ -108,7 +108,7 @@ AMR includes:
 
 .. note::
 
-  AMR requires (:ref:`optimizer`) or (:ref:`optimizer_platform`) as a prerequisite.
+  AMR requires :ref:`optimizer` or :ref:`optimizer_platform` as a prerequisite.
 
 .. _vm_management:
 
@@ -181,7 +181,7 @@ the following activities:
 * Saving recommendations
 * VM supervision and licensing reviews
 * Monthly cost reviews
-* Planned event support (see **Event Management**)
+* Planned event support
 
 .. _optimizer_platform:
 
