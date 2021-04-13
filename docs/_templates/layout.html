@@ -93,11 +93,6 @@
 {%- block footer %}
 {% include "footer.html" %}
 {% endblock %}
-<script type="text/javascript">
-  jQuery(function () {
-      SphinxRtdTheme.Navigation.enable({{ 'true' if theme_sticky_navigation|tobool else 'false' }});
-  });
-</script>
 {% include "scripts.html" %}
 </body>
 </html>
