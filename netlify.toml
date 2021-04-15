@@ -2,6 +2,7 @@
 [build.environment]
   NPM_VERSION = "7.9.0"
   NODE_VERSION = "15.0.1"
+  HUGO_VERSION = "0.82.0"
 
 [build]
   publish = "docs/_build/html"
