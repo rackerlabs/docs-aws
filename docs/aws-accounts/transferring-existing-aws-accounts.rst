@@ -16,10 +16,8 @@ This process involves formally assigning your AWS account to Rackspace for
 management, which can be initiated by submitting a request via the
 `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
 
-* Click the **Add AWS Account** card at the bottom of the AWS account
-list.
-
-* For account source, select **Use an existing AWS account not currently
+Click the **Add AWS Account** card at the bottom of the AWS account
+list. For account source, select **Use an existing AWS account not currently
 managed by Rackspace**. The following information is required:
 
   * AWS Payer(s) or Account Number(s)
