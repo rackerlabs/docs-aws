@@ -18,7 +18,6 @@ management, which can be initiated by submitting a request via the
 
 #. Click the **Add AWS Account** card at the bottom of the AWS account
 list.
-
 #. For account source, select **Use an existing AWS account not currently
 managed by Rackspace**. The following information is required:
 
