@@ -1,8 +1,8 @@
 .. _transferring_existing_aws_accounts:
 
-===============================================
-Transferring existing AWS accounts to Rackspace
-===============================================
+========================================================================
+Transferring existing AWS Master Payers and Linked Accounts to Rackspace
+========================================================================
 
 While the
 `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
@@ -15,16 +15,17 @@ existing AWS account.
 This process involves formally assigning your AWS account to Rackspace for
 management, which can be initiated by submitting a request via the
 `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+
 Click the **Add AWS Account** card at the bottom of the AWS account
 list. For account source, select **Use an existing AWS account not currently
 managed by Rackspace**. The following information is required:
 
-* AWS Account Number
-* Legal Company Name
-* Legal Company Address
-* Authorized Signatory Name (the individual who can legally give
-  authorization to assign your AWS account to Rackspace)
-* Authorized Signatory Email Address
+  * AWS Payer(s) or Account Number(s)
+  * Legal Company Name
+  * Legal Company Address
+  * Authorized Signatory Name (the individual who can legally give
+    authorization to assign your AWS account to Rackspace)
+  * Authorized Signatory Email Address
 
 Once we receive your request, we will create a ticket for you with
 instructions that your team must carry out in order to prepare the AWS
