@@ -66,6 +66,7 @@ must meet our minimum account requirements, which include:
 * `No access keys exist for the root user of the AWS account <https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#root-password>`_
 * The account is not consolidated under a payer account or serving as a
   payer account with linked child accounts
+* The account cannot be a part of an AWS Organization
 
 These requirements **must** be met before the account can be transitioned
 to Rackspace.
