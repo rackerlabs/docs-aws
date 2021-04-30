@@ -68,5 +68,5 @@ latest information.
    managed-infra-as-code/index.rst
    legacy-service-offers/index.rst
    service-levels/index.rst
-   aviator-infrastructure-management/index.rst
+   infrastructure-management/index.rst
    service-blocks/index.rst
