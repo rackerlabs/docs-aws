@@ -7,24 +7,23 @@ User Management and Permissions
 Account Owner
 -------------
 
-When you sign up for Fanatical Support for AWS, the first user you create
-is the **Account Owner**.  After signing up, you can reassign Account
-Owner status to another user on the account.  You can make this change
-from the **Account Settings** page.  There can only be one Account Owner
-at a time.
+When you sign up for Fanatical Support for AWS, the first user you create is the
+**Account Owner**.  After signing up, you can reassign Account Owner status to
+another user on the account.  You can make this change from the **Account
+Settings** page.  There can only be one Account Owner at a time.
 
 The **Account Owner** has full administrative privileges, including:
 
-* AWS ``AdministratorAccess`` IAM policy rights on all AWS accounts
-* ``Admin`` rights to all Fanatical Support for AWS features on all AWS
+* AWS ``AdministratorAccess`` IAM policy rights on all AWS accounts * ``Admin``
+rights to all Fanatical Support for AWS features on all AWS
   accounts
-* ``Admin`` rights to the Rackspace Billing and Payments portal
-* Ability to add additional AWS accounts for Rackspace to manage
-* Ability to create and delete users on the Rackspace account and manage
+* ``Admin`` rights to the Rackspace Billing and Payments portal * Ability to add
+additional AWS accounts for Rackspace to manage * Ability to create and delete
+users on the Rackspace account and manage
   their permissions on a per AWS account basis
-* Ability to make other users Account Administrators
-* Ability to reassign Account Owner status
-* Ability to configure Rackspace account-wide settings including enabling
+* Ability to make other users Account Administrators * Ability to reassign
+Account Owner status * Ability to configure Rackspace account-wide settings
+including enabling
   multi-factor authentication, configuring session duration, etc.
 * Ability to cancel the Rackspace account
 
@@ -44,15 +43,15 @@ To create and manage users:
 2. Click your **user name** at the top right to activate the account menu.
 3. Select **User Management**.
 
-From the **User Management** page you'll have the ability to create new
-users, manage existing users, and assign permissions to users.
+From the **User Management** page you'll have the ability to create new users,
+manage existing users, and assign permissions to users.
 
 Identity Federation
 -------------------
 
-Rackspace Identity Federation enables you to configure your corporate
-security and identity systems to enable your employees to use their
-regular company credentials to authenticate to Rackspace accounts. For more
+Rackspace Identity Federation enables you to configure your corporate security
+and identity systems to enable your employees to use their regular company
+credentials to authenticate to Rackspace accounts. For more
 information about Identity Federation, see the
 `Rackspace Identity Federation User Guide <https://developer.rackspace.com/docs/rackspace-federation/>`_.
 
@@ -60,19 +59,19 @@ Account Administrator
 ---------------------
 
 One permission that can be assigned is **Account Administrator**. This
-permission is useful when the Account Owner wishes to delegate a
-significant set of rights to another user on the account, e.g. if
-someone else in the organization besides the Account Owner is responsible
-for creating new users and assigning them permissions.
+permission is useful when the Account Owner wishes to delegate a significant set
+of rights to another user on the account, e.g. if someone else in the
+organization besides the Account Owner is responsible for creating new users and
+assigning them permissions.
 
 Users with the **Account Administrator** right have the following privileges:
 
-* AWS ``AdministratorAccess`` IAM policy rights on all AWS accounts
-* ``Admin`` rights to all Fanatical Support for AWS features on all
+* AWS ``AdministratorAccess`` IAM policy rights on all AWS accounts * ``Admin``
+rights to all Fanatical Support for AWS features on all
   AWS accounts
-* ``Admin`` rights to the Rackspace Billing and Payments portal
-* Ability to add additional AWS accounts for Rackspace to manage
-* Ability to create and delete users on the Rackspace account and manage
+* ``Admin`` rights to the Rackspace Billing and Payments portal * Ability to add
+additional AWS accounts for Rackspace to manage * Ability to create and delete
+users on the Rackspace account and manage
   their permissions on a per AWS account basis
 * Ability to make other users Account Administrators
 
@@ -84,9 +83,9 @@ Users with the **Account Administrator** right have the following privileges:
   multi-factor authentication, configuring session duration, etc.
 * Ability to cancel the Rackspace account
 
-The **Account Administrator** permission does not determine user status
-within CloudHealth. Please see **Account Owner** and the Product
-Permissions section for CloudHealth user status controls.
+The **Account Administrator** permission does not determine user status within
+CloudHealth. Please see **Account Owner** and the Product Permissions section
+for CloudHealth user status controls.
 
 
 Understanding and Managing Permissions
@@ -152,8 +151,8 @@ Rackspace specific permissions can be set to one of three values:
 Permission Example
 ------------------
 
-You have two AWS accounts managed by Rackspace, both at the Aviator service
-level. They are named **App1-Staging** and **App1-Production**.
+You have two AWS accounts managed by Rackspace. They are named **App1-Staging**
+and **App1-Production**.
 
 You might grant a junior developer working on this application the following
 permissions:
@@ -188,14 +187,14 @@ Product Permissions
 CloudHealth Permissions
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-CloudHealth views are available at a default organization or
-sub-organization level. The default organization is a view of all AWS
-accounts under your Rackspace account. The sub-organization view is only
-the individual AWS accounts for which you have AWS control plane access.
+CloudHealth views are available at a default organization or sub-organization
+level. The default organization is a view of all AWS accounts under your
+Rackspace account. The sub-organization view is only the individual AWS accounts
+for which you have AWS control plane access.
 
-CloudHealth access is given at either a Power User or Standard User
-permission. A Power User has full operational privileges across all data.
-A Standard User can view but not edit or delete data within CloudHealth.
+CloudHealth access is given at either a Power User or Standard User permission.
+A Power User has full operational privileges across all data. A Standard User
+can view but not edit or delete data within CloudHealth.
 
 .. list-table::
    :header-rows: 1
@@ -220,4 +219,5 @@ A Standard User can view but not edit or delete data within CloudHealth.
      - Sub-Org
 
 
-Please contact your Rackspace Customer Success Manager with any questions about permissions.
+Please contact your Rackspace Customer Success Manager with any questions about
+permissions.
