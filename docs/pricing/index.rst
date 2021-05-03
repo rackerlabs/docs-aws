@@ -5,9 +5,8 @@ Pricing
 =======
 
 Your monthly service fees will be calculated by pooling the AWS infrastructure
-charges from all of your AWS accounts at the same service level. Learn more
-about monthly service fee calculations in the
-:ref:`Billing <billing_monthly_service_fees>` section.
+charges from all of your AWS accounts. Learn more about monthly service fee
+calculations in the :ref:`Billing <billing_monthly_service_fees>` section.
 
 Service fees are charged in addition to AWS infrastructure rates. Service
 Fees for AWS Reserved Instances and Spot Instances are calculated based on
