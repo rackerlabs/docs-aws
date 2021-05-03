@@ -63,8 +63,8 @@ increases, so you will likely pay a lower total amount of service fees
 over the life of the reserved instance than if you had run on-demand
 instances during the same time period.
 
-Example 1: Navigator Service Level
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Example Service Level 1
+^^^^^^^^^^^^^^^^^^^^^^^
 
 For this example, assume that your application requires a single m4.4xlarge
 instance and no other AWS on-demand infrastructure. Your options are:
@@ -86,8 +86,8 @@ instance and no other AWS on-demand infrastructure. Your options are:
 In the example above, you would save 84% on service fees and 42% on AWS
 infrastructure costs when purchasing reserved instances.
 
-Example 2: Aviator Service Level
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Example Service Level 2
+^^^^^^^^^^^^^^^^^^^^^^^
 
 For this example, assume that your application requires 25 c4.2xlarge
 instances and no other AWS on-demand infrastructure. Your options are:
@@ -111,8 +111,8 @@ instances and no other AWS on-demand infrastructure. Your options are:
 In the example above, you would save 36% on service fees and 36% on AWS
 infrastructure costs when purchasing reserved instances.
 
-Example 3: Navigator Service Level
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Example Service Level 3
+^^^^^^^^^^^^^^^^^^^^^^^
 
 For this example, assume that your application requires 15 c4.2xlarge
 instances and no other AWS on-demand infrastructure. Your options are:
