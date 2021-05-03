@@ -4,10 +4,10 @@
 CloudFormation
 ==============
 
-There are two important concepts to understand when using AWS
-CloudFormation: *templates* and *stacks*. A template is used to describe your
-AWS resources and their properties. When you create a stack, AWS
-CloudFormation provisions the resources that are described in the template.
+There are two important concepts to understand when using AWS CloudFormation:
+*templates* and *stacks*. A template is used to describe your AWS resources and
+their properties. When you create a stack, AWS CloudFormation provisions the
+resources that are described in the template.
 
 To learn more, view the AWS documentation on
 `stacks <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html>`_
@@ -17,15 +17,14 @@ and
 Rackspace CloudFormation Template: BaseNetwork
 ----------------------------------------------
 
-In our Aviator :ref:`service level <service_levels>` we assist customers
-with creating custom CloudFormation templates to describe their
-environments. For customers at both the Navigator and Aviator service
-levels we make a standardized CloudFormation Template, BaseNetwork, available
-to create the initial network and all of its necessary components. The
-rest of this section will describe the elements that are part of the
-BaseNetwork CloudFormation Template, and their associated components. You can
-download the BaseNetwork template
-`here <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/BaseNetwork.template>`_.
+In our :ref:`service levels <service_levels>` we assist customers with creating
+custom CloudFormation templates to describe their environments. We make a
+standardized CloudFormation Templates, BaseNetwork, available to create the
+initial network and all of its necessary components. The rest of this section
+will describe the elements that are part of the BaseNetwork CloudFormation
+Template, and their associated components. You can download the BaseNetwork
+template `here
+<https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/BaseNetwork.template>`_.
 
 **Parameters**
 
