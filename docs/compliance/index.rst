@@ -60,11 +60,10 @@ right-hand corner, select "Documents and Forms", and navigate to the
 
 **Does Fanatical Support for AWS service level matter for PCI-DSS?**
 
-Both our Navigator and Aviator customers can leverage our PCI-compliant
-tooling and infrastructure.  Note, however, that the Aviator service
-level provides a greater number of value-added services to include
-design, service selection, monitoring, and more that make achieving
-PCI-DSS compliance easier.
+Customers can leverage our PCI-compliant tooling and infrastructure.  Note,
+however, that other service level provides a greater number of value-added
+services to include design, service selection, monitoring, and more that make
+achieving PCI-DSS compliance easier.
 
 **I have general questions about Rackspace Security beyond the scope
 of PCI-DSS - where can I get answers to those questions?**
@@ -94,11 +93,10 @@ signed BAA (Business Associate Agreement).
 
 **Does Fanatical Support for AWS service level matter for HIPAA?**
 
-We provide management for both Navigator and Aviator customers running
-HIPAA workloads at AWS. However, with Aviator service level customers can
-take advantage of value-add services like best-practice architecture, service
-selection, patching, monitoring, and ongoing operations that may make
-achieving HIPAA compliance easier for customers.
+We provide management for customers running HIPAA workloads at AWS. However,
+with other service level customers can take advantage of value-add services like
+best-practice architecture, service selection, patching, monitoring, and ongoing
+operations that may make achieving HIPAA compliance easier for customers.
 
 **Do I need to maintain a Business Associate Agreement (BAA) with both
 Rackspace and AWS?**
