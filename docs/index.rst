@@ -67,5 +67,5 @@ latest information.
    cloud-native-security/index.rst
    managed-infra-as-code/index.rst
    service-levels/index.rst
-   aviator-infrastructure-management/index.rst
+   infrastructure-management/index.rst
    service-blocks/index.rst

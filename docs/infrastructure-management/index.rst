@@ -1,15 +1,14 @@
-.. _aviator_infrastructure_management:
+.. _infrastructure_management:
 
-===================================================
-Aviator Infrastructure Management (Legacy offering)
-===================================================
+=========================
+Infrastructure Management
+=========================
 
 .. note::
 
 For a list of current offerings, refer to
 :ref:`rackspace_elastic_engineering_and_optimizer`.
 
-Summary
 -------
 
 Based on your desired infrastructure management preference, some
@@ -105,8 +104,8 @@ will be happy to discuss the options with you!
 Terraform and GitHub Support (Limited Availability)
 ---------------------------------------------------
 
-Fanatical Support for AWS offers, in limited availability,
-support for :ref:'Terraform <using_terraform>' and :ref:'GitHub <using_github>'
-as an alternative to having your infrastructure managed by CloudFormation. If
-you're interested in learning more about this future option, please reach
-out to your Account Manager.
+Fanatical Support for AWS offers, in limited availability, support for
+:ref:`Terraform <using_terraform>` and :ref:`GitHub <using_github>` as an
+alternative to having your infrastructure managed by CloudFormation. If you're
+interested in learning more about this future option, please reach out to your
+Account Manager.
