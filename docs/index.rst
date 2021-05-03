@@ -52,6 +52,7 @@ latest information.
    recommended-network-config/index.rst
    billing/index.rst
    reserved-instances/index.rst
+   user-management-and-perms/index.rst
    access-and-permissions/index.rst
    security/index.rst
    compliance/index.rst
