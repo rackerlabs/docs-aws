@@ -5,7 +5,7 @@ Account Defaults
 ================
 
 For all AWS accounts managed by Rackspace, whether created new via the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 or created directly with AWS and transferred to Rackspace, we automatically
 apply several default settings to the account based on best practices we
 have developed in cooperation with AWS. You should not change or disable

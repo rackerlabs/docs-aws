@@ -25,7 +25,7 @@ all customers. Our Fanatical Support for AWS experts will work with you to:
 
 
 You can access CloudHealth by clicking the CloudHealth link in the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 
 .. _cloudhealth_permissions:
 
@@ -36,4 +36,4 @@ For detailed information on CloudHealth permissions, please see
 :ref:`User Management and Permissions <user_management_and_perms>`.
 
 Please contact your Customer Success Manager with any questions related to
-your CloudHealth and Fanatical Support for AWS Control Panel permissions.
+your CloudHealth and Rackspace Technology Customer Portal permissions.

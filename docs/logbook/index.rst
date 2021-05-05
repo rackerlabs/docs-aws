@@ -28,7 +28,7 @@ aggregated from a number of different sources:
   the Passport access request.
 
 The |LogbookTM| section of the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 provides a timeline-based view of all of these activities. You can view
 the activities for a specific AWS account or view activities across all of
 your AWS accounts. You can also filter/facet the results to find the

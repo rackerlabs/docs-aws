@@ -21,7 +21,7 @@ Add a new AWS account
 ---------------------
 
 Once you have created your Rackspace account navigate to the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 Login using the credentials you established during the signup process above.
 
 Note that all new Rackspace accounts undergo a thorough review to minimize

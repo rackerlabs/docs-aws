@@ -6,7 +6,7 @@ AWS Accounts
 
 Each Rackspace account can house one or more AWS accounts. By default, you
 can create up to five new AWS accounts via the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 If you need more than five accounts, please open a ticket to request a
 limit increase.  In addition to creating new AWS accounts, you may also
 :ref:`transfer existing AWS accounts <transferring_existing_aws_accounts>`

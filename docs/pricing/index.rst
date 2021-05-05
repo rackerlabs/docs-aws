@@ -13,7 +13,7 @@ Fees for AWS Reserved Instances and Spot Instances are calculated based on
 the corresponding on-demand list rates. AWS infrastructure is charged at the
 list rates on the `AWS website <https://aws.amazon.com>`_. You can view your
 service fees in the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws/pricing>`_.
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws/pricing>`_.
 
 Please note that the AWS free tier is not available to Fanatical Support
 for AWS accounts.

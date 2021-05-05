@@ -21,14 +21,14 @@ previous month (though the process may take a few days longer to run).
 
 Users with access to all AWS accounts within a Rackspace account can access
 Waypoint by clicking the Waypoint link in the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 Waypoint is available only to users with access to all AWS accounts because
 it summarizes details for all those accounts.
 
 Users with access to only a subset of all AWS accounts within a Rackspace
 account can instead access Usage, which provides billing details for the
 subset of accounts. To access Usage, click the Usage link in the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 
 Users will see either Waypoint (for those with access to all AWS accounts) or
 Usage (for those with access to only some AWS accounts), but not both.

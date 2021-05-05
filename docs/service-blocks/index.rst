@@ -35,7 +35,7 @@ services are built on top. Platform Essentials includes:
 * Unified billing for all your Rackspace platforms and other Managed Public
   Cloud Accounts
 
-* Access to the Fanatical Support for AWS Control Panel to manage your AWS
+* Access to the Rackspace Technology Customer Portal to manage your AWS
   accounts, your users, and their permissions
 
 * Industry leading tooling that provides you better insight into your AWS

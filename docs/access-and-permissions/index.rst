@@ -27,7 +27,7 @@ accounts are
 
 The Account Owner or a user with the Account Administrator designation can
 set the session inactivity timeout for the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 To change the timeout, visit
 `account.rackspace.com <https://account.rackspace.com>`_, and then navigate
 to Account Settings > Rackspace Account Settings > Session Inactivity Timeout.
@@ -42,14 +42,14 @@ AWS Console
 ===========
 
 Once you have logged in to the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 you will see a listing of all AWS accounts you have access to.
 
 If you wish to access the AWS Console you can click the
 "Log in to AWS Console" button and you will be automatically signed in as
 a federated user. This allows you to maintain one set of credentials to
 access both the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 and the AWS Console. As described in the
 :ref:`User Management and Permissions section <user_management_and_perms>`
 the access a user will receive when they federate to the AWS Console will
@@ -58,7 +58,7 @@ permissions.
 
 The Account Owner can set the AWS console session duration, which controls
 the maximum session time for a user who logs into the AWS console from
-the `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+the `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 To change the timeout, visit
 `account.rackspace.com <https://account.rackspace.com>`_, and then
 navigate to Account Settings > Product Preferences > AWS Account Preferences
@@ -75,7 +75,7 @@ There are two methods for accessing the AWS command-line interface
 (CLI), software development kits (SDKs), and application programming
 interfaces (APIs):
 
-1. From the `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_,
+1. From the `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_,
    navigate to the Account Details screen for the AWS account you would like
    to access and click the View Credentials button. You will be issued AWS
    Security Token Service (STS) credentials that are valid for up to
@@ -106,7 +106,7 @@ As described earlier, our standard best practice is to manage all access as
 either:
 
 * Users within the
-  `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+  `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 
 * IAM Roles for AWS resources, such as EC2 instances, requiring access
   to other AWS services
@@ -123,7 +123,7 @@ a user or role directly within IAM, please remember the following:
   creating the appropriate IAM policy, please :ref:`contact us <support>`.
 
 * IAM users and roles are managed outside of the
-  `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+  `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
   and will not show up in the User Management system. Therefore, any
   modifications or revocation of access must also be performed directly
   within AWS IAM.
@@ -136,7 +136,7 @@ a user or role directly within IAM, please remember the following:
 * An IAM user should typically have password access or access keys, but
   not both. Password access is used for accessing the AWS Console
   (and most of these use cases should be covered under the
-  `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+  `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
   permissions model) and access keys are used for programmatic access.
   In almost all cases where you are creating an IAM user, only access keys
   should be required.
