@@ -176,10 +176,10 @@ Systems Manager API
 .. image:: /_static/img/patching_ec2_troubleshootssm.png
    :width: 100%
 
-If you need to troubleshoot further, or manually resolve either issue,
-please see
-`Where Are My Instances? <https://docs.aws.amazon.com/systems-manager/latest/userguide/troubleshooting-remote-commands.html#where-are-instances>`_
-in the Amazon Systems Manager User Guide.
+  If you need to troubleshoot further, or manually resolve either issue,
+  please see
+  `Where Are My Instances? <https://docs.aws.amazon.com/systems-manager/latest/userguide/troubleshooting-remote-commands.html#where-are-instances>`_
+  in the Amazon Systems Manager User Guide.
 
 Auto Scaling Group instances
 ----------------------------
@@ -236,11 +236,12 @@ manually applying this to the Auto Scaling Group:
 
 #. Identify the current LC used for the ASG
 #. Create a copy of the LC, with an updated AMI
-   #. AWS Console --> Services --> EC2 --> Auto Scaling --> Launch
-   Configurations
+
+   #. AWS Console --> Services --> EC2 --> Auto Scaling --> Launch Configurations
    #. Select a LC --> 'Copy launch configuration'
    #. 'Edit AMI'
    #. 'Create launch configuration'
+
 #. Edit the ASG and select the new LC
 
 Vendor AMI
@@ -386,13 +387,13 @@ and
 In-place patching of ASG instances (emergency only)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-EC2 instances running under an ASG *can* be patched/rebooted in place
-using the SSM documents above, but it is important to consider this as
-**emergency mitigation only**. This must be followed by an AMI update and
-rolling replacement of all instances as soon as possible. New instances
-launched at any time in the future will be unpatched (*even if automatic
-patching is enabled*), and there will be a configuration discrepancy with
-any existing instances, which will be in an untested configuration.
+EC2 instances running under an ASG *can* be patched/rebooted in place using the
+SSM documents above, but it is important to consider this as **emergency
+mitigation only**. This must be followed by an AMI update and rolling
+replacement of all instances as soon as possible. New instances launched at any
+time in the future will be unpatched (*even if automatic patching is enabled*),
+and there will be a configuration discrepancy with any existing instances, which
+will be in an untested configuration.
 
 *More information:* Correct functioning of your application within a group of
 Auto-Scaling instances relies upon current running instances and instances
@@ -400,9 +401,9 @@ launched at any future date/time holding the same configuration. As this
 configuration is made through in several stages or layers (examples below),
 synchronizing and adequately testing existing instances against the
 configuration for future instances can be very difficult and error-prone.
-Rackspace's recommended best practice is therefore to update the underlying
-AMI and perform a rolling replacement of all Auto-Scaling instances, as
-described in this guide.
+Rackspace's recommended best practice is therefore to update the underlying AMI
+and perform a rolling replacement of all Auto-Scaling instances, as described in
+this guide.
 
 *Instance launch configuration stages:*
 
