@@ -27,5 +27,6 @@ cluster needs to remain provisioned for a recurring job, but security
 updates are critical. The EMR cluster should be replaced using the recommended
 method above as soon as a downtime window is available.
 
-Note: Any new instances that are launched - either through scaling changes
+.. note::
+  Any new instances that are launched - either through scaling changes
 or self-healing - will apply outstanding patches at launch.
