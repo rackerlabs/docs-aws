@@ -5,7 +5,7 @@ Transferring existing AWS Master Payers and Linked Accounts to Rackspace
 ========================================================================
 
 While the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 enables the ability to easily provision new AWS accounts, there may be
 situations where you would like to transfer an existing AWS account to
 Rackspace for management. This is also supported, and once complete, will
@@ -14,7 +14,7 @@ existing AWS account.
 
 This process involves formally assigning your AWS account to Rackspace for
 management, which can be initiated by submitting a request via the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 
 Click the **Add AWS Account** card at the bottom of the AWS account
 list. For account source, select **Use an existing AWS account not currently
@@ -46,12 +46,12 @@ This process typically takes 2-4 weeks from start to finish, which is
 somewhat dependent on you since certain steps of the process require action
 on your part. Please monitor your email and the Support Tickets section
 of the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 for tickets that require your action.
 
 Note that transferring an existing AWS account to Rackspace does not count
 against the limit of new AWS accounts you are able to provision via the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 
 Please note that Reserved Instance and Savings Plan sharing between AWS
 accounts may be disrupted during the account transition process. For details,

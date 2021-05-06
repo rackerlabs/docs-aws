@@ -37,7 +37,7 @@ user credentials?**
 You'll be able to manage all access as either:
 
 * Users within the
-  `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+  `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 * IAM Roles for AWS resources, such as EC2 instances (see
   `AWS Identity and Access Management <https://manage.rackspace.com/aws/docs/product-guide/access_and_permissions/aws_iam.html#aws-iam>`_)
 

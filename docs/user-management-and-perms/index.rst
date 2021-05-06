@@ -32,14 +32,14 @@ Creating and Managing Users
 
 If you have more than one person in your organization that will need
 access to the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_,
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_,
 the AWS Console/APIs, or both, you can create additional users and assign
 them permissions on a per AWS account basis.
 
 To create and manage users:
 
 1. Log in to the
-   `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+   `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 2. Click your **user name** at the top right to activate the account menu.
 3. Select **User Management**.
 
@@ -129,7 +129,7 @@ There are three Fanatical Support for AWS permissions:
   existing AWS accounts.
 * **Fanatical Support for AWS** - Controls what access, if any, the user
   will have within the
-  `Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+  `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
   This permission applies to **all** Rackspace features including Passport,
   Logbook, CloudHealth, and Usage.  This permission is configured on a per
   AWS account basis.

@@ -13,7 +13,7 @@ Tickets
 
 One of the primary ways that you can interact with a Racker is by creating
 a ticket in the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_.
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 Once logged in, click the Support button in the black bar at the top of the
 screen and follow the links to create a new ticket or view an existing ticket.
 

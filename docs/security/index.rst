@@ -8,7 +8,7 @@ Rackspace Shared Management Services
 ------------------------------------
 
 Rackspace takes the security of our shared management services and the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 extremely seriously. All infrastructure is deployed on AWS leveraging the
 same set of best practices that we apply to customer accounts. The following
 sections provide a sample of some of the key security focus areas.
@@ -56,7 +56,7 @@ Activity Logging
 As described in the :ref:`Rackspace Logbook section <logbook>` all control
 plane and data plane activities are logged and visible to both customers and
 Rackers via the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_,
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_,
 providing a complete playback of events that occurred on an account.
 
 AWS Security

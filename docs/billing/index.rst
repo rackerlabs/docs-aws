@@ -99,7 +99,7 @@ Usage
 -----
 
 The Usage page in the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 will provide you with a mid-month view of your charges and an estimate of your
 full month's charges, typically updated a few times per day, along with
 historical usage from previous months. You can use this information to avoid
@@ -118,7 +118,7 @@ Viewing your Invoices
 ---------------------
 
 To view your invoices, log in to the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 and click the Billing link toward the top right of the page.
 
 The primary account holder will receive an email any time a payment is
@@ -171,6 +171,6 @@ Modifying your Payment Method
 
 If you need to update the credit card or ACH (eCheck - United States only
 details that you have on file, log in to the
-`Fanatical Support for AWS Control Panel <https://manage.rackspace.com/aws>`_
+`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 and click the Billing link toward the top right of the page. From there, you'll
 find a link to update your payment details.
