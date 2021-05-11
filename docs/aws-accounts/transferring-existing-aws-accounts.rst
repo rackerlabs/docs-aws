@@ -1,24 +1,23 @@
 .. _transferring_existing_aws_accounts:
 
 ========================================================================
-Transferring existing AWS Master Payers and Linked Accounts to Rackspace
+Transferring existing AWS Master Payers and linked accounts to Rackspace
 ========================================================================
 
 While the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
-enables the ability to easily provision new AWS accounts, there may be
-situations where you would like to transfer an existing AWS account to
-Rackspace for management. This is also supported, and once complete, will
-allow Rackspace management tooling and expertise to function with your
-existing AWS account.
+enables you to provision new AWS accounts easily, you might occasionally
+want to transfer an existing AWS account to Rackspace for management. We
+also support this, and after the transfer completes, it allows Rackspace
+management tooling and expertise to function with your existing AWS account.
 
 This process involves formally assigning your AWS account to Rackspace for
-management, which can be initiated by submitting a request via the
+management, which you can initiate by submitting a request in the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 
-Click the **Add AWS Account** card at the bottom of the AWS account
-list. For account source, select **Use an existing AWS account not currently
-managed by Rackspace**. The following information is required:
+Click **Add AWS Account** at the bottom of the AWS account
+list. For **account source**, select **Use an existing AWS account not currently
+managed by Rackspace**. Include the following required information:
 
   * AWS Payer(s) or Account Number(s)
   * Legal Company Name
@@ -27,46 +26,45 @@ managed by Rackspace**. The following information is required:
     authorization to assign your AWS account to Rackspace)
   * Authorized Signatory Email Address
 
-Once we receive your request, we will create a ticket for you with
-instructions that your team must carry out in order to prepare the AWS
+After we receive your request, we create a ticket for you with
+instructions that your team must carry out to prepare the AWS
 account for transition to Rackspace support.
 
-Once your team completes those instructions from the ticket, Rackspace
+After your team completes the instructions in the ticket, Rackspace
 sends a request to AWS to review and approve the account assumption
-request. AWS will confirm if any custom legal or pricing terms exist that
-need to be transferred to Rackspace. Once completed, AWS will approve
-the account assumption.
+request. AWS confirms whether any custom legal or pricing terms exist that
+should transfer to Rackspace. Then, AWS approves the account assumption.
 
-After those steps are complete, Rackspace will automatically apply several
+After those steps finish, Rackspace automatically applies several
 default settings to the account based on best practices we have developed
-in cooperation with AWS. For details, please refer to the
+in cooperation with AWS. For details, refer to the
 :ref:`Account Defaults <account_defaults>` section of this product guide.
 
-This process typically takes 2-4 weeks from start to finish, which is
-somewhat dependent on you since certain steps of the process require action
-on your part. Please monitor your email and the Support Tickets section
-of the
+This process typically takes two to four weeks from start to finish. This 
+partly depends on you because certain steps of the process require action
+on your part. Monitor your email and the Support Tickets section of the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 for tickets that require your action.
 
-Note that transferring an existing AWS account to Rackspace does not count
-against the limit of new AWS accounts you are able to provision via the
+**Note**: Transferring an existing AWS account to Rackspace does not count
+against the limit of new AWS accounts you can provision through the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 
-Please note that Reserved Instance and Savings Plan sharing between AWS
-accounts may be disrupted during the account transition process. For details,
-please consult your Rackspace Onboarding Manager or Customer Success Manager.
+**Note**: The Reserved Instance and Savings Plan sharing between AWS
+accounts might be disrupted during the account transition process. For details,
+consult your Rackspace Onboarding Manager or Customer Success Manager.
 
-Minimum Account Requirements
+Minimum account requirements
 ----------------------------
 
-In order for an existing AWS account to be transitioned to Rackspace, it
-must meet our minimum account requirements, which include:
+For you to transition an existing AWS account to Rackspace, it
+must meet our minimum account requirements, which include the 
+following criteria:
 
-* `No access keys exist for the root user of the AWS account <https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#root-password>`_
+* `No access keys exist for the root user of the AWS account <https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#root-password>`_.
 * The account is not consolidated under a payer account or serving as a
-  payer account with linked child accounts
-* The account cannot be a part of an AWS Organization
+  payer account with linked child accounts.
+* The account cannot be a part of an AWS Organization.
 
-These requirements **must** be met before the account can be transitioned
-to Rackspace.
+Make sure your account meets these **manditory** requirements before you
+transition the account to Rackspace.
