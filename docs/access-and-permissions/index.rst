@@ -20,7 +20,7 @@ Rackspace account
 Your Rackspace account is the top-level container that contains one or
 more AWS accounts. All user and permissions management occurs at the
 Rackspace account level, though you can limit specific users on your
-account to have access to only specific AWS accounts. You calso use the
+account to have access to only specific AWS accounts. You can also use the
 Rackspace account for billing purposes. All charges from each of the AWS
 accounts are
 :ref:`aggregated at the Rackspace account level <billing_rackspace_account>`.
@@ -87,8 +87,8 @@ interfaces (APIs):
    APIs, use one of the following options:
    
    - If the access is from a user's workstation, create an IAM user with access keys.
-   - If the access is from resources, such as EC2 instances, running at AWS, create
-     an IAM instance role (). 
+   - If the access is from resources, such as EC2 instances running at AWS, create
+     an IAM instance role. 
      
    **Note**: You do not manage directly-created IAM users or roles within the
    Fanatical Support for AWS user management system. Instead, you must modify
@@ -112,8 +112,8 @@ either:
 - IAM Roles for AWS resources, such as EC2 instances, requiring access
   to other AWS services
 
-Occasionally, a use case occurs where you need to directly
-create an IAM user or role. These scenarios typically involve a third-party
+Occasionally, a use case occurs where you need to create an IAM user
+or role directly. These scenarios typically involve a third-party
 tool or SaaS needing access to your account, such as a continuous
 integration and deployment system, such as CircleCI, or a local file management
 application that integrates with S3, such as Cyberduck. If you must create
@@ -130,7 +130,7 @@ a user or role directly within IAM, remember the following recommendations:
 
 - We include a default IAM password policy in our
   :ref:`AWS account defaults <account_defaults>`. We do not recommend
-  weakening or disabling these requirements, because we put them in place to
+  weakening or disabling these requirements because we put them in place to
   protect your account from brute-force password attacks.
 
 - An IAM user should typically have password access or access keys, but
