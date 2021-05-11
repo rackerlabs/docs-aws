@@ -28,7 +28,7 @@
 [[redirects]]
   from = "/docs/fanatical-support-aws/access-and-permissions/user-management-and-perms/*"
   to = "/docs/fanatical-support-aws/user-management-and-perms/:splat"
-  status = 200
+  status = 404
   force = false
 
 [[plugins]]
