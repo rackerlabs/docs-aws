@@ -14,9 +14,9 @@ partnership with Rackspace.
 
 **Why must Rackspace hold root credentials for AWS accounts?**
 
-Racksapce holds the root credentials to secure AWS accounts and prevent
+Rackspace holds the root credentials to secure AWS accounts and prevent
 fraudulent usage because security compromise
-is a critical aspect to our management of AWS accounts. AWS specifies
+is critical to our management of AWS accounts. AWS specifies
 several Identity and Access Management best practices to minimize the
 risk of account compromise.  These include locking away the AWS account
 root user access keys and enabling multifactor authentication (MFA). By
@@ -32,7 +32,7 @@ based on emails sent to that email address. This lets Rackspace Fanatical
 Support for AWS (FAWS) share important account updates with you through
 tickets.
 
-**How am I and my team impacted by not holding our AWS account root user credentials?**
+**How are my team and I impacted by not holding our AWS account root user credentials?**
 
 You can manage all access as either:
 
@@ -41,7 +41,7 @@ You can manage all access as either:
   `AWS Identity and Access Management <https://manage.rackspace.com/aws/docs/product-guide/access_and_permissions/aws_iam.html#aws-iam>`_)
 
 For the specific tasks that require AWS account root user permission, a
-small set of the FAWS Rackers can carry out the tasks.   
+small set of FAWS Rackers can carry out the tasks.   
 
 **How does Rackspace secure and store root credentials?**
 
