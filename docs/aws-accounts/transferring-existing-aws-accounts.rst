@@ -26,9 +26,9 @@ managed by Rackspace**. Include the following required information:
     authorization to assign your AWS account to Rackspace)
   * Authorized Signatory Email Address
 
-After we receive your request, we create a ticket for you with
+After receiving your request, we create a ticket for you with
 instructions that your team must carry out to prepare the AWS
-account for transition to Rackspace support.
+account for the transition to Rackspace support.
 
 After your team completes the instructions in the ticket, Rackspace
 sends a request to AWS to review and approve the account assumption
@@ -50,9 +50,9 @@ for tickets that require your action.
 against the limit of new AWS accounts you can provision through the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 
-**Note**: The Reserved Instance and Savings Plan sharing between AWS
-accounts might be disrupted during the account transition process. For details,
-consult your Rackspace Onboarding Manager or Customer Success Manager.
+**Note**: The transition process might disrupt the Reserved Instance and Savings
+Plan sharing between AWS accounts. For details, consult your Rackspace
+Onboarding Manager or Customer Success Manager.
 
 Minimum account requirements
 ----------------------------
@@ -66,5 +66,5 @@ following criteria:
   payer account with linked child accounts.
 * The account cannot be a part of an AWS Organization.
 
-Make sure your account meets these **manditory** requirements before you
+Make sure your account meets these **mandatory** requirements before you
 transition the account to Rackspace.
