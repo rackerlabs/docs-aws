@@ -45,9 +45,9 @@ support charges to your Rackspace account, and they appear on
 your next Rackspace bill. Each line item includes the month in which
 you incurred the charges. The system creates your Rackspace bill on the 15th of
 each month if you signed up for a FAWS account after
-July 6, 2017. If you signed up prior to July 6, 2017 or are using an
+July 6, 2017. If you signed up before July 6, 2017, or are using an
 account originally created for the Rackspace Public Cloud, we bill you
-based on the anniversary date when you created the account.
+based on the anniversary date you created the account.
 
 .. _billing_rackspace_account:
 
@@ -88,8 +88,8 @@ that month. If you do make a Reserved Instance purchase, we remove the
 proration as the service fees paid during your first month cover our
 services for the length of the reserved instance reservation. Note that
 we base proration on AWS account signup date and not the date AWS
-infrastructure charges reach more than $30. For example, if your AWS account
-has a signup date of March 15th but you do not start using resources in your
+infrastructure charges reach more than $30. For example, if you signed up
+for your AWS account on March 15th but did not start using resources in your
 account until April 5th, we charge you for a full month of service fees
 for April.
 
@@ -130,8 +130,8 @@ Tagging
 -------
 
 Rackspace provides detailed views of your AWS billing data by resource
-tags. Tags must use a key from the following list (case-sensitive)
-to be included in these views:
+tags. The views include only tags with a key from the following list
+(case-sensitive):
 
 * BusinessUnit
 * Group
@@ -170,7 +170,7 @@ Modifying your payment method
 -----------------------------
 
 If you need to update the credit card or ACH (eCheck - United States only)
-details that you have on file, log in to the
+details you have on file, log in to the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 and click the **Billing** link near the upper-right corner of the page. From there,
 find the link to update your payment details.
