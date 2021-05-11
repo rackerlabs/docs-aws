@@ -1,1 +1,1 @@
-/docs/fanatical-support-aws/access-and-permissions/user-management-and-perms /docs/fanatical-support-aws/user-management-and-perms
+/docs/fanatical-support-aws/access-and-permissions/user-management-and-perms/* /docs/fanatical-support-aws/user-management-and-perms/:splat 200
