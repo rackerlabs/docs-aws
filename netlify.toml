@@ -20,16 +20,16 @@
   directory = "functions"
 
 [[redirects]]
+  from = "/docs/fanatical-support-aws/access-and-permissions/user-management-and-perms/*"
+  to = "/docs/fanatical-support-aws/user-management-and-perms/:splat"
+  status = 404
+  force = false
+
+[[redirects]]
   from = "/*"
   to = "/docs/fanatical-support-aws/:splat"
   status = 301
   force = false
-
-[[redirects]]
-  from = "/docs/fanatical-support-aws/access-and-permissions/user-management-and-perms/*"
-  to = "/docs/fanatical-support-aws/user-management-and-perms/:splat"
-  status = 404
-  force = true
 
 [[plugins]]
   package = "@netlify/plugin-sitemap"
