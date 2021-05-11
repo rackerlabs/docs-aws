@@ -9,7 +9,7 @@ For all AWS accounts managed by Rackspace, whether created through the
 or created directly with AWS and transferred to Rackspace, we automatically
 apply the following default settings to the account based on best practices we
 developed in cooperation with AWS. You should not change or disable
-any of these default settings becaue they are critical to our delivery of
+any of these default settings because they are critical to our delivery of
 Fanatical Support.
 
 **AWS IAM (Identity and Access Management)**:
