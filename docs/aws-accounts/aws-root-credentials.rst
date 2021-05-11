@@ -53,7 +53,7 @@ and vault it by using AWS Key Management Service (KMS).
 Rackspace tools and employees accomplish most AWS account management
 by using IAM roles and users.
 
-**Why does Rackspace require root access keys deletion?**
+**Why does Rackspace require root access key deletion?**
 
 You can use access keys (an access key ID and secret access key) to make
 programmatic requests to AWS. Rackspace requires that you delete root
