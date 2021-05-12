@@ -4,7 +4,7 @@
 User management and permissions
 ===============================
 
-The followiong sections cover user management and permissions considerations:
+The following sections cover user management and permissions considerations:
 
 Account Owner
 -------------
@@ -74,7 +74,7 @@ Users with the **Account Administrator** right have the following privileges:
 - ``Admin`` rights to the Rackspace Billing and Payments portal.
 - Ability to add additional AWS accounts for Rackspace to manage.
 - Ability to create and delete users on the Rackspace account and manage
-  their permissions on for each AWS account.
+  their permissions for each AWS account.
 - Ability to make other users Account Administrators.
 
 **Account Administrators** do **NOT** have the following permissions:
@@ -127,11 +127,10 @@ There are three Fanatical Support for AWS permissions:
 * **Allow this user to add AWS Accounts**: Enables the user to add
   additional AWS accounts for Rackspace to manage. These could be new or
   existing AWS accounts.
-* **Fanatical Support for AWS**: Controls what access, if any, the user
-  has within the
+* **Fanatical Support for AWS**: Controls what access the user has within the
   `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
   This permission applies to **all** Rackspace features, including Passport,
-  Logbook, CloudHealth, and Usage. YOu can configure this permission for
+  Logbook, CloudHealth, and Usage. You can configure this permission for
   each AWS account.
 * **AWS Console and APIs**: Controls what access, if any, the user has
   when federating to the AWS Console or retrieving AWS temporary API
@@ -198,24 +197,24 @@ can view but not edit or delete data within CloudHealth.
 .. list-table::
    :header-rows: 1
 
-   * - Rackspace Role
-     - CloudHealth User Status
-     - CloudHealth Organization
-   * - Account Owner
-     - Power User
-     - Default Org
-   * - Product Access: Admin
-     - Power User
-     - Default Org
-   * - Product Access: Observer
-     - Standard User
-     - Default Org
+   * - Rackspace role
+     - CloudHealth user status
+     - CloudHealth organization
+   * - Account owner
+     - Power user
+     - Default org
+   * - Product access: Admin
+     - Power user
+     - Default org
+   * - Product access: Observer
+     - Standard user
+     - Default org
    * - Fanatical Support for AWS: Admin
-     - Power User
-     - Sub-Org
+     - Power user
+     - Sub-org
    * - Fanatical Support for AWS: Observer
-     - Standard User
-     - Sub-Org
+     - Standard user
+     - Sub-org
 
 Contact your Rackspace Customer Success Manager with any questions about
 permissions.
