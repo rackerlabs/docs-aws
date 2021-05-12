@@ -5,10 +5,10 @@ Patching
 ========
 
 This section describes the necessary considerations and steps for patching guest
-Operating Systems in AWS services where the OS is unmanaged, with a particular
-focus on EC2 instances.
+Operating Systems in AWS services where the OS is unmanaged, 
+focusing on EC2 instances.
 
-Customers of *Fanatical Support for AWS* may wish to reach out to the Rackspace
+Customers of *Fanatical Support for AWS* can reach out to the Rackspace
 support team for further advice, guidance, and assistance on applying security
 updates or patches to any of these services.
 
