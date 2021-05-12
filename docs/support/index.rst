@@ -18,8 +18,8 @@ follow the links to create a new ticket or view an existing ticket.
 
 Our automated systems create tickets for events on your AWS accounts
 that require attention from you or a Racker. For example,
-our :ref:`Rackspace Watchman <watchman>` creates a ticket when an alarm
-is raised that requires attention.
+our :ref:`Rackspace Watchman <watchman>` creates a ticket when the
+system raises an alarm that requires attention.
 
 When we update a ticket, you get an email directing you back
 to the Control Portal to view the latest comments.
