@@ -11,7 +11,7 @@ Rackspace shared management services
 
 Rackspace takes the security of our shared management services and the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
-extremely seriously. We deploy all infrastructure on AWS leveraging the
+extremely seriously and deploy all infrastructure on AWS leveraging the
 same best practices that we apply to customer accounts. The following
 sections provide a sample of some of the key security focus areas.
 
@@ -25,7 +25,7 @@ Racker privileges
 ^^^^^^^^^^^^^^^^^
 
 Rackspace tightly controls each Racker's access privileges for our Fanatical
-Support for AWS management systems based on job role, and we review it
+Support for AWS management systems based on job role, reviewing it
 periodically to ensure that each Racker has the minimum level of
 permissions required to perform their job duties adequately. We also log
 all privilege changes that require management approval for later review.
@@ -40,7 +40,7 @@ and the AWS SDKs for application-level encryption of secrets.
 Encryption in transit
 ^^^^^^^^^^^^^^^^^^^^^
 
-We ecnrypt all communication between services that make up the Fanatical
+We encrypt all communication between services that make up the Fanatical
 Support for AWS shared management system during transit by using SSL. You
 can access our customer and Racker UIs and APIs only through HTTPS.
 
@@ -71,7 +71,7 @@ recommend reviewing their
 
 We also encourage you to review the
 `Securing Data at Rest with Encryption whitepaper <https://d0.awsstatic.com/whitepapers/AWS_Securing_Data_at_Rest_with_Encryption.pdf>`_
-for an overview of the methods for securing your data.
+to see an overview of the methods for securing your data.
 
 If you have questions about the whitepapers or environment security,
 :ref:`contact a member of your Support team <support>`.
@@ -88,7 +88,7 @@ events with AWS services."
 If you are interested in staying informed about these security bulletins, watch the
 AWS `Security Bulletins <https://aws.amazon.com/security/security-bulletins/>`_
 web page or the companion
-`RSS feed <https://aws.amazon.com/security/security-bulletins/feed/>`_ are
+`RSS feed <https://aws.amazon.com/security/security-bulletins/feed/>`_
 channels. Sometimes, Rackspace provides additional details or guidance to our
 customers for specific security incidents. We publish such value-add security
 updates here.
