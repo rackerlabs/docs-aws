@@ -23,14 +23,14 @@ Rackspace Government Cloud Secure Configuration Baseline (RHEL7)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Built by a FedRAMP authorized CSP. Significantly reduced cost and time of
-securing Images to DISA standards. AMIs updated monthly.
+securing Images to DISA standards. Amazon® Machine Image (AMI) updated monthly.
 `https://aws.amazon.com/marketplace/pp/B091DX5M4Y`_.
 
 Rackspace Government Cloud Secure Configuration Baseline (Win2019)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Standard Windows 2019 STIG-compliant Server. Significantly reduced cost and time
-of securing Images to DISA standards. Amazon&reg; Machine Image (AMI). updated monthly.
+of securing Images to DISA standards. Amazon® Machine Image (AMI) updated monthly.
 `https://aws.amazon.com/marketplace/pp/B091YSYFLD`_.
 
 For more information on Rackspace Government Cloud Secure Configuration Baseline (RGCSCB), visit our
