@@ -1,7 +1,7 @@
 .. _aws_accounts:
 
 ============
-AWS Accounts
+AWS accounts
 ============
 
 Each Rackspace account can house one or more AWS accounts. By default, you
@@ -33,7 +33,7 @@ tracking within accounts. However, tagging is more complicated. You might miss
 tagging certain resources resulting in unallocated cost, and not all AWS resource
 types support tagging. AWS accounts provide a great default cost allocation construct.
 
-Lastly, using separate AWS accounts per environment gives you the flexibility
+Lastly, by using separate AWS accounts for each environment, you have the flexibility
 to select different Rackspace :ref:`service levels <service_levels>` for each
 environment because Rackspace applies service levels at the AWS account
 level. For example, you might opt for the Navigator service level on your
