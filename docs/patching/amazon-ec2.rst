@@ -47,33 +47,33 @@ patching instances in both categories:
      to be *stateful*. That is, it stores configuration or data locally, and
      you cannot replace it. An example would be a build server holding local
      configuration data.
-   * The term *Auto-Recovery Instance* often refers to standalone instances
+   * *Auto-Recovery Instance* often refers to standalone instances
      configured with CloudWatch Auto-Recovery alarms, improving resilience
-     and availability. This guidetreats these instances as simple Standalone
+     and availability. This guide treats these instances as simple Standalone
      instances.
 
 #. Instances in an Auto Scaling Group (ASG)
 
-   * **Method:** *Update the Amazon Machine Image (AMI)* from which you launch
+   * **Method:** Update the Amazon Machine Image (AMI) from which you launch
      these instances and perform a *rolling replacement* of the instances
      in each ASG.
    * You normally provision ASG instances where an instance is *stateless*.
-     That is, it stores all data externally (in S3 or a database) and you
+     That is, it stores all data externally (in S3 or a database), and you
      can replace the instance itself at any time. An example would be a
-     group of webservers.
+     group of web servers.
    * ASG instances provide higher availability than Standalone
      instances and the potential to scale to tens or even hundreds of
      instances horizontally.
-   * New instances replace these instances on a regular
-     basis, whether or not you apply any Scaling Policies to your
+   * New instances replace these instances regularly,
+     whether or not you apply any Scaling Policies to your
      ASG. Patching existing ASG instances in place is therefore ineffectual.
    * Don't worry if you make manual changes to an ASG instance. This
-     guide covers this (and other) corner cases in many different configurations.
+     guide covers several corner cases in many different configurations.
 
 Patching process overview
 -------------------------
 
-Generally speaking, if you have a group of identical webservers, you
+Generally speaking, if you have a group of identical web servers, you
 likely provision them in an ASG. You can examine each ASG (including a
 list of instances) in the AWS console  by navigating to
 **Services --> EC2 --> Auto Scaling --> Auto Scaling Groups**.
@@ -81,25 +81,25 @@ list of instances) in the AWS console  by navigating to
 On the other hand, you likely provision individual instances fulfilling
 utility roles as standalone instances.
 
-If you are unsure, or need to programmatically list or report on
-your instances, you can examine the tags on each instance. ASG instances
+If you are unsure or need to list or report on your instances programmatically,
+you can examine the tags on each instance. ASG instances
 have the ``aws:autosscaling:groupName`` tag key. This is an AWS-reserved
 tag that you cannot modify manually.
 
 Following are some AWS CLI command examples:
 
-* Describe all Auto Scaling instances in `us-east-1`::
+* Describe all Auto Scaling instances in ``us-east-1``::
 
       aws --region=us-east-1 autoscaling describe-auto-scaling-instances
 
-* List all Auto Scaling instances in` us-east-1`, along with their ASG name
+* List all Auto Scaling instances in ``us-east-1``, along with their ASG name
   and CloudFormation stack name::
 
       aws --region=us-east-1 ec2 describe-instances \
           --filters 'Name=tag-key,Values=aws:autoscaling:groupName' \
           --query 'Reservations[*].Instances[*].[InstanceId,Tags[?Key==`aws:autoscaling:groupName`],Tags[?Key==`aws:cloudformation:stack-name`]]'
 
-* List all standalone instances in `us-east-1`, along with their
+* List all standalone instances in ``us-east-1``, along with their
   CloudFormation stack name::
 
       aws --region=us-east-1 ec2 describe-instances \
@@ -120,16 +120,16 @@ in red.  We shaded in purple the automatable processes with the SSM documents:
 Standalone instances
 --------------------
 
-You should patch standalone instances in-place and reboot them.
+You should patch standalone instances in place and reboot them.
 
 If Configuration Management (examples: Puppet, Chef, Ansible, Saltstack)
 manages the instance, you should probably use this
-configuration management to apply updates and reboot. Good news:
-You're done, so you can move on to the next instance.
+configuration management to apply updates and reboot. That's all you
+need to do, so you can move on to the next instance.
 
 If the instance is not under Configuration Management, you should apply
 the updates automatically by using Amazon Systems Manager, which is also
-known as Simple Systems Manager (SSM) or manually by using native OS tools
+known as Simple Systems Manager (SSM), or manually by using native OS tools
 if necessary.
 
 Apply OS patches
@@ -139,7 +139,7 @@ You can find
 `Systems Manager Patch Manager walkthroughs <https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-patch-walkthrough.html>`_
 in the **AWS Systems Manager User Guide**.
 
-If necessary, you can manually checke and apply the updates, reboot the instance,
+If necessary, you can manually check and apply the updates, reboot the instance,
 and validate the update through your usual management access to this
 instance (SSH or RDP). However, Rackspace recommends using the Systems Manager
 Documents to ensure repeatability, eliminate manual work, and manage
@@ -160,7 +160,7 @@ problems might be the cause:
      service offering can find the *RackspaceDefaultEC2Role* and
      *RackspaceDefaultEC2Policy* created on all accounts, which provide the correct
      permissions.
-   * If you need to create a role and/or policy manually, see
+   * If you need to create a role or policy manually, see
      `Create an Instance Profile Role for Systems Manager <https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-configuring-access-role.html>`_
      in the **Amazon Systems Manager User Guide**, or reach out to the
      Fanatical Support for AWS Support team for assistance.
@@ -183,7 +183,7 @@ Auto Scaling Group instances
 ----------------------------
 
 Update Auto Scaling Groups with a new Launch Configuration (LC)
-specifying a new AMI that incorporates the necessary OS updates and
+specifying a new AMI that incorporates the necessary OS updates. Then,
 replace them by using a rolling update to the ASG.
 
 Update AMI
@@ -198,13 +198,13 @@ an AWS-reserved tag that you cannot modify manually.
 
 Following are some AWS CLI command examples:
 
-* List all ASGs in `us-east-1` created by CloudFormation and their
+* List all ASGs in ``us-east-1`` created by CloudFormation and their
   CloudFormation stack name::
 
       aws --region=us-east-1 autoscaling describe-auto-scaling-groups \
           --query 'AutoScalingGroups[?not_null(Tags[?Key == `aws:cloudformation:stack-name`])].[AutoScalingGroupName,Tags[?Key==`aws:cloudformation:stack-   name`].Value] | []'
 
-* List all ASGs in `us-east-1` not created by CloudFormation::
+* List all ASGs in ``us-east-1`` not created by CloudFormation::
 
       aws --region=us-east-1 autoscaling describe-auto-scaling-groups \
           --query 'AutoScalingGroups[?!not_null(Tags[?Key == `aws:cloudformation:stack-name`])].AutoScalingGroupName | []'
@@ -225,9 +225,9 @@ the template and updating the stack with the new template.
 
 If you have trouble updating a CloudFormation template or need to
 move towards best practices, such as parameterizing the AMI ID, then
-ask Rackspace for assistence.
+ask Rackspace for assistance.
 
-If you make a change to a template, remember to check it into a
+If you change to a template, remember to check it into a
 version control repository, such as Git, that you use.
 
 Update Auto Scaling Groups not under CloudFormation (or other Infrastructure as Code)
@@ -235,7 +235,7 @@ management by creating a new Launch Configuration (LC) and
 manually applying it to the Auto Scaling Group by using the following steps:
 
 #. Identify the current LC used for the ASG.
-#. Create a copy of the LC, with an updated AMI.
+#. Create a copy of the LC with an updated AMI.
 
    #. Navigate to **AWS Console --> Services --> EC2 --> Auto Scaling --> Launch Configurations**.
    #. Select a **LC --> Copy launch configuration**.
@@ -247,7 +247,7 @@ manually applying it to the Auto Scaling Group by using the following steps:
 Vendor AMI
 """"""""""
 
-If you are using a default vendor AMI with no *baked in* customization, then
+If you are using a default vendor AMI with no *baked-in* customization, then
 update the ASG with the latest version of the vendor AMI. This guide provides the
 following references for your convenience, but you should always use the 
 latest AMI issued by the vendor.
@@ -283,7 +283,7 @@ AMI for your ASG:
 The following process shows how to generate a custom AMI (if necessary). As
 before, we shaded automatable processes in purple. You can use SSM documents
 to automate new patching AMI generation, either from
-an existing AMI or from an existing instance. For examples, see the
+an existing AMI or an existing instance. For examples, see the
 :ref:`Rackspace SSM documents <patching_ec2_meltdownspectre>` targeting AMI
 generation for Meltdown/Spectre remediation.
 
@@ -298,7 +298,7 @@ manual steps:
    these manual changes.
 
    You can do this offline by using the ``--reboot``
-   `CLI argument <https://docs.aws.amazon.com/cli/latest/reference/ec2/create-image.html>`_,
+   `CLI argument <https://docs.aws.amazon.com/cli/latest/reference/ec2/create-image.html>`_
    or without choosing ``No reboot`` in the console AMI generator wizard.
    This process ensures that the instance shuts down properly for a consistent
    filesystem snapshot.
@@ -314,7 +314,7 @@ manual steps:
    If the temporary instance is available in SSM, use the instructions under the
    preceding **Apply OS patches** section to update the instance by using SSM documents.
    
-   If the temporary instance is not available in SSM (For example, the AMI did not
+   If the temporary instance is not available in SSM (for example, the AMI did not
    contain an installation of the SSM agent), you need to access the instance
    directly (SSH or RDP) and manually apply updates.
 
@@ -324,10 +324,10 @@ manual steps:
 
    Examples of items you may need to remove:
 
-     * SSH keys and other secrets
-     * Log files
-     * Application code
-     * Software agents
+   * SSH keys and other secrets
+   * Log files
+   * Application code
+   * Software agents
 
 #. Generate an AMI from this temporary instance by using the AWS console, AWS
    CLI, or any third-party tool that can call the ``CreateImage``
@@ -364,7 +364,7 @@ ASG. The following diagram illustrates this process:
 
 Alternatively, you might want to update the CloudFormation stack template to
 add an ``UpdatePolicy`` to the Auto Scaling Group resource, similar to the
-following::
+following example::
 
      "UpdatePolicy": {
        "AutoScalingRollingUpdate": {
@@ -400,10 +400,10 @@ are in an untested configuration.
 **More information:** The correct functioning of your application within a group of
 Auto-Scaling instances relies upon current running instances and instances
 launched at any future date having the same configuration. Because you made this
-configuration through in several stages or layers (as shown in the following examples),
+configuration in several stages or layers (as shown in the following examples),
 synchronizing and adequately testing existing instances against the
 configuration for future instances can be very difficult and error-prone.
-Rackspace recommends, as a best practice, that you update the underlying AMI
+As a best practice, Rackspace recommends that you update the underlying AMI
 and perform a rolling replacement of all Auto-Scaling instances, as described in
 this guide.
 
@@ -414,14 +414,14 @@ Instance launch configuration occurs in the following stages:
    pre-configured with some software packages or application code.
 
 #. **Cloud-init**: The EC2 service uses cloud-init to perform initial instance
-   configuration. This includes resetting OS configuration left in the AMI, setting
+   configuration. This includes resetting the OS configuration left in the AMI, setting
    up networking, deploying SSH keys, and so on.
 
-#. **User Data**: `cloud-init` then executes the User Data, often used to setup
+#. **User Data**: `cloud-init` then executes the User Data, often used to set up
    software repositories, configuration management agents, and so on.
 
 #. **Bootstrapping**: Installation and configuration of software packages,
-   usually by using CloudFormation `cfn-init` metadata and your Configuration
+   usually by using CloudFormation ``cfn-init`` metadata and your Configuration
    Management.
 
 #. **Application Deployment**: Copying and testing your application code by using
