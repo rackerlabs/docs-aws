@@ -22,9 +22,9 @@ You can learn more about how AWS Systems Manager is used in the
 Passport CLI
 ------------
 
-You must install the Passport CLI on your local workstation in order to
-connect to instances with Passport. Before you install the Passport CLI, make
-sure that you have the following dependencies installed:
+You must install the Passport CLI on your local workstation in order to connect
+to instances with Passport. Before you install the Passport CLI, make sure that
+you have the following dependencies installed:
 
 * `AWS CLI v1.16.220 or higher <https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html>`_
 * `AWS Session Manager Plugin v1.1.26 or higher <https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html>`_
