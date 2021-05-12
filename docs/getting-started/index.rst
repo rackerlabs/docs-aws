@@ -20,7 +20,7 @@ and follow the instructions to establish your account.
 Add a new AWS account
 ---------------------
 
-After you have created your Rackspace account navigate to the
+After you have created your Rackspace account, navigate to the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 Log in by using the credentials you established during the preceding signup process.
 
@@ -35,7 +35,7 @@ Provide the relevant details and select a
 :ref:`service level <service_levels>`. At that point, we immediately provision
 a new AWS account ready for your use. You can click the
 **Log in to AWS Console** link to go straight to AWS, though we encourage
-you to first review our :ref:`recommended_network_configuration`.
+you to review our :ref:`recommended_network_configuration` first.
 
 Any time you need assistance from a Racker, do not hesitate
 to :ref:`Contact Us <support>`.
