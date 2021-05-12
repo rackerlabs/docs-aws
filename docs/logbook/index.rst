@@ -7,7 +7,7 @@
 Logbook
 =======
 
-AWS and Rackspace generate detailed Control Panel logs for all activities
+AWS and Rackspace generate detailed control plane logs for all activities
 taking place in your Fanatical Support for AWS accounts, aggregating data
 from the following sources:
 
@@ -18,7 +18,7 @@ from the following sources:
   and store only ``PutObjectAcl``, ``DeleteObject``, and
   ``DeleteObjects`` in Logbook. Logbook does not store read-only events.
 - **Fanatical Support for AWS shared management system and user interfaces**: View
-  Control Panel logins and other actions, such as creating a new AWS account
+  Control Portal logins and other actions, such as creating a new AWS account
   or modifying user permissions.
 - **Fanatical Support for AWS environment access**: Any time a Racker, or one
   of your employees, accesses your AWS environment by creating a
