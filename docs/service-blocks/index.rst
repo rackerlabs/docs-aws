@@ -75,8 +75,8 @@ Architect & Deploy
 
 With the Rackspace Architect & Deploy service block, our experts apply best
 practices to design and deploy public cloud infrastructure that meets your
-business needs. It minimizes costs, maximizes availability, security and
-performance, and enables you to outsource ongoing management activities to
+business needs. It minimizes costs, maximizes availability, security, and
+performance, enabling you to outsource ongoing management activities to
 Rackspace. The Architect & Deploy offer includes:
 
 * An Onboarding Manager to coordinate end-to-end activities and project manage
@@ -85,10 +85,10 @@ Rackspace. The Architect & Deploy offer includes:
 * A Solutions Architect to understand your requirements and create a
   high-level proposal document for your approval.
 
-* A Build Engineer who builds and deploys the environment according to the
+* A Build Engineer to build and deploy the environment according to the
   design document.
 
-* A Design document, which describes the detailed solution design. We share this
+* A Design document to describes the detailed solution design. We share this
   document and require your approval of the design before deploying the solution.
 
 * An AWS Environment in which the deployed solution runs on AWS.
@@ -125,7 +125,7 @@ back. Manage & Operate includes access to additional tooling like Passport
 to tickets for Rackers to address), and Instance Scheduler (configuration
 of custom start and stop schedules for EC2 and RDS instances). Your Rackspace
 technical support professionals help you resolve issues quickly
-and effectively any time. Manage & Operate includes:
+and effectively at any time. Manage & Operate includes:
 
 * Named Account Manager to coordinate escalations, follow AWS technical
   issues through to resolution, and help focus on the AWS technical
@@ -140,7 +140,7 @@ and effectively any time. Manage & Operate includes:
 * Operating system management
 
 * Set up of AWS Infrastructure monitoring by using AWS CloudWatch and response to
-  your monitoring alerts throught the Rackspace Watchman tool with response time
+  your monitoring alerts through the Rackspace Watchman tool with response time
   SLAs up to 15 minutes.
 
 * `Passport <https://manage.rackspace.com/aws/docs/product-guide/passport.html>`_,
@@ -248,7 +248,7 @@ Managed Security–Compliance Assistance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 With Compliance Assistance, our Managed Security compliance experts help
-customers to define, manage, and validate selected Governance Risk
+customers define, manage, and validate selected Governance Risk
 and Compliance (GRC) requirements. Compliance Assistance includes:
 
 * Configuration Hardening Monitoring
