@@ -12,7 +12,7 @@ example is stopping DEV instances outside of working hours (reducing weekly
 utilization from 168 hours to 50 hours—yielding a 70 percent reduction in
 running costs).
 
-Instance Scheduler is a *solution* not an AWS *service*, so you can't
+Instance Scheduler is a *solution*, not an AWS *service*, so you can't
 find it in the AWS console. It is composed of several AWS services that are
 packaged together into a CloudFormation template. It's important to note that it
 does not feature a user interface. AWS develops, maintains, and
@@ -84,4 +84,4 @@ Pricing
 
 Aviator customers get Instance Scheduler management at no additional cost.
 Customers are responsible for the minimal infrastructure cost to run
-the solution, which is normally up to $10 per AWS account per month.
+the solution, normally up to $10 per AWS account per month.
