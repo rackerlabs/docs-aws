@@ -28,10 +28,10 @@ from the following sources:
 
 The |Logbook™| section of the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
-provides a timeline-based view of all of these activities. You can view
+provides a timeline-based view of all these activities. You can view
 the activities for a specific AWS account or view activities across all
 your AWS accounts. You can also filter the results to find the
-specific activities you are looking for. Logbook indexes and retains the
+specific activities you want to see. Logbook indexes and retains the
 last 90 days of historical data for you to explore.
 
 The information in Logbook can be extremely valuable if you need
