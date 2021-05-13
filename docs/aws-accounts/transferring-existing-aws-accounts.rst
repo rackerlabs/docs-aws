@@ -12,28 +12,30 @@ also support this, and after the transfer completes, it allows Rackspace
 management tooling and expertise to function with your existing AWS account.
 
 This process involves formally assigning your AWS account to Rackspace for
-management, which you can initiate by submitting a request in the
-`Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
+management, which you can initiate by submitting a request in the `Rackspace
+Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 
-Click **Add AWS Account** at the bottom of the AWS account
-list. For **account source**, select **Use an existing AWS account not currently
-managed by Rackspace**. Include the following required information:
+When submitting an AWS Master Payer, notify Rackspace to ensure a smooth
+transition of the AWS Master Payer and linked accounts, prior to placing into
+the portal. 
 
-  * AWS Payer(s) or Account Number(s)
+Click **Add AWS Account** at the bottom of the AWS account list. For **account
+source**, select **Use an existing AWS account not currently managed by
+Rackspace**. Include the following required information:
+
+  * AWS Master Payer(s) or Account Number(s)
   * Legal Company Name
   * Legal Company Address
   * Authorized Signatory Name (the individual who can legally give
     authorization to assign your AWS account to Rackspace)
   * Authorized Signatory Email Address
 
-After receiving your request, we create a ticket for you with
-instructions that your team must carry out to prepare the AWS
-account for the transition to Rackspace support.
-
-After your team completes the instructions in the ticket, Rackspace
-sends a request to AWS to review and approve the account assumption
-request. AWS confirms whether any custom legal or pricing terms exist that
-should transfer to Rackspace. Then, AWS approves the account assumption.
+After receiving your request, we create a ticket for you with instructions your
+team must carry out to prepare the AWS account for the transition to Rackspace
+support. After the instructions are completed, Rackspace sends a request to AWS
+to review and approve the account assumption request. AWS confirms whether any
+custom legal or pricing terms exist that should transfer to Rackspace. Then, AWS
+approves the account assumption.
 
 After those steps finish, Rackspace automatically applies several
 default settings to the account based on best practices we have developed
