@@ -82,6 +82,8 @@ When need to override a schedule, use one of the following methods:
 Pricing
 -------
 
-Aviator customers get Instance Scheduler management at no additional cost.
-Customers are responsible for the minimal infrastructure cost to run
-the solution, normally up to $10 per AWS account per month.
+Management of Instance Scheduler is provided at no additional cost for Rackspace
+Elastic Engineering customers. Customers are responsible for the minimal
+infrastructure cost to run the solution (normally up to $10 per AWS account per
+month) and this may consume hours from your Elastic Engineering Pod to setup or
+manage.
