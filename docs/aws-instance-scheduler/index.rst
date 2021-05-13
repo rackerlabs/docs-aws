@@ -7,10 +7,10 @@ AWS Instance Scheduler
 AWS Instance Scheduler is an AWS-provided solution that enables customers to
 configure custom start and stop schedules for their EC2 and RDS instances. The
 solution can help reduce operational costs by stopping resources when they are
-not needed and start them back up based on a defined schedule. The most common
-example is stopping DEV instances outside of working hours (reducing weekly
-utilization from 168 hours to 50 hours—yielding a 70 percent reduction in
-running costs).
+not needed and starting them back up based on a defined schedule. The most common
+example is stopping DEV instances outside of working hours. For example, this might
+reduce weekly usage from 168 hours to 50 hours, yielding a 70 percent reduction in
+running costs.
 
 Instance Scheduler is a *solution*, not an AWS *service*, so you can't
 find it in the AWS console. It is composed of several AWS services that are
@@ -82,6 +82,8 @@ When need to override a schedule, use one of the following methods:
 Pricing
 -------
 
-Aviator customers get Instance Scheduler management at no additional cost.
-Customers are responsible for the minimal infrastructure cost to run
-the solution, normally up to $10 per AWS account per month.
+For Rackspace Elastic Engineering customers, we provide Instance Scheduler
+management at no additional cost. Customers are responsible for the minimal
+infrastructure cost to run the solution, normally up to $10 per AWS account per
+month. Setting up or managing the service might consume hours from your Elastic
+Engineering Pod.
