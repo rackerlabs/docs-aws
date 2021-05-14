@@ -8,9 +8,8 @@ Passport
 ========
 
 The Fanatical Support for AWS offering includes access to our |PassportTM|
-service at the :ref:`Service level <service_levels>`. This is the same
-capability that Rackers use to access your environment. Passport leverages 
-`AWS Systems Manager
+service. This is the same capability that Rackers use to access your
+environment. Passport leverages `AWS Systems Manager
 <https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html>`_
 to provision short lived users onto your EC2 instances and provide network
 access into your VPC.

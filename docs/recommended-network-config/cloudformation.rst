@@ -17,13 +17,12 @@ and
 Rackspace CloudFormation Template: BaseNetwork
 ----------------------------------------------
 
-In our :ref:`service levels <service_levels>` we assist customers with creating
-custom CloudFormation templates to describe their environments. We make a
-standardized CloudFormation Templates, BaseNetwork, available to create the
-initial network and all of its necessary components. The rest of this section
-will describe the elements that are part of the BaseNetwork CloudFormation
-Template, and their associated components. You can download the BaseNetwork
-template `here
+We assist customers creating custom CloudFormation templates to describe their
+environments. We make a standardized CloudFormation Templates, BaseNetwork,
+available to create the initial network and all of its necessary components. The
+rest of this section will describe the elements that are part of the BaseNetwork
+CloudFormation Template, and their associated components. You can download the
+BaseNetwork template `here
 <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/BaseNetwork.template>`_.
 
 **Parameters**
