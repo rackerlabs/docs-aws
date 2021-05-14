@@ -51,11 +51,11 @@ organization, in addition to the reusable code mentioned above:
    Example: ``12345-aws-LargeCorp``
 
 2. *Account Repository*: These are repositories that map directly to an AWS
-   account. They house Terraform files that are used to directly test and
-   deploy infrastructure in that specific account. These start with your
-   customer number, mention the specific AWS account, and contain a human
-   readable ending. They map directly to the Aviator, Infrastructure as
-   Code accounts we manage for you.
+   account. They house Terraform files that are used to directly test and deploy
+   infrastructure in that specific account. These start with your customer
+   number, mention the specific AWS account, and contain a human readable
+   ending. They map directly to the Infrastructure as Code accounts we manage
+   for you.
 
    Examples: ``12345-aws-9876541-Production1``, ``12345-aws-9876541-Test1``,
    ``12345-aws-9876541-Dev1``

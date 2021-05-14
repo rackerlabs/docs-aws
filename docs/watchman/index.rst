@@ -9,11 +9,10 @@ Support for AWS support teams. CloudWatch provides a wide variety of metrics
 that cover the entire suite of AWS services - from CPU utilization and
 disk I/O on EC2 instances to network throughput of your ELB load balancers.
 
-While AWS CloudWatch is available to Fanatical Support for AWS accounts at
-all service levels, customers using our Aviator service level can opt to
-have a Racker respond to unexpected deviations in metrics. Watchman is the
-system responsible for receiving CloudWatch alarms and creating tickets on
-your Rackspace account.
+While AWS CloudWatch is available to Fanatical Support for AWS accounts at all
+service levels, and can opt to have a Racker respond to unexpected deviations in
+metrics. Watchman is the system responsible for receiving CloudWatch alarms and
+creating tickets on your Rackspace account.
 
 CloudWatch Alarms
 -----------------
@@ -30,28 +29,18 @@ account is first setup for Fanatical Support for AWS. A subscription to the
 SNS topic is created for a centralized region-specific SQS (Simple Queue
 Service) queue that resides in our shared management services account. Our
 shared management services system continually monitors these queues and
-generates a ticket when a valid CloudWatch alarm is received from an Aviator
-service level account.
-
-.. note::
-
-  While the SNS topic described above is present on every Fanatical
-  Support for AWS account, only accounts at the Aviator service level will
-  have tickets generated. If your account is at the Navigator service level,
-  no action will be taken for CloudWatch alarm notifications sent to your
-  account's *rackspace-support* SNS queue.
+generates a ticket when a valid CloudWatch alarm is received.
 
 Custom CloudWatch Configuration
 -------------------------------
 
 CloudWatch allows for the creation of custom metrics to allow monitoring the
-things that are most critical to the uptime of your applications. As an
-Aviator customer, you can create custom CloudWatch metrics and alarms, as
-well as send notifications to the *rackspace-support* SNS topic if you
-desire a Racker response to triggered alarms. We do recommend that you work
-with a Racker when first creating custom CloudWatch metrics and alarms so
-that we can ensure that everything is configured properly and that the
-desired Racker response is clearly documented.
+things that are most critical to the uptime of your applications. You can create
+custom CloudWatch metrics and alarms, as well as send notifications to the
+*rackspace-support* SNS topic if you desire a Racker response to triggered
+alarms. We do recommend that you work with a Racker when first creating custom
+CloudWatch metrics and alarms so that we can ensure that everything is
+configured properly and that the desired Racker response is clearly documented.
 
 SmartTickets
 -------------------------------

@@ -12,8 +12,8 @@ example, you can use single sign-on from the Rackspace portal into
 CloudHealth. Users have full access to CloudHealth with near real-time
 cost data, savings opportunities, inventory, and much more.
 
-Platform Essentials, Navigator, and Aviator include CloudHealth for
-all customers. Our Fanatical Support for AWS (FAWS) experts work with you to:
+Platform Essentials, include CloudHealth for all customers. Our Fanatical
+Support for AWS (FAWS) experts work with you to:
 
 * Review costs and savings potential.
 

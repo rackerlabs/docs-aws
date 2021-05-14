@@ -13,14 +13,7 @@ below. These can be leveraged as part of the process described in the
 instances in place, or to generate patched AMIs from existing instances or
 AMIs.
 
-Customers of *Fanatical Support for AWS* who consume our *Aviator* service
-offering can find these available as Systems Manager Shared Resources
-(in the AWS console, browse to EC2 --> Systems Manager Shared
-Resources --> Documents --> Private Documents and look for documents
-labeled with the owner '507897595701').
-
-Customers of *Fanatical Support for AWS* who consume our *Navigator*
-service offering can download these from the direct links below.
+Customers can download these from the direct links below.
 
 #. `FAWS-MeltdownSpectre-PatchRunningWinLinuxEC2 <https://s3.us-east-2.amazonaws.com/rackspace-faws-public-ssm-docs/spectre_meltdown_remediation/spectre_meltdown_vuln_ec2_patch_winlinux/spectre_meltdown_vuln_ec2_patch_winlinux.json>`_
 

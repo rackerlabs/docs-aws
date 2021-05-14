@@ -11,11 +11,10 @@ For a list of current offerings, refer to
 
 -------
 
-Based on your desired infrastructure management preference, some
-AWS environments built under the Fanatical Support for AWS Aviator service
-level are managed directly via the AWS console, while others are managed
-through a process known as Infrastructure as Code (IaC), specifically
-using an AWS service named CloudFormation.
+Based on your desired infrastructure management preference, some AWS
+environments are managed directly via the AWS console, while others are managed
+through a process known as Infrastructure as Code (IaC), specifically using an
+AWS service named CloudFormation.
 
 Management via the AWS console
 ------------------------------

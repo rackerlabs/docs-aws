@@ -76,10 +76,10 @@ infrastructure charges are greater than $30, we assess a monthly service fee
 and proportionally distribute it to each of your AWS accounts at
 that service level.
 
-For example, if you have two AWS accounts at the Aviator service level, one
-with $45,000 in AWS infrastructure charges and the other with $30,000 in
-AWS infrastructure charges, your monthly service fee would be $25,000 based
-on your combined AWS infrastructure charge of $75,000.
+For example, if you have two AWS accounts, one with $45,000 in AWS
+infrastructure charges and the other with $30,000 in AWS infrastructure charges,
+your monthly service fee would be $25,000 based on your combined AWS
+infrastructure charge of $75,000.
 
 During your first month with any AWS accounts at a specific service level, we
 prorate the monthly service fee for the remainder of the month based on
