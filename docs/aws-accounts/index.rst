@@ -23,15 +23,16 @@ developers access to provision EC2 instances, RDS databases, and so on in
 your development and staging accounts and restrict them to read access for the
 resources in your production account.
 
-In addition to being a strong permission boundary, AWS accounts also provide
-a convenient construct for tracking expenses because, by default, the system
-groups both AWS and Rackspace charges by AWS account. For example, if you use
-four separate AWS accounts (**app1-dev**, **app1-prod**, **app2-dev**, and
-**app2-prod**), you can easily see how much you are spending on each application
-environment. We highly encourage you to use tagging for more fine-grained expense
-tracking within accounts. However, tagging is more complicated. You might miss
-tagging certain resources resulting in unallocated cost, and not all AWS resource
-types support tagging. AWS accounts provide a great default cost allocation construct.
+In addition to being a strong permission boundary, AWS accounts also provide a
+convenient construct for tracking expenses because, by default, the system
+groups both AWS and Rackspace charges by AWS account and can span multiple
+accounts. For example, if you use four separate AWS accounts (**app1-dev**,
+**app1-prod**, **app2-dev**, and **app2-prod**), you can easily see how much you
+are spending on each application environment. We highly encourage you to use
+tagging for more fine-grained expense tracking within accounts. However, tagging
+is more complicated. You might miss tagging certain resources resulting in
+unallocated cost, and not all AWS resource types support tagging. AWS accounts
+provide a great default cost allocation construct.
 
 Lastly, by using separate AWS accounts for each environment, you have the flexibility
 to select different Rackspace :ref:`service levels <service_levels>` for each
