@@ -15,11 +15,11 @@ Fanatical Support for AWS Product Guide
   |vspace|
 
 This Product Guide provides a detailed look at how Rackspace delivers our
-**Fanatical Support for AWS** offering. It covers core concepts such as the
-:ref:`AWS account structure <aws_accounts>`, Rackspace :ref:`features
-<features>` and advanced concepts such as providing access requests to instances
-via :ref:`Rackspace Passport <passport_v2>` and accessing audit logs via
-:ref:`Rackspace Logbook <logbook>`.
+**Fanatical Support for AWS** offering. It covers core concepts (such as the
+:ref:`AWS account structure <aws_accounts>`, and Rackspace :ref:`features
+<features>`) and advanced concepts (such as providing access requests to instances
+through :ref:`Rackspace Passport <passport_v2>` and accessing audit logs through
+:ref:`Rackspace Logbook <logbook>`).
 
 For general information on the offering, visit
 `https://www.rackspace.com/aws <https://www.rackspace.com/managed-aws>`_.
