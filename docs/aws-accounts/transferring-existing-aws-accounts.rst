@@ -16,8 +16,8 @@ management, which you can initiate by submitting a request in the `Rackspace
 Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 
 When submitting an AWS Master Payer, notify Rackspace to ensure a smooth
-transition of the AWS Master Payer and linked accounts, prior to placing into
-the portal. 
+transition of the AWS Master Payer and linked accounts before adding them
+to the portal. 
 
 Click **Add AWS Account** at the bottom of the AWS account list. For **account
 source**, select **Use an existing AWS account not currently managed by
@@ -32,7 +32,7 @@ Rackspace**. Include the following required information:
 
 After receiving your request, we create a ticket for you with instructions your
 team must carry out to prepare the AWS account for the transition to Rackspace
-support. After the instructions are completed, Rackspace sends a request to AWS
+support. After your tem completes the instructions, Rackspace sends a request to AWS
 to review and approve the account assumption request. AWS confirms whether any
 custom legal or pricing terms exist that should transfer to Rackspace. Then, AWS
 approves the account assumption.
