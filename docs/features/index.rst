@@ -73,17 +73,14 @@ We offer the following expert assistance:
 
 * **Hands-on management and assistance for all supported AWS services**:
 
-  * Service levels: Rackspace Elastic Engineering. Read more about the
-  :ref:`offers<rackspace_elastic_engineering_and_optimizer>`.
+  * Service levels: Rackspace Elastic Engineering. Read more about the :ref:`offers <rackspace_elastic_engineering_and_optimizer>`.
 
 * **EC2 operating system management**:
 
-    * Service levels: Rackspace Elastic Engineering. See our latest :ref:`offers
-    <rackspace_elastic_engineering_and_optimizer>` to determine which bundle of
-    offers best suits your needs. 
+    * Service levels: Rackspace Elastic Engineering. See our latest :ref:`offers <rackspace_elastic_engineering_and_optimizer>`
+    to determine which bundle of offers best suits your needs. 
 
-    * See a list of supported operating systems in the
-      :ref:`Supported Operating Systems <supported_os>` section.
+    * See a list of supported operating systems in the :ref:`Supported Operating Systems <supported_os>` section.
 
     * Configuration, optimization, patching, and upgrades.
 
@@ -107,8 +104,7 @@ We offer the following expert assistance:
 
 * :ref:`Rackspace Watchman <watchman>`:
 
-    * Service levels: Advanced Monitoring and Resolution. Read more about
-    our:ref:`offers<rackspace_elastic_engineering_and_optimizer>`. 
+    * Service levels: Advanced Monitoring and Resolution. Read more about our :ref:`offers<rackspace_elastic_engineering_and_optimizer>`. 
 
     * Rackspace AWS certified engineer response to CloudWatch alarms 24x7x365.
     
