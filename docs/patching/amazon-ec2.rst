@@ -156,10 +156,6 @@ problems might be the cause:
 
    * You can update the instance role or role policies by using the AWS
      console, API, or CLI without any downtime to the instance.
-   * Customers of *Fanatical Support for AWS* who consume our *Aviator*
-     service offering can find the *RackspaceDefaultEC2Role* and
-     *RackspaceDefaultEC2Policy* created on all accounts, which provide the correct
-     permissions.
    * If you need to create a role or policy manually, see
      `Create an Instance Profile Role for Systems Manager <https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-configuring-access-role.html>`_
      in the **Amazon Systems Manager User Guide**, or reach out to the

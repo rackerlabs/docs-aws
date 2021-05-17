@@ -37,9 +37,7 @@ provide a great default cost allocation construct.
 Lastly, by using separate AWS accounts for each environment, you have the flexibility
 to select different Rackspace :ref:`service levels <service_levels>` for each
 environment because Rackspace applies service levels at the AWS account
-level. For example, you might opt for the Navigator service level on your
-development account while using the Aviator service level for your production
-environment.
+level.
 
 As we describe later in this document, several FAWS
 features (such as :ref:`Rackspace Logbook <logbook>`) are available in both
