@@ -14,12 +14,12 @@ Fanatical Support for AWS Product Guide
   `https://developer.rackspace.com/docs/fanatical-support-aws <https://developer.rackspace.com/docs/fanatical-support-aws>`_.
   |vspace|
 
-This Product Guide provides a detailed look at how Rackspace
-delivers our **Fanatical Support for AWS** offering. It covers core concepts
-such as the :ref:`AWS account structure <aws_accounts>`, Rackspace
-:ref:`service levels <service_levels>` and advanced concepts such as
-providing access requests to instances via :ref:`Rackspace Passport <passport_v2>` and
-accessing audit logs via :ref:`Rackspace Logbook <logbook>`.
+This Product Guide provides a detailed look at how Rackspace delivers our
+**Fanatical Support for AWS** offering. It covers core concepts (such as the
+:ref:`AWS account structure <aws_accounts>`, and Rackspace :ref:`features
+<features>`) and advanced concepts (such as providing access requests to instances
+through :ref:`Rackspace Passport <passport_v2>` and accessing audit logs through
+:ref:`Rackspace Logbook <logbook>`).
 
 For general information on the offering, visit
 `https://www.rackspace.com/aws <https://www.rackspace.com/managed-aws>`_.
@@ -53,6 +53,7 @@ latest information.
    billing/index.rst
    reserved-instances/index.rst
    user-management-and-perms/index.rst
+   features/index.rst
    access-and-permissions/index.rst
    security/index.rst
    compliance/index.rst
@@ -67,6 +68,5 @@ latest information.
    aws-marketplace/index.rst
    cloud-native-security/index.rst
    managed-infra-as-code/index.rst
-   service-levels/index.rst
    infrastructure-management/index.rst
    service-blocks/index.rst

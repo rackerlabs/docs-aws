@@ -32,7 +32,7 @@ the verification process, :ref:`Contact Us <support>`.
 
 After you log in, you see an option to add a new AWS account.
 Provide the relevant details and select a
-:ref:`service level <service_levels>`. At that point, we immediately provision
+:ref:`features <features>`. At that point, we immediately provision
 a new AWS account ready for your use. You can click the
 **Log in to AWS Console** link to go straight to AWS, though we encourage
 you to review our :ref:`recommended_network_configuration` first.

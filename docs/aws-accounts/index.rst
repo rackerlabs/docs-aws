@@ -35,7 +35,7 @@ unallocated cost, and not all AWS resource types support tagging. AWS accounts
 provide a great default cost allocation construct.
 
 Lastly, by using separate AWS accounts for each environment, you have the flexibility
-to select different Rackspace :ref:`service levels <service_levels>` for each
+to select different Rackspace :ref:`features <features>` for each
 environment because Rackspace applies service levels at the AWS account
 level.
 
