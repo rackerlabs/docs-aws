@@ -74,13 +74,13 @@ We offer the following expert assistance:
 * **Hands-on management and assistance for all supported AWS services**:
 
   * Service levels: Rackspace Elastic Engineering. Read more about the
-  :ref:`offers<rackspace_elastic_engineering_and_optimizer>`.
+  :ref:`offers <rackspace_elastic_engineering_and_optimizer>`.
 
 * **EC2 operating system management**:
 
-    * Service levels: Rackspace Elastic Engineering. See our latest :ref:`offers
-    <rackspace_elastic_engineering_and_optimizer>` to determine which bundle of
-    offers best suits your needs. 
+    * Service levels: Rackspace Elastic Engineering. See our latest 
+    :ref:`offers <rackspace_elastic_engineering_and_optimizer>` to determine 
+    which bundle of offers best suits your needs. 
 
     * See a list of supported operating systems in the
       :ref:`Supported Operating Systems <supported_os>` section.
@@ -188,8 +188,6 @@ The following table shows supported operating systems:
 +-------------------------------------------------+-----------------+
 | RHEL and CentOS 8                               | May 2029        |
 +-------------------------------------------------+-----------------+
-| Ubuntu® 16.04 LTS                               | April 30, 2021  |
-+-------------------------------------------------+-----------------+
 | Ubuntu 18.04 LTS                                | April 30, 2023  |
 +-------------------------------------------------+-----------------+
 | Ubuntu 20.04 LTS                                | April 30, 2025  |
@@ -200,18 +198,3 @@ The following table shows supported operating systems:
 +-------------------------------------------------+-----------------+
 | Windows Server 2019                             | January 2029    |
 +-------------------------------------------------+-----------------+
-
-
-
-The following operating systems are approaching End of Life (EOL) as determined
-by the vendor:
-
-+------------------------------+-------------------+
-| Operating System             | EOL Date          |
-+==============================+===================+
-| RHEL and CentOS 6            | November 2020     |
-+------------------------------+-------------------+
-| Amazon Linux (legacy)        | December 2020     |
-+------------------------------+-------------------+
-| Ubuntu 16.04 LTS             | April 2021        |
-+------------------------------+-------------------+
