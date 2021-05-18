@@ -224,3 +224,6 @@ improvements. The review can include the following items:
 * Recent environment changes
 * Upcoming customer events
 * Product announcements
+
+
+For a list of legacy offerings, visit our `website <https://docs.rackspace.com/docs/faws-legacy/>`__.

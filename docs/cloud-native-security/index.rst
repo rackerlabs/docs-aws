@@ -15,7 +15,7 @@ like `AWS Security Hub <https://aws.amazon.com/security-hub/>`_,
 `Amazon GuardDuty <https://aws.amazon.com/guardduty/>`_, and
 `IAM Access Analyzer <https://aws.amazon.com/iam/features/analyze-access/>`_
 but have neither the expertise nor resources to invest in a 24x7x365 Security
-Operations Center (SOC) can now use the Cloud Native Security Service Block
+Operations Center (SOC) can now use the Cloud Native Security
 from Rackspace.
 
 **Amazon GuardDuty** provides threat detection using existing AWS-native
@@ -34,35 +34,35 @@ functions.
 Analyzer findings across multiple AWS accounts, acts as the conduit to Rackspace
 systems, and serves as a single pane of glass for all native security services
 that generate findings. It also provides security standard checks against
-industry best practices, such as CIS AWS Foundations. We enable Security Hub
-for all Cloud Native Security Service Block customers, but the security standards
-feature is optional.
+industry best practices, such as CIS AWS Foundations. We enable Security Hub for
+all Cloud Native Security customers, but the security standards feature is
+optional.
 
-This Service Block requires Security Hub. However, the other native security products
+Cloud Native Security requires Security Hub. However, the other native security products
 are optional, and you can disable them by creating a ticket with Rackspace.
 
 Onboarding
 ----------
 
-During onboarding to this Service Block, Rackspace deploys and configures the
+During Cloud Native Security onboarding, Rackspace deploys and configures the
 security products onto the customer's AWS accounts across different regions.
 Rackspace also collaborates with the customer to create a customer-specific
 runbook.
 
-Every customer has a dedicated AWS account for use as Security Hub
-master and GuardDuty master. Rackspace enables and configures Security Hub
-and GuardDuty on the master account and all other accounts in scope,
-including configuring the master-member relationship.
+Every customer has a dedicated AWS account for use as Security Hub master and
+GuardDuty master. Rackspace enables and configures Security Hub and GuardDuty on
+the master account and all other accounts in scope, including configuring the
+master-member relationship.
 
-Rackspace configures Security Hub to ingest security findings from GuardDuty
-and IAM Access Analyzer. We also configure it to deliver the events to the
-Rackspace Security Information and Event Management (SIEM), a system
-that our security specialists use to monitor the security of customer
-environments 24x7x365.
+Rackspace configures Security Hub to ingest security findings from GuardDuty and
+IAM Access Analyzer. We also configure it to deliver the events to the Rackspace
+Security Information and Event Management (SIEM), a system that our security
+specialists use to monitor the security of customer environments 24x7x365.
 
 We create a runbook for every customer. The runbook provides Rackspace engineers
-with information about the customer’s environment and allows them to apply context
-to security findings. A typical runbook might include the following elements:
+with information about the customer’s environment and allows them to apply
+context to security findings. A typical runbook might include the following
+elements:
 
 - **Information about the environments**: Details such as what is production versus
   non-production, which environments contain sensitive data, any expected suspicious
@@ -99,10 +99,9 @@ notification processes.
 Investigation and remediation 
 -----------------------------
 
-Rackspace engineers investigate the findings, engage the customer as
-necessary according to the runbook, and recommend remediation actions. On AWS
-accounts that include the Manage & Operate Service Block, Rackspace
-remediates the findings.
+Rackspace engineers investigate the findings, engage the customer as necessary
+according to the runbook, and recommend remediation actions. On AWS accounts
+that subscribe to Elastic Engineering, Rackspace remediates the findings.
 
 Ongoing management
 ------------------
@@ -163,16 +162,16 @@ model, standard charges apply for findings sent to Rackspace by using this metho
 Billing
 -------
 
-Cloud Native Security Service Block service fees do not include the cost of
-the native security products themselves. The AWS infrastructure charges
-portion of the customer's Rackspace bill includes the cost of the native
-products and the infrastructure supporting the Rackspace SIEM integration.
+Cloud Native Security service fees do not include the cost of the native
+security products themselves. The AWS infrastructure charges portion of the
+customer’s Rackspace bill includes the cost of the native products and the
+infrastructure supporting the Rackspace SIEM integration.
 
 Rackspace charges the initial deployment and configuration as a one-time
 onboarding fee.
 
 Customers can choose one of the following billing models for the Cloud Native
-Security Service Block:
+Security:
 
 - Percentage of AWS infrastructure billing model
 - Per-event billing model
@@ -236,7 +235,6 @@ Additional services
 
 Cloud Native Security provides SOC-as-a-Service for native AWS security
 products. Customers interested in improving their security posture beyond the
-scope of the Cloud Native Security Service Block can purchase
-`add-on services <https://www.rackspace.com/security>`_ for agent-based
-OS-level threat detection, threat hunting, and threat intelligence.
+scope of the Cloud Native Security can purchase `add-on services <https://www.rackspace.com/security>`_ for
+agent-based OS-level threat detection, threat hunting, and threat intelligence.
 

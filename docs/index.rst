@@ -68,5 +68,3 @@ latest information.
    aws-marketplace/index.rst
    cloud-native-security/index.rst
    managed-infra-as-code/index.rst
-   infrastructure-management/index.rst
-   service-blocks/index.rst
