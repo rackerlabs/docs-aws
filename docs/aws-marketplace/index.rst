@@ -29,6 +29,18 @@ This product has the following characteristics:
 - Amazon® Machine Image (AMI) updated monthly.
 - Marketplace `link. <https://aws.amazon.com/marketplace/pp/B091DX5M4Y/>`_
 
+
+Rackspace Government Cloud Secure Configuration Baseline (Win2016)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+This product has the following characteristics:
+
+- Built by a FedRAMP authorized CSP.
+- Standard Windows 2016 STIG-compliant Server.
+- Significantly reduced cost and time of securing Images to DISA standards.
+- Marketplace `link. <https://aws.amazon.com/marketplace/pp/B0923FFB88>`_
+
+
 Rackspace Government Cloud Secure Configuration Baseline (Win2019)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -42,6 +54,7 @@ This product has the following characteristics:
 For more information on Rackspace Government Cloud Secure Configuration Baseline
 (RGCSCB), visit our
 `service introduction blog post <https://docs.rackspace.com/blog/rackspace-government-cloud-secure-configuration-baseline-launches-on-the-aws-marketplace/>`_.
+
 
 Rackspace Elastic Engineering 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
