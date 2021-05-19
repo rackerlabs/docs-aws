@@ -13,9 +13,8 @@ account, as needed.
 
 .. _rackspace_account:
 
-=================
 Rackspace account
-=================
+-----------------
 
 Your Rackspace account is the top-level container that contains one or
 more AWS accounts. All user and permissions management occurs at the
@@ -37,9 +36,8 @@ on the account.
 
 .. _aws_console:
 
-===========
 AWS Console
-===========
+-----------
 
 After you log in to the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_,
@@ -65,9 +63,8 @@ to all users on the account.
 
 .. _aws_cli_sdk_api:
 
-=======================
 AWS CLI, SDKs, and APIs
-=======================
+-----------------------
 
 There are two methods for accessing the AWS command-line interface
 (CLI), software development kits (SDKs), and application programming
@@ -99,9 +96,8 @@ use case, :ref:`contact a Racker <support>`.
 
 .. _aws_iam:
 
-========================================
 AWS Identity and Access Management (IAM)
-========================================
+----------------------------------------
 
 As described previously, our standard best practice is to manage all access as
 either:
@@ -146,9 +142,8 @@ to your account, :ref:`contact us <support>`.
 
 .. _aws_systems_manager:
 
-=======================================
 AWS Systems Manager EC2 Session Manager
-=======================================
+---------------------------------------
 
 AWS accounts managed by Rackspace require the use of the AWS Systems
 Manager Agent for operating system support.
