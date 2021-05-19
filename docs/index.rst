@@ -6,13 +6,6 @@ Fanatical Support for AWS Product Guide
 
 *Last updated:* |today|
 
-.. only:: latex
-
-  **IMPORTANT:** Tis is a PDF version of the Product Guide
-  for point-in-time offline reference purposes only. You can find the
-  authoritative version of this document with the latest updates at
-  `https://developer.rackspace.com/docs/fanatical-support-aws <https://developer.rackspace.com/docs/fanatical-support-aws>`_.
-  |vspace|
 
 This Product Guide provides a detailed look at how Rackspace delivers our
 **Fanatical Support for AWS** offering. It covers core concepts (such as the
@@ -27,16 +20,7 @@ For general information on the offering, visit
 To sign up, visit
 `https://cart.rackspace.com/aws <https://cart.rackspace.com/aws>`_.
 
-PDF Download
-------------
 
-You can download a `PDF version of this documentation <https://9d31a28d75515373cbe0-39a001adc5755d26f84687a5d61bbba1.ssl.cf1.rackcdn.com/AWS%20files/fanaticalsupportforawsproductguide.pdf>`_.
-We frequently update our documentation, so we encourage you to check back periodically for the
-latest information.
-
-.. |vspace| raw:: latex
-
-    \vspace{10mm}
 
 ----
 
