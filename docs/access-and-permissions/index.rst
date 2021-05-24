@@ -71,14 +71,14 @@ There are two methods for accessing the AWS command-line interface
 interfaces (APIs):
 
 1. From the `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_,
-   navigate to the **Account Details** screen for the AWS account you want
-   to access and click **View Credentials**. The system issues you AWS
-   Security Token Service (STS) credentials that are valid for up to
-   60 minutes and are scoped to the same level of permissions as if you were
-   to federate to the AWS Console. This preferred method of
-   short-lived, infrequent access to the credentials is tied to
-   your Fanatical Support for AWS user and is logged in the
-   :ref:`Rackspace Logbook <logbook>`.
+   navigate to the **Account Details** screen for the AWS account you want to
+   access and click **View Credentials**. The system issues you AWS Security
+   Token Service (STS) credentials. AWS temporary credentials obtained via the
+   Rackpsace portal expire after the specified AWS session duration your account
+   administrator has set on the Portal Account Settings page. This preferred
+   method of short-lived, infrequent access to the credentials is tied to your
+   Fanatical Support for AWS user and is logged in the :ref:`Rackspace Logbook
+   <logbook>`.
 
 2. If you require longer-lived, more persistent access to the CLI, SDKs, or
    APIs, use one of the following options:
@@ -90,6 +90,11 @@ interfaces (APIs):
    **Note**: You do not manage directly-created IAM users or roles within the
    Fanatical Support for AWS user management system. Instead, you must modify
    or terminate access directly within AWS IAM.
+
+   **Note**: If you have set a duration greater than an hour and are still only
+   getting one-hour credentials, you should confirm that the maximum session
+   duration set on the Rackspace role in AWS is at least as long as the duration
+   configured in the `Rackspace account <https://docs.aws.amazon.com/IAM/latest/UserGuide/roles-managingrole-editing-console.html#roles-modify_max-session-duration>`_.
 
 If you need assistance determining the best option for your specific
 use case, :ref:`contact a Racker <support>`.
