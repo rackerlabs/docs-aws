@@ -17,10 +17,12 @@ access into your VPC.
 Passport v2 offers several improvements over our original Passport tool,
 including:
 
-* User accounts are created on demand and cleaned up after use * Public subnets
-and bastion hosts are no longer required in customer VPCs * EC2 instances with
-multiple Elastic Network Interfaces (ENIs) are now
-  supported
+* User accounts are created on demand and cleaned up after use.
+
+* Public subnets and bastion hosts are no longer required in customer VPCs.
+
+* EC2 instances with multiple Elastic Network Interfaces (ENIs) are now
+  supported.
 
 Passport’s primary concept is an **Access Request**. Each access request defines
 who is accessing your account, which specific EC2 instances they are accessing,
