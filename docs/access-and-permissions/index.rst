@@ -55,9 +55,8 @@ the maximum session time for a user who logs into the AWS console from
 the `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 To change the timeout, visit
 `account.rackspace.com <https://account.rackspace.com>`_, and then
-navigate to ** Account Settings > Product Preferences > AWS Account Preferences
-> AWS Account - AWS Console Session Duration**. This maximum limit applies
-to all users on the account.
+navigate to **Account Settings > Product Preferences > AWS Account Preferences > AWS Account - AWS Console Session Duration**. 
+This maximum limit applies to all users on the account.
 
 .. _aws_cli_sdk_api:
 
