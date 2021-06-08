@@ -72,6 +72,7 @@ between Rackspace Technology and the customer.
    * - Advice and Support
      - * Answer questions related to cloud usage, best practices, and make recommendations
 
+
 .. _monitoring_resolution:
 
 Advanced Monitoring and Resolution
@@ -108,27 +109,32 @@ AMR includes:
 
 .. note::
 
-  AMR requires :ref:`optimizer` or :ref:`optimizer_platform` as a prerequisite.
+  AMR requires :ref:`optimizer_plus` or :ref:`optimizer_platform` as a prerequisite.
+
 
 .. _vm_management:
 
 VM Management
 -------------
 
-VM Management (VMM) is a simple, full-featured tool that makes your most critical and time-consuming
-server tasks easy to complete. Built to be multi-cloud, VMM manages your VMs wherever they are located
-through a simple interface and billed on a consolidated invoice. Set up your cloud the way you want
-and then proceed with your migrations, transformations, and new development activities.
+VM Management (VMM) is a simple, full-featured tool that makes your most
+critical and time-consuming server tasks easy to complete. Built to be
+multi-cloud, VMM manages your VMs wherever they are located through a simple
+interface and billed on a consolidated invoice. Set up your cloud the way you
+want and then proceed with your migrations, transformations, and new development
+activities.
 
-VMM complements Rackspace Elastic Engineering by removing critical but distracting workloads so you
-can focus your resources on building your next-generation infrastructure.
+VMM complements Rackspace Elastic Engineering by removing critical but
+distracting workloads so you can focus your resources on building your
+next-generation infrastructure.
 
 Services
 ^^^^^^^^
 
-VMM is currently in Limited Availability (LA). Descriptions of all services are subject to change. In
-LA, VMM provides patching, and in subsequent releases, it might include backup services for multi-cloud
-infrastructures. VMM also provides the following services:
+VMM is currently in Limited Availability (LA). Descriptions of all services are
+subject to change. In LA, VMM provides patching, and in subsequent releases, it
+might include backup services for multi-cloud infrastructures. VMM also provides
+the following services:
 
 * Reporting
 * Support
@@ -137,27 +143,29 @@ infrastructures. VMM also provides the following services:
 Patching
 ^^^^^^^^
 
-VMM provides standard baseline patching. Customers can create custom patch baselines, patch
-groups, and maintenance windows to adhere to their own patching strategy. The API makes all
-of these services available for customization.
+VMM provides standard baseline patching. Customers can create custom patch
+baselines, patch groups, and maintenance windows to adhere to their own patching
+strategy. The API makes all of these services available for customization.
 
-Best practices for each Operating System (OS) define the patch baselines, but we customize
-them to fit customer needs.
+Best practices for each Operating System (OS) define the patch baselines, but we
+customize them to fit customer needs.
 
-In addition, customers can inject their own customization for patching to enable process
-interruptions like reboots, non-standard package downloads, and so on.
+In addition, customers can inject their own customization for patching to enable
+process interruptions like reboots, non-standard package downloads, and so on.
+
 
 .. _optimizer:
 
-Optimizer+
-----------
+Optimizer
+---------
 
-Optimizer+ is a lightweight support option that provides world-class operational tooling, support,
-and expert guidance needed to get the most out of public cloud infrastructure. With Optimizer+, a
-team of cost optimization experts provides detailed actions and recommendations to maximize
-workload performance while saving money and supplementing your IT staff.
+Optimizer is a lightweight support option that provides world-class operational
+tooling, support, and expert guidance needed to get the most out of public cloud
+infrastructure. With Optimizer, a team of cost optimization experts provides
+detailed actions and recommendations to maximize workload performance while
+saving money and supplementing your IT staff.
 
-The Optimizer+ service also includes:
+The Optimizer service includes:
 
 * Unified billing for all of customer Rackspace Technology platforms and other managed public cloud accounts
 * Access to the Rackspace Technology Customer Portal for account and user management
@@ -165,32 +173,77 @@ The Optimizer+ service also includes:
 Cost optimization
 ^^^^^^^^^^^^^^^^^
 
-Rackspace Technology provides cost optimization guidance and assistance through cloud-native
-and third-party tooling. Customers can create tickets for cost optimization questions and
-request general guidance for infrastructure spend. After receiving a customer request, the
-Rackspace Technology Optimizer+ Team provides best practice guidance that maximizes workload
-performance and saves money. Depending on customer spend, cost optimization efforts can include
-the following activities:
+Rackspace Technology provides cost optimization guidance and assistance through
+cloud-native and third-party tooling. Customers can create tickets for cost
+optimization questions and request general guidance for infrastructure spend.
+After receiving a customer request, the Rackspace Technology Optimizer+ Team
+provides best practice guidance that maximizes workload performance and saves
+money. Depending on customer spend, cost optimization efforts can include the
+following activities:
 
 * Access to CloudHealth, which is the leading multi-cloud management platform designed to drive
   increased business value at every stage of your cloud journey.
 * Initial cost optimization review
 * Cost guidance
-* Architecture reviews
 * Tagging strategy reviews
 * Saving recommendations
 * VM supervision and licensing reviews
-* Monthly cost reviews
-* Planned event support
+* Regular cost reviews
+
+
+.. _optimizer_plus:
+
+Optimizer+
+----------
+
+Optimizer+ builds on the Optimizer offering with additional service
+enhancements.  You still get the same great cost optimization services, and you
+can still buy your support wherever you’d like.  However, O+ layers on a few
+additional services:
+
+*	Architecture reviews
+*	Planned event support
+*	Basic VM Monitoring
+
+
+Architecture Reviews
+^^^^^^^^^^^^^^^^^^^^
+
+Rackspace Technology will provide, at your request, an architecture review in
+accordance with the best practices in your cloud of choice.  We’ll evaluate your
+security posture, technological architecture and use of cloud services among
+other things.  At the end of that engagement, you’ll get a report you can use to
+ensure your environment is compliant with best practice recommendations.
+
+
+Planned Event Support
+^^^^^^^^^^^^^^^^^^^^^
+
+Twice a year, Rackspace can help you to plan for and manage a large-scale event.
+Commonly customers use this to help with events like Black Friday or their
+“Shark Tank” moment.  We’ll evaluate your architecture, services utilized and
+resiliency to help you form a strategy to withstand the sudden spike in visitors
+to your application.
+
+
+Basic VM Monitoring
+^^^^^^^^^^^^^^^^^^^
+
+As part of Optimizer+, we can setup a standard array of monitoring alerts for
+your infrastructure based on the best practices of the cloud of your choice.
+These alerts cover basic monitoring like instance performance checks, low disk
+alerts and domain health.  While we don’t respond to these alerts when they
+fire, we’ll gladly ensure they’re configured to flow to the support team of your
+choice.
 
 .. _optimizer_platform:
 
 Optimizer+ with Platform Support
 --------------------------------
 
-Optimizer+ with Platform Support includes all Optimizer+ services plus the following public
-cloud support services powered by certified Rackspace Technology engineers and backed by
-top-level direct public cloud support.
+Optimizer+ with Platform Support includes all Optimizer+ services plus the
+following public cloud support services powered by certified Rackspace
+Technology engineers and backed by top-level direct public cloud support.
 
 Rackspace Technology can:
 
@@ -202,18 +255,19 @@ Rackspace Technology can:
 * Offer advice about the appropriate workaround to restore service.
 * Provide customers the opportunity to confirm issue resolution before closing the ticket.
 
-We handle cloud platform escalations with the restoration of Services as the primary objective.
-Rackspace Technology endeavors to restore normal service as quickly as possible when a problem or
-incident occurs.
+We handle cloud platform escalations with the restoration of Services as the
+primary objective. Rackspace Technology endeavors to restore normal service as
+quickly as possible when a problem or incident occurs.
 
 Account Reviews
 ^^^^^^^^^^^^^^^
 
-Through the customer's Rackspace Technology Customer Success Manager, Rackspace Technology provides
-reviews to analyze the performance of the Customer's cloud environment and recommendations from our
-Cost Optimization Team. By using cloud-provider billing reports and Rackspace Technology tooling,
-some of these recommendations include committed-use discounts and investigations for performance
-improvements. The review can include the following items:
+Through the customer’s Rackspace Technology Customer Success Manager, Rackspace
+Technology provides reviews to analyze the performance of the Customer’s cloud
+environment and recommendations from our Cost Optimization Team. By using
+cloud-provider billing reports and Rackspace Technology tooling, some of these
+recommendations include committed-use discounts and investigations for
+performance improvements. The review can include the following items:
 
 * Support tickets
 * Monitoring alerts
