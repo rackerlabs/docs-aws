@@ -3,11 +3,21 @@
 This repository contains the source files that generate the Rackspace Fanatical
 Support for AWS Product Guide:
 
-* https://developer.rackspace.com/docs/fanatical-support-aws/
+* <https://developer.rackspace.com/docs/fanatical-support-aws/>
 
 When you commit changes to the master branch of this repository, the
 OpenShift CI/CD build job
 builds the documentation. Successful builds are deployed to production.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bba6c4a7-222d-46da-93e3-5b7d19ed49bc/deploy-status)](https://app.netlify.com/sites/docs-aws/deploys)
+
+## Local Setup
+
+`npm i -g netlify-cli`
+`netlify init`
+`netlify build`
+`netlify dev`
+`netlify deploy`
 
 ### Support and feedback
 
