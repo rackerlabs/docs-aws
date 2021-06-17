@@ -29,6 +29,9 @@ Fanatical Support.
   * Create an IAM role named **AWSConfig** for the AWS Config service to use.
   * Create an IAM role named **CloudHealth-Role** to enable us to provide you
     with :ref:`CloudHealth <cloudhealth>`.
+
+    * Tampering or removing this role could cause overbilling.
+
   * Create an IAM role named **RackspaceDefaultEC2Role** with an attached
     IAM policy named **RackspaceDefaultEC2Policy** that you can attach to
     EC2 instances to provide access to
