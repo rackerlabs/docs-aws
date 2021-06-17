@@ -106,11 +106,6 @@ AMR includes:
 - Guidance for a default list of alerts and thresholds, which we can customize to meet customer needs 
 - Ongoing support to adjust monitoring as the customer environment grows
 
-.. note::
-
-  AMR requires :ref:`optimizer_plus` or :ref:`optimizer_platform` as a prerequisite.
-
-
 .. _vm_management:
 
 VM Management
