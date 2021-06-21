@@ -12,7 +12,7 @@ Account Owner
 When you sign up for Fanatical Support for AWS, the first user you create is the
 **Account Owner**.  After signing up, you can reassign Account Owner status to
 another user on the account.  You can make this change from the **Account
-Settings** page.  There can have only one Account Owner at a time.
+Settings** page.  There can be only one Account Owner at a time.
 
 The **Account Owner** has full administrative privileges, including:
 
@@ -20,11 +20,11 @@ The **Account Owner** has full administrative privileges, including:
 - ``Admin`` rights to all Fanatical Support for AWS features on all AWS
   accounts.
 - ``Admin`` rights to the Rackspace Billing and Payments portal.
-- Ability to add additional AWS accounts for Rackspace to manage.
+- Ability to add additional AWS, Microst Azure, GCP, VMware accounts for Rackspace to manage.
 - Ability to create and delete users on the Rackspace account and manage
   their permissions for each AWS account.
 - Ability to make other users Account Administrators.
-- Ability to reassign Account Owner status
+- Ability to reassign Account Owner status.
 - Ability to configure Rackspace account-wide setting, including enabling
   multi-factor authentication, configuring session duration, and so on.
 - Ability to cancel the Rackspace account.
@@ -69,8 +69,7 @@ assigning them permissions.
 Users with the **Account Administrator** right have the following privileges:
 
 - AWS ``AdministratorAccess`` IAM policy rights on all AWS accounts.
-- ``Admin`` rights to all Fanatical Support for AWS features on all
-  AWS accounts.
+- ``Admin`` rights to all AWS, Mirosft Azure, GCP, VMware on all accounts.
 - ``Admin`` rights to the Rackspace Billing and Payments portal.
 - Ability to add additional AWS accounts for Rackspace to manage.
 - Ability to create and delete users on the Rackspace account and manage
@@ -81,8 +80,6 @@ Users with the **Account Administrator** right have the following privileges:
 
 * Ability to view or modify the Account Owner or other users with the
   Account Administrator permission.
-* Ability to configure Rackspace account-wide settings, including enabling
-  multi-factor authentication, configuring session duration, and so on.
 * Ability to cancel the Rackspace account.
 
 The **Account Administrator** permission does not determine user status within
@@ -119,15 +116,14 @@ Support for AWS.
 ^^^^^^^^^^^^^^^^^^^^^^
 
 These permissions are Rackspace product-specific. This is where you manage
-Fanatical Support for AWS permissions. This guide doe not cover other
-product permissions.
+Produc Access. This guide doe not cover other product permissions.
 
 There are three Fanatical Support for AWS permissions:
 
 * **Allow this user to add AWS Accounts**: Enables the user to add
   additional AWS accounts for Rackspace to manage. These could be new or
   existing AWS accounts.
-* **Fanatical Support for AWS**: Controls what access the user has within the
+* **Product Access**: Controls what access the user has within the
   `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
   This permission applies to **all** Rackspace features, including Passport,
   Logbook, CloudHealth, and Usage. You can configure this permission for
@@ -136,6 +132,8 @@ There are three Fanatical Support for AWS permissions:
   when federating to the AWS Console or retrieving AWS temporary API
   credentials. You can manage this permission for any AWS managed or custom IAM
   policy available on the AWS account and configure it for each AWS account.
+
+For AWS accounts with users groups and identity federation enabled: non-federated user group members will not inherit **Product Access** or **AWS Console and APIs permissions** from a user group. 
 
 Rackspace permission types
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -169,14 +167,14 @@ Product permissions
 
 **App1-Staging**
 
-* ``Admin`` access to **Fanatical Support for AWS** so, for example, he can
+* ``Admin`` access to **Product Access** so, for example, he can
   authenticate to instances through Passport.
 * ``AdministratorAccess`` IAM policy access so he has full access to AWS
   services through the **AWS Console and APIs**.
 
 **App1-Production**
 
-* ``Observer`` access to **Fanatical Support for AWS** so he can view but
+* ``Observer`` access to **Product Access** so he can view but
   not make changes to the production AWS Account through Rackspace tooling. This
   disables Passport access, but CloudHealth and Logbook are still available.
 * ``ViewOnlyAccess`` IAM policy to limit his **AWS Console and API** access
