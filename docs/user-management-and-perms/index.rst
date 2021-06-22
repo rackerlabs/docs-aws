@@ -116,7 +116,7 @@ Support for AWS.
 ^^^^^^^^^^^^^^^^^^^^^^
 
 These permissions are Rackspace product-specific. This is where you manage
-Product Access. This guide doe not cover other product permissions.
+Product Access. This guide does not cover other product permissions.
 
 There are three Fanatical Support for AWS permissions:
 
@@ -124,7 +124,7 @@ There are three Fanatical Support for AWS permissions:
   additional AWS accounts for Rackspace to manage. These could be new or
   existing AWS accounts.
 * **Product Access**: Controls what access the user has within the
-  `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
+  `Rackspace Customer Portal <https://manage.rackspace.com/aws>`_.
   This permission applies to **all** Rackspace features, including Passport,
   Logbook, CloudHealth, and Usage. You can configure this permission for
   each AWS account.
@@ -135,7 +135,7 @@ There are three Fanatical Support for AWS permissions:
 
 Accounts with Identity Federation
 ---------------------------------
-Users who are provisioned manually via the Rackspace portal (none-federated users) can not inherit **Product Access**
+Users who are provisioned manually via the Rackspace portal (non-federated users) cannot inherit **Product Access**
 and **AWS Console and APIs permissions** permissions from a user group. This restriction does not apply to users
 generated via an identity federation login flow.
 
@@ -173,7 +173,7 @@ Product permissions
 
 * ``Admin`` access to **Product Access** so, for example, he can
   authenticate to instances through Passport.
-* ``AdministratorAccess`` IAM policy access so he has full access to AWS
+* ``AdministratorAccess`` IAM policy access so the user has full access to AWS
   services through the **AWS Console and APIs**.
 
 **App1-Production**
