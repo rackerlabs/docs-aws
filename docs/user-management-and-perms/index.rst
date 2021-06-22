@@ -116,7 +116,7 @@ Support for AWS.
 ^^^^^^^^^^^^^^^^^^^^^^
 
 These permissions are Rackspace product-specific. This is where you manage
-Produc Access. This guide doe not cover other product permissions.
+Product Access. This guide doe not cover other product permissions.
 
 There are three Fanatical Support for AWS permissions:
 
@@ -133,7 +133,11 @@ There are three Fanatical Support for AWS permissions:
   credentials. You can manage this permission for any AWS managed or custom IAM
   policy available on the AWS account and configure it for each AWS account.
 
-For AWS accounts with users groups and identity federation enabled: non-federated user group members will not inherit **Product Access** or **AWS Console and APIs permissions** from a user group. 
+Accounts with Identity Federation
+---------------------------------
+Users who are provisioned manually via the Rackspace portal (none-federated users) can not inherit **Product Access**
+and **AWS Console and APIs permissions** permissions from a user group. This restriction does not apply to users
+generated via an identity federation login flow.
 
 Rackspace permission types
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
