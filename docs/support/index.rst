@@ -28,6 +28,6 @@ Phone
 -----
 
 Would you prefer to speak to a live Racker? Give our team a call at
-+1-210-571-7780 (US) or +91-1244246700 (IN) so we can assist you.
++1-800-961-4454 (US) or +1-512-361-4935 (International Support) so we can assist you.
 Additional international contact numbers are available on our
 `Contact Us <https://www.rackspace.com/contact>`_ page.
