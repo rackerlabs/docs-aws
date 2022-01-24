@@ -69,7 +69,7 @@ assigning them permissions.
 Users with the **Account Administrator** right have the following privileges:
 
 - AWS ``AdministratorAccess`` IAM policy rights on all AWS accounts.
-- ``Admin`` rights to all AWS, Mirosft Azure, GCP, VMware on all accounts.
+- ``Admin`` rights to all AWS, Microsoft Azure, GCP, VMware on all accounts.
 - ``Admin`` rights to the Rackspace Billing and Payments portal.
 - Ability to add additional AWS accounts for Rackspace to manage.
 - Ability to create and delete users on the Rackspace account and manage
