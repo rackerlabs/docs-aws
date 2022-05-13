@@ -36,7 +36,7 @@ in two categories. The following decision diagram provides an
 overview of categorizing your EC2 instances and simplified steps for
 patching instances in both categories:
 
-.. image:: /_static/img/patching_ec2_simple.png
+.. image:: /docs/fanatical-support-aws/_static/img/patching_ec2_simple.png
    :width: 100%
 
 #. Standalone instances (not in an Auto Scaling Group)
@@ -112,7 +112,7 @@ first. The majority of instances follow one of two simplified paths
 (one for Standalone, one for ASG instances), which we highlighted
 in red.  We shaded in purple the automatable processes with the SSM documents:
 
-.. image:: /_static/img/patching_ec2.png
+.. image:: /docs/fanatical-support-aws/_static/img/patching_ec2.png
    :width: 100%
 
 *Click through for a larger version of this or any other image.*
@@ -168,7 +168,7 @@ problems might be the cause:
    * Find documentation on installing the SSM agent in the
      `AWS Systems Manager User Guide <https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html>`_
 
-.. image:: /_static/img/patching_ec2_troubleshootssm.png
+.. image:: /docs/fanatical-support-aws/_static/img/patching_ec2_troubleshootssm.png
    :width: 100%
 
   If you need to troubleshoot further, or manually resolve either issue, see
@@ -283,7 +283,7 @@ an existing AMI or an existing instance. For examples, see the
 :ref:`Rackspace SSM documents <patching_ec2_meltdownspectre>` targeting AMI
 generation for Meltdown/Spectre remediation.
 
-.. image:: /_static/img/patching_ec2_generateami.png
+.. image:: /docs/fanatical-support-aws/_static/img/patching_ec2_generateami.png
    :width: 100%
 
 If you cannot use the Rackspace-authored SSM documents, use the following
@@ -355,7 +355,7 @@ template does not contain a RollingUpdate ``UpdatePolicy`` for the ASG, then
 you need to perform a manual rolling replacement of the instances in the
 ASG. The following diagram illustrates this process:
 
-.. image:: /_static/img/patching_ec2_rollingreplacement.png
+.. image:: /docs/fanatical-support-aws/_static/img/patching_ec2_rollingreplacement.png
    :width: 100%
 
 Alternatively, you might want to update the CloudFormation stack template to
