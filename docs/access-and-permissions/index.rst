@@ -26,7 +26,7 @@ The Account Owner or a user with the Account Administrator designation can
 set the session inactivity timeout for the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 To change the timeout, visit
-`account.rackspace.com <https://account.rackspace.com>`_ and then navigate
+`manage.rackspace.com/account-settings <https://manage.rackspace.com/account-settings>`_ and then navigate
 to **Account Settings > Rackspace Account Settings > Session Inactivity Timeout**.
 The session inactivity timeout is the maximum time a user can be inactive
 before being automatically logged out. This timeout applies to all users
@@ -54,7 +54,7 @@ The Account Owner can set the AWS console session duration, which controls
 the maximum session time for a user who logs into the AWS console from
 the `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_.
 To change the timeout, visit
-`account.rackspace.com <https://account.rackspace.com>`_, and then
+`manage.rackspace.com/account-settings <https://manage.rackspace.com/account-settings>`_, and then
 navigate to **Account Settings > Product Preferences > AWS Account Preferences > AWS Account - AWS Console Session Duration**. 
 This maximum limit applies to all users on the account.
 
