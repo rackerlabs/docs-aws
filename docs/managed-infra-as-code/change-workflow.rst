@@ -4,7 +4,7 @@
 Change Workflow
 ===============
 
-.. image:: /_static/img/change-flow-overview.png
+.. image:: /docs/fanatical-support-aws/_static/img/change-flow-overview.png
 
 Initiating a change
 -------------------

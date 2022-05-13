@@ -11,7 +11,7 @@ and additional supporting scripts will be used to create the initial
 network and all of its necessary components, thus providing Public and
 Private subnets for EC2 instances and other AWS services.
 
-.. image:: /_static/img/recommended_network_configuration.png
+.. image:: /docs/fanatical-support-aws/_static/img/recommended_network_configuration.png
 
 This includes:
 
