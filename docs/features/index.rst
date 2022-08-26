@@ -123,14 +123,11 @@ We offer the following expert assistance:
 Response time SLAs
 ------------------
 
-.. note::
-   Applicable to only Advanced Monitoring and Resolution.
 
 Rackspace responds to support requests submitted to us through tickets within
 the following timeframes. If you did not purchase directly from AWS, make all
 requests directly to Rackspace so we can escalate to AWS. If you purchased from
-AWS then follow the AWS SLAs. No service level other than Advanced Monitoring
-and Resolution includes a monitoring response.
+AWS then follow the AWS SLAs. Advanced Monitoring and Resolution is the only service level that includes SLA response to monitoring alerts.
 
 Rackspace honors the followong SLA timeframes:
 
@@ -140,6 +137,8 @@ Rackspace honors the followong SLA timeframes:
   your AWS Services are inaccessible from the public internet, which might
   result in the inability to complete business transactions, and generates an
   emergency monitoring alarm.
+  .. note::
+   Emergency is only applicable to Advanced Monitoring and Resolution.
   
 * **Urgent (Production System Outage / Significant Business Impact)**: Within 60 minutes
 
@@ -161,7 +160,7 @@ Rackspace honors the followong SLA timeframes:
   Assumptions: Your AWS Services are functioning normally but you have a time-sensitive
   request or question, or you have an issue that needs to be addressed.
   
-  Customers must sunbmit the support request in a ticket.
+  Customers must submit the support request in a ticket.
   
 * **Low (General Information, Questions, and Guidance)**: Within 24 hours
 
