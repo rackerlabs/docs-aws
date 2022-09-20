@@ -50,7 +50,7 @@ Based on services that you are subscribed to, we automatically apply some accoun
   * Configure an SNS topic named **rackspace-cloudtrail** in each region and
     subscribe it to a region-specific Shared Management Services SQS queue
     for use by the :ref:`Rackspace Logbook <logbook>` service.
-  * Note: Our accoung provisioning automation does not create a new trail if one already exists or if the AWS account is managed by Control Tower.
+  * Note: Our account provisioning automation does not create a new trail if one already exists or if the AWS account is managed by Control Tower.
 
 **AWS Config**:
 
@@ -60,7 +60,7 @@ Based on services that you are subscribed to, we automatically apply some accoun
   * Configure an SNS topic named "rackspace-awsconfig" in each region and
     subscribe it to a region-specific Shared Management Services SQS queue
     for use by Rackspace tooling.
-  * Note: Our accoung provisioning automation skips AWS Config deployment if a Config recorder already exists in the AWS region or if the AWS account is managed by Control Tower.
+  * Note: Our account provisioning automation skips AWS Config deployment if a Config recorder already exists in the AWS region or if the AWS account is managed by Control Tower.
 
 **AWS Simple Notification Service (SNS)**:
 
