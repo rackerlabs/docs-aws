@@ -19,3 +19,4 @@ If you purchased subscriptions with ongoing payment commitments, then you're cha
 After 90 days, any content remaining in your account will be permanently deleted, and AWS services that aren't already terminated also will be terminated. However, service attributes might be retained as long as necessary for billing and administration purposes. AWS retains your account information as described in the Privacy Notice. You can't permanently delete your account before 90 days. You can't reopen the account after 90 days.
 
 You can't create new AWS accounts using the email address that was associated with your account at the time of its closure.
+
