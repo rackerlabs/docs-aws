@@ -49,6 +49,7 @@ multiple AWS accounts.
    :maxdepth: 1
 
    account-defaults.rst
+   closing-aws-accounts.rst
    transferring-existing-aws-accounts.rst
    offboarding.rst
    aws-root-credentials.rst
