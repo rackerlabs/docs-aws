@@ -52,3 +52,4 @@ multiple AWS accounts.
    transferring-existing-aws-accounts.rst
    offboarding.rst
    aws-root-credentials.rst
+   closing-aws-accounts.rst
