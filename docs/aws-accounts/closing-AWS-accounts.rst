@@ -1,8 +1,8 @@
-.. Closing AWS Accounts:
+.. _closing_aws_accounts:
 
-===========
+====================
 Closing AWS Accounts
-===========
+====================
 
 
 
