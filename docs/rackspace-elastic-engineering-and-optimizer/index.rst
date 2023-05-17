@@ -1,7 +1,7 @@
-.. _rackspace_elastic_engineering_and_optimizer:
+.. _Current Offerings:
 
 =============================================
-Rackspace Elastic Engineering and Optimizer +
+Current Offerings
 =============================================
 
 Rackspace knows that our customers have varying needs at different stages of
@@ -74,116 +74,62 @@ between Rackspace Technology and the customer.
 
 .. _monitoring_resolution:
 
-Advanced Monitoring and Resolution
------------------------------------
+Modern Operations
+-----------------
 
-Built for customers' critical workloads and always vigilant 24x7x365, our team
-of operations engineers monitors and responds to alerts in customer
-environments. Advanced Monitoring and Resolution (AMR) is an optionated
-deployment of cloud services monitors that act as an extension of customer
-operational teams by providing automation where possible and human actions for
-activities beyond automation.
+Modern Operations by Rackspace Technology provides customers with 24x7 operational and sys admin support, across AWS, leveraging decades of cloud expertise. This managed offering is designed to meet customers in any cloud maturity model, providing a broad range of services support, for end-to-end lifecycle management of customers cloud environments. Regardless of a customer’s cloud maturity, Modern Operations allows the freedom to innovate and transform to achieve core business objectives, while ensuring adapting business needs are supported.  
 
-With Rackspace Technology acting as an extension of your 24x7 operational team,
-you can focus on what matters most to your business.
-
-AMR services
+ModOps services
 ^^^^^^^^^^^^
 
-AMR provides real-time monitoring and alerting for your cloud environment. An
-expert team of operations engineers monitors and responds to any alerts in your
-environment. Rackspace Technology has the breadth of knowledge required to
-operate the most complex cloud deployments on a global scale. By combining with
-the Rackspace Elastic Engineering service, you gain the peace of mind that comes
-with having an environment cared for by a team of cloud-certified operations
-engineers who help drive continuous innovation.
+Modern Operations is a stand-alone service that provides 24/7/365 ticket- and phone-based support for operational and systems administration tasks in the cloud. Additionally, Modern Operations provides a glide path to modernization via our expertise based support model and compatibility with Rackspace Elastic Engineering.
 
-AMR includes:
+Modern Operations Includes:
+
+- 24x7x365 access to cloud experts
+- 24x7x365 cloud infrastructure operations management 
+- Phone and ticket-based support  
+- Monitoring, response and incident management 
+- Backup and patch management
+- Expertise catalog over restrictive sphere of management
+- Technical Account Manager (for qualifying customers) 
+- Optional lead engineer add on 
+- Architecture and infrastructure deployment
+
+Dependencies:
+
+- Business support or better AWS support plan highly encouraged for Modern Operations 
+- Modern Operations ticket automation required for monitoring will not function correctly for resources that are deployed on the AWS Program Management account (also known as Payer). These resources will need to be moved to a member account in order for the monitoring portion of Modern Operations to function. 
+
+
+.. _MOMR:
+
+Modern Operations Monitoring and Resolution (MOMR)
+--------------------------------------------------
+
+MOMR includes:
 
 - Optionated deployment of cloud services monitoring using known best-practices
 - 24x7x365 monitoring coverage backed by cloud experts 
-- Improved resolution timelines by leveraging Rackspace Technology automation 
+- Improved resolution timelines by leveraging Rackspace Technology automation
 - Guidance for a default list of alerts and thresholds, which we can customize to meet customer needs 
 - Ongoing support to adjust monitoring as the customer environment grows
 
-.. _vm_management:
+Modern Operations Patching
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-VM Management
--------------
+Modern Operations provides standard baseline patching. Customers can create custom patch baselines, patch groups, and maintenance windows to adhere to their own patching strategy. The API makes all of these services available for customization. 
 
-VM Management (VMM) is a simple, full-featured tool that makes your most
-critical and time-consuming server tasks easy to complete. Built to be
-multi-cloud, VMM manages your VMs wherever they are located through a simple
-interface and billed on a consolidated invoice. Set up your cloud the way you
-want and then proceed with your migrations, transformations, and new development
-activities.
+Best practices for each Operating System (OS) define the patch baselines, but we customize them to fit customer needs. 
 
-VMM complements Rackspace Elastic Engineering by removing critical but
-distracting workloads so you can focus your resources on building your
-next-generation infrastructure.
+In addition, customers can inject their own customization for patching to enable process interruptions like reboots, non-standard package downloads, and so on. 
 
-Services
-^^^^^^^^
+Modern Operations Patching UI provides the following services:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-VMM is currently in Limited Availability (LA). Descriptions of all services are
-subject to change. In LA, VMM provides patching, and in subsequent releases, it
-might include backup services for multi-cloud infrastructures. VMM also provides
-the following services:
-
-* Reporting
-* Support
-* API and UI access through the Rackspace Technology Control Panel
-
-Patching
-^^^^^^^^
-
-VMM provides standard baseline patching. Customers can create custom patch
-baselines, patch groups, and maintenance windows to adhere to their own patching
-strategy. The API makes all of these services available for customization.
-
-Best practices for each Operating System (OS) define the patch baselines, but we
-customize them to fit customer needs.
-
-In addition, customers can inject their own customization for patching to enable
-process interruptions like reboots, non-standard package downloads, and so on.
-
-
-.. _optimizer:
-
-Optimizer
----------
-
-Optimizer is a lightweight support option that provides world-class operational
-tooling, support, and expert guidance needed to get the most out of public cloud
-infrastructure. With Optimizer, a team of cost optimization experts provides
-detailed actions and recommendations to maximize workload performance while
-saving money and supplementing your IT staff.
-
-The Optimizer service includes:
-
-* Unified billing for all of customer Rackspace Technology platforms and other managed public cloud accounts
-* Access to the Rackspace Technology Customer Portal for account and user management
-
-Cost optimization
-^^^^^^^^^^^^^^^^^
-
-Rackspace Technology provides cost optimization guidance and assistance through
-cloud-native and third-party tooling. Customers can create tickets for cost
-optimization questions and request general guidance for infrastructure spend.
-After receiving a customer request, the Rackspace Technology Optimizer+ Team
-provides best practice guidance that maximizes workload performance and saves
-money. Depending on customer spend, cost optimization efforts can include the
-following activities:
-
-* Access to CloudHealth, which is the leading multi-cloud management platform designed to drive
-  increased business value at every stage of your cloud journey
-* Initial cost optimization review
-* Cost guidance
-* Tagging strategy reviews
-* Saving recommendations
-* VM supervision and licensing reviews
-* Regular cost reviews
-
+- Reporting
+- Support 
+- API and UI access through the Rackspace Technology Control Panel 
 
 .. _optimizer_plus:
 
