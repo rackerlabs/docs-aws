@@ -4,7 +4,7 @@
 Features
 ========
 
-.. important::
+..important::
 
 The features described here might not apply to all product offers.
 
