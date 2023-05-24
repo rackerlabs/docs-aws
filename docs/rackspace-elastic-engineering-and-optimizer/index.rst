@@ -80,7 +80,7 @@ Modern Operations
 Modern Operations by Rackspace Technology provides customers with 24x7 operational and sys admin support, across AWS, leveraging decades of cloud expertise. This managed offering is designed to meet customers in any cloud maturity model, providing a broad range of services support, for end-to-end lifecycle management of customers cloud environments. Regardless of a customer’s cloud maturity, Modern Operations allows the freedom to innovate and transform to achieve core business objectives, while ensuring adapting business needs are supported.  
 
 ModOps services
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
 Modern Operations is a stand-alone service that provides 24/7/365 ticket- and phone-based support for operational and systems administration tasks in the cloud. Additionally, Modern Operations provides a glide path to modernization via our expertise based support model and compatibility with Rackspace Elastic Engineering.
 
