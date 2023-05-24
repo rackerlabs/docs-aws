@@ -26,7 +26,7 @@ from the following sources:
   instances they had access to, the source of their Passport access
   request, and other associated details throughout the Passport access request.
 
-The |Logbook™| section of the
+The Logbook™ section of the
 `Rackspace Technology Customer Portal <https://manage.rackspace.com/aws>`_
 provides a timeline-based view of all these activities. You can view
 the activities for a specific AWS account or view activities across all
