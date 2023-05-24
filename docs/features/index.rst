@@ -4,8 +4,6 @@
 Features
 ========
 
-..important::
-
 The features described here might not apply to all product offers.
 
 Fanatical Support for AWS combines tooling and automation with human experts to
