@@ -4,8 +4,6 @@
 Features
 ========
 
-.. important::
-
 The features described here might not apply to all product offers.
 
 Fanatical Support for AWS combines tooling and automation with human experts to
@@ -138,7 +136,7 @@ Rackspace honors the followong SLA timeframes:
   result in the inability to complete business transactions, and generates an
   emergency monitoring alarm.
   .. note::
-   Emergency is only applicable to Advanced Monitoring and Resolution.
+  Emergency is only applicable to Advanced Monitoring and Resolution.
   
 * **Urgent (Production System Outage / Significant Business Impact)**: Within 60 minutes
 
