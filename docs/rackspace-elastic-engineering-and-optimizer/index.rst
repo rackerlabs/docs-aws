@@ -136,68 +136,66 @@ Modern Operations Patching UI provides the following services:
 Optimizer+
 ----------
 
-Optimizer+ (O+) builds on the Optimizer offering with additional service
-enhancements. You still get the same great cost optimization services, and you
-can still buy your support wherever you’d like. However, O+ layers on a few
-additional services:
+Optimizer+ is a lightweight support option that provides world-class operational tooling, support, and expert guidance needed to get the most out of AWS. With Optimizer+, a team of cost optimization experts provides detailed actions and recommendations to maximize workload performance while saving money and supplementing your IT staff.
 
-*	Architecture reviews
-*	Planned event support
-*	Basic VM monitoring
+Optimizer+ service includes:
+
+*	Unified billing for all of customer Rackspace Technology platforms and other managed public cloud accounts
+*	Access to the Rackspace Technology Customer Portal for account and user management
+*	Cost Optimization expertise
+*  Architecture reviews
+*  Planned event support
+*  AWS expertise
+
+Cost optimization
+^^^^^^^^^^^^^^^^^
+
+Rackspace Technology provides cost optimization guidance and assistance through cloud-native and third-party tooling. Customers can create tickets for cost optimization questions and request general guidance for infrastructure spend. After receiving a customer request, the Rackspace Technology Optimizer+ Team provides best practice guidance that maximizes workload performance and saves money. Depending on customer spend, cost optimization efforts can include the following activities:
+
+Access to CloudHealth, which is the leading multi-cloud management platform designed to drive increased business value at every stage of your cloud journey
+
+Initial cost optimization review
+
+Cost guidance
+
+Tagging strategy reviews
+
+Saving recommendations
+
+VM supervision and licensing reviews
+
+Regular cost reviews
 
 
 Architecture reviews
 ^^^^^^^^^^^^^^^^^^^^
 
-Rackspace Technology provides, at your request, an architecture review following
-the best practices in your cloud of choice. We evaluate your security posture,
-technological architecture, and use of cloud services, among other things. At the
-end of that engagement, you get a report you can use to ensure your environment
-is compliant with best practice recommendations.
+Rackspace Technology provides, at your request, an architecture review following the best practices in your cloud of choice. We evaluate your security posture, technological architecture, and use of cloud services, among other things. At the end of that engagement, you get a report you can use to ensure your environment is compliant with best practice recommendations.
 
 
 Planned event support
 ^^^^^^^^^^^^^^^^^^^^^
 
-Twice a year, Rackspace can help you to plan for and manage a large-scale event.
-Commonly customers use this to help with events like Black Friday or their
-*Shark Tank* moment. We evaluate your architecture, services utilization, and
-resiliency to help you form a strategy to withstand the sudden spike in visitors
-to your application.
+Twice a year, Rackspace can help you to plan for and manage a large-scale event. Commonly customers use this to help with events like Black Friday or their Shark Tank moment. We evaluate your architecture, services utilization, and resiliency to help you form a strategy to withstand the sudden spike in visitors to your application.
+**AWS Expertise**
 
+As part of Optimizer+, we can provide guidance and best practices across a wide range of AWS products and services. We can also (by request) set up a standard array of monitoring alerts for your AWS environment. These alerts cover basic monitoring like instance performance checks, low disk alerts, and domain health. While we don’t respond to these alerts when they fire under Optimizer+, we are more than happy to assist or guide you in getting them configured.
 
-Basic VM monitoring
-^^^^^^^^^^^^^^^^^^^
-
-As part of Optimizer+, we can set up a standard array of monitoring alerts for
-your infrastructure based on the best practices of the cloud of your choice.
-These alerts cover basic monitoring like instance performance checks, low disk
-alerts, and domain health.  While we don’t respond to these alerts when they
-fire, we gladly ensure we configured them to flow to the support team of your
-choice.
 
 .. _optimizer_platform:
 
 Optimizer+ with Platform Support
 --------------------------------
 
-Optimizer+ with Platform Support includes all Optimizer+ services plus the
-following public cloud support services powered by certified Rackspace
-Technology engineers and backed by top-level direct public cloud support.
+Optimizer+ with Platform Support includes all Optimizer+ services plus the following public cloud support services powered by certified Rackspace Technology engineers and backed by top-level direct public cloud support.
 
 Rackspace Technology can:
 
 * Provide escalation management 24x7x365.
-* Escalate issues at any time until we achieve resolution. This escalation might be
-  hierarchical (to a more senior engineer or the service delivery manager) or functional
-  (involving specialized technical expertise from other functional groups or partner cloud teams).
+* Escalate issues at any time until we achieve resolution. This escalation might be hierarchical (to a more senior engineer or the service delivery manager) or functional (involving specialized technical expertise from other functional groups or AWS teams).
 * Escalate to a technology or service vendor in the event of an incident.
 * Offer advice about the appropriate workaround to restore service.
 * Provide customers the opportunity to confirm issue resolution before closing the ticket.
-
-We handle cloud platform escalations with the restoration of services as the
-primary objective. Rackspace Technology endeavors to restore normal service as
-quickly as possible when a problem or incident occurs.
 
 Account reviews
 ^^^^^^^^^^^^^^^
