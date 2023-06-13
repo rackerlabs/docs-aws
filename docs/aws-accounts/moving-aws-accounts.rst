@@ -4,7 +4,7 @@
 Moving AWS Accounts from one Rackspace Account (DDI) to another Rackspace Account
 ==================================================================================
 
-“DDI Moves” refers to the process of moving a Customer’s AWS Account, associated with a specific Rackspace Customer account number,
+**“DDI Moves”** refers to the process of moving a Customer’s AWS Account, associated with a specific Rackspace Customer account number,
 to another Rackspace Customer account number. 
 
 Customer requests for DDI moves must be submitted at least 14 business days in advance of the designated DDI Move date. DDI Moves are performed 
