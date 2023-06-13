@@ -45,9 +45,12 @@ between Rackspace Technology and the customer.
    * - Infrastructure builds
      - * Deploy infrastructure or applications into the environment
        * Modify infrastructure to reduce cost, increase performance, and scale optimization
-   * - DevOps and automation
+   * - Cloud Maturity
      - * Manage, maintain, and enhance automation systems for operational effectiveness, stability, and security
        * Change existing automation systems or develop new automation systems
+   * - DevOps and automation
+     - * Elastic Engineering developed framework for evaluating an organization’s progress on their cloud journey
+       * Help identify opportunities to empower a customer on their cloud journey
    * - Performance management
      - * Identify performance targets and continuously adjust infrastructure to deliver the desired performance at the optimal cost
        * Tune applications and provide detailed analysis of application-level performance problems
